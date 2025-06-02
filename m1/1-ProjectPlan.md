@@ -44,7 +44,7 @@
 ## 3. Team Roles
 
 | Role         | Name          | Responsibility                 |
-| :----------- | :------------ | :----------------------------- |
+| ------------ | ------------- | ------------------------------ |
 | Team Manager | Yongshik Bae  | Manage schedule, Communication |
 | Tech Lead    | Navnit Kumar  | Architect, Code review         |
 | Developer    | Jaeyong Jeong |                                |
