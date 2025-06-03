@@ -25,9 +25,8 @@ In addition to the key QA elements in description, additional items were derived
 
 #### Score board
 
-Business importance : Indicates how important quality attributes are to a successful system and to meeting requirements.
-
-Risk : This shows how dangerous it can be when quality attributes are not met.
+**Business importance** : Indicates how important quality attributes are to a successful system and to meeting requirements.
+**Risk** : This shows how dangerous it can be when quality attributes are not met.
 
 | Quality Attribute   | Business Importance | Risk | Score | Comments                                                     |
 | ------------------- | :-----------------: | :--: | :---: | ------------------------------------------------------------ |
@@ -51,7 +50,6 @@ Risk : This shows how dangerous it can be when quality attributes are not met.
 #### Selected items and priorities
 
 (In order of importance based on score)
-
 Resiliency - Performance - Extensibility - Modifiability - Usability - Maintainability
 
 
