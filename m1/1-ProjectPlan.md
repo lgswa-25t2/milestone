@@ -34,7 +34,7 @@ Some changes may apply.
 | Role         | Name          | Responsibility                      |
 | ------------ | ------------- | ----------------------------------- |
 | Team Manager | Yongshik Bae  | Manage schedule, Communication      |
-| Tech Lead    | Navnit Kumar  | Architect, Code review, Development |            |
+| Tech Lead    | Navnit Kumar  | Architect, Code review, Development |
 | Developer    | Jaeyong Jeong | Analyze requirements, Development   |
 | Developer    | Sangyeob Na   | Analyze requirements, Development   |
 | Developer    | Seungsoon Lee | Analyze requirements, Development   |
