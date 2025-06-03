@@ -2,5 +2,8 @@
 
 Due to 7/2 (Wed)
 
-- Final Demonstration
-- Final Presentation
+## Deliverables
+
+**Demo and lessons learned**
+
+For the final milestone, the team will demo the completed system, and present the lessons learned.

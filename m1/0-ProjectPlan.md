@@ -1,8 +1,10 @@
 # Project Plan – Flight Tracking Assistance
 
+This document presents the project's name, purpose, schedule, members, tools used, primary risks, and goals.
 
+It may be updated as the project progresses.
 
-## 1. Project Overview
+## Project Overview
 
 - **Project Name** : Intelligent Flight Tracking Assistance
 
@@ -12,7 +14,7 @@
 
 
 
-## 2. Timeline & Milestones
+## Timeline & Milestones
 
 Some items may be added or changed.
 
@@ -27,7 +29,7 @@ Some items may be added or changed.
 
 
 
-## 3. Team Roles
+## Team Roles
 
 Some changes may apply.
 
@@ -43,7 +45,7 @@ Some changes may apply.
 
 
 
-## 4. Tools & Technologies
+## Tools & Technologies
 
 - **Language** : C++
 - **IDE** : C++ Builder
@@ -58,7 +60,7 @@ Some changes may apply.
 
 
 
-## 5. Risk Management
+## Risk Management
 
 | Risk                          | Impact | Mitigation Strategies                                |
 | ----------------------------- | ------ | ---------------------------------------------------- |
@@ -69,10 +71,10 @@ Some changes may apply.
 
 
 
-## 6. Success Criteria
+## Success Criteria
 
-- 100% implementation and deployment of features within the schedule
+- 100% implementation and deployment of mandatory features within the schedule
 
 - Meeting key Quality Attributes
-  - Performance, Resiliency, Extensibility - required by project sponsor
+  - Performance, Resiliency, Extensibility - top QA defined by project sponsor
   - Reliability, Usability, Scalability - derived from QA score board
