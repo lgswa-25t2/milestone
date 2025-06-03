@@ -15,7 +15,7 @@ Please refer to [Requirements](./1-Requirements.md).
 
 ## Constraints
 
-- The original code is written in c++.
+- The original code is written in C++.
 - Since this is a Windows application using VCL (Visual Component Library), the IDE is set to RAD Studio.
 - DB must use Google BigQuery.
 

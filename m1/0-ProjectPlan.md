@@ -77,4 +77,4 @@ Some changes may apply.
 
 - Meeting key Quality Attributes
   - Performance, Resiliency, Extensibility - top QA defined by project sponsor
-  - Reliability, Usability, Scalability - derived from QA score board
+  - Modifiability, Maintainability, Usability - derived from QA score board and project description
