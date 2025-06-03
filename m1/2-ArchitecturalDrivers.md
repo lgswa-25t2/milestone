@@ -15,9 +15,11 @@ Please refer to [Requirements](./1-Requirements.md).
 
 ## Constraints
 
+- 5 weeks development period.
 - The original code is written in C++.
 - Since this is a Windows application using VCL (Visual Component Library), the IDE is set to RAD Studio.
 - DB must use Google BigQuery.
+- An antenna is Raspberry Pi 5.
 
 ## Quality Attributes
 
@@ -54,7 +56,54 @@ In addition to the key QA elements in description, additional items were derived
 
 Resiliency - Performance - Extensibility - Modifiability - Usability - Maintainability
 
+|      | Resiliency | Performance | Extensibility | Modifiability | Usability  | Maintainability |
+| :--: | :--------: | :---------: | :-----------: | :-----------: | :--------: | :-------------: |
+|  R   |     -      |   Strong    |     Weak      |     Weak      |    None    |      Weak       |
+|  P   |            |      -      |    Strong     |    Strong     | Complement |     Strong      |
+|  E   |            |             |       -       |  Complement   |    Weak    |   Complement    |
+|  M   |            |             |               |       -       | Complement |   Complement    |
+|  U   |            |             |               |               |     -      |   Complement    |
+|  M   |            |             |               |               |            |        -        |
 
+|  | Performance | Resiliency | Extensibility | Modifiability | Usability | Maintainability |
+
+ |---------------|----------------|----------------|-------------------|-------------------|---------------|-------------------|
+
+ | Performance | - | Weak | Strong | Strong | Weak | Strong |
+
+ | Resiliency | Weak | - | Complementary | Complementary | None | Complementary |
+
+ | Extensibility | Strong | Complementary | - | Complementary | Weak | Complementary |
+
+ | Modifiability | Strong | Complementary | Complementary | - | Weak | Complementary |
+
+ | Usability | Weak | None | Weak | Weak | - | Weak |
+
+ | Maintainability | Strong | Complementary | Complementary | Complementary | Weak | - |
+
+
+
+**Complementary (🟢)** 
+
+- **Modifiability ↔ Maintainability**: A well-modularized system is easier to modify and maintain.
+
+- **Performance ↔ Usability**: Fast response times improve the user experience.
+
+- **Extensibility ↔ Modifiability**: A flexible structure allows easier addition and modification of features.
+
+**None** (⚪)
+
+- **Usability ↔ Resiliency**: Resiliency mechanisms (e.g., backend redundancy) have minimal direct impact on user interface experience.
+
+**Weak Trade-off** (🟠)
+
+Conflicts may arise but can often be resolved through good design decisions.
+Example: A plugin-based architecture may slightly increase the complexity of error handling.
+
+**Strong Trade-off (🔴)**
+
+These attributes are difficult to optimize simultaneously. Architectural prioritization is necessary.
+Example: Performance vs. Extensibility, or Performance vs. Resiliency.
 
 ### Performance
 
