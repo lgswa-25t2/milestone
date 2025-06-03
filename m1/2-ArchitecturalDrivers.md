@@ -65,9 +65,9 @@ Resiliency - Performance - Extensibility - Modifiability - Usability - Maintaina
 |  U   |            |             |               |               |     -      |   Complement    |
 |  M   |            |             |               |               |            |        -        |
 
-|  | Performance | Resiliency | Extensibility | Modifiability | Usability | Maintainability |
+| - | Performance | Resiliency | Extensibility | Modifiability | Usability | Maintainability |
 
- |---------------|----------------|----------------|-------------------|-------------------|---------------|-------------------|
+ | --------------- | ---------------- | ---------------- | ------------------- | ------------------- | --------------- | ------------------- |
 
  | Performance | - | Weak | Strong | Strong | Weak | Strong |
 

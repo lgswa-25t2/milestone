@@ -18,14 +18,17 @@ It may be updated as the project progresses.
 
 Some items may be added or changed.
 
-| Phase                                | Duration       | Key Deliverables        |
-| ------------------------------------ | -------------- | ----------------------- |
-| Planning & Analyze requirements      | 6/2 ~ 6/8      | Architectural Drivers   |
-| System Design & Experiments          | 6/9 ~ 6/20     | Architecture            |
-| Development 1                        | 6/11 ~ 6/22    | TBD, Before Milestone 2 |
-| Development 2                        | 6/23 ~ 7/1     | TBD, After Milestone 2  |
-| Integration test                     | same as dev, 2 | Test results            |
-| Prepare demonstration & presentation | 6/29 ~ 7/1     | Presentation slides     |
+| **Phase**                         | **Duration** | **Key Deliverables**      |
+| --------------------------------- | ------------ | ------------------------- |
+| 🔹 Planning & Analyze Requirements | 6/2 ~ 6/8    | Architectural Drivers     |
+| **🟢 Milestone 1**                 | **6/10**     | —                         |
+| 🔹 System Design & Experiments     | 6/9 ~ 6/20   | Architecture              |
+| 🔹 Development 1                   | 6/11 ~ 6/22  | TBD (Before Milestone 2)  |
+| **🟡 Milestone 2**                 | **6/23**     | —                         |
+| 🔹 Development 2                   | 6/23 ~ 7/1   | TBD (After Milestone 2)   |
+| 🔹 Integration Test                | 6/23 ~ 7/1   | Test Results              |
+| 🔹 Prepare Demo & Presentation     | 6/29 ~ 7/1   | Presentation Slides       |
+| **🎯 Final Presentation**          | **7/2**      | Demo & Final Presentation |
 
 
 
