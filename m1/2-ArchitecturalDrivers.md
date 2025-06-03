@@ -35,7 +35,7 @@ Risk : This shows how dangerous it can be when quality attributes are not met.
 | ***Resiliency***    |         10          |  10  |  100  | - Quality req. #2 in description<br />- connection lost      |
 | Reliability         |          8          |  3   |  24   | It is difficult for non-artificial failures to occur.        |
 | ***Extensibility*** |         10          |  9   |  90   | - Quality req. #3 in description<br />- add new features     |
-| <u>Usability</u>    |          9          |  7   |  63   | Make popup box when error is occuring.                       |
+| **Usability**       |          9          |  7   |  63   | Make popup box when error is occuring.                       |
 | Scalability         |          7          |  5   |  35   | There is no requirement that performance remain constant as the number of aircraft increases. |
 | **Maintainability** |          8          |  7   |  56   | - Quality req. #5 in description                             |
 | Testability         |          3          |  2   |   6   | Out of scope                                                 |
@@ -44,7 +44,7 @@ Risk : This shows how dangerous it can be when quality attributes are not met.
 
 - ***Performance***, ***Resiliency***, ***Extensibility*** - Top quality attributes determined by project sponsor
 - **Modifiability**, **Maintainability** - Derived from short brief of quality requirements in project description
-- <u>Usability</u> : additional derived from QA score board
+- **Usability** : additional derived from QA score board
 
 
 
