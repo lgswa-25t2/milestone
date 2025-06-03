@@ -9,7 +9,7 @@ This document outlines all the factors that affect system architecture, defining
 | Product Owner | Solvit Inc.        | Features          |
 | Dev team      | Team #2 Challenger | Rapid development |
 
-## Requirements
+## Functional Requirements
 
 Please refer to [Requirements](./1-Requirements.md).
 
@@ -48,6 +48,14 @@ Risk : This shows how dangerous it can be when quality attributes are not met.
 
 
 
+#### Selected items and priorities
+
+(In order of importance based on score)
+
+Resiliency - Performance - Extensibility - Modifiability - Usability - Maintainability
+
+
+
 ### Performance
 
 #### Scenario
@@ -61,11 +69,7 @@ Risk : This shows how dangerous it can be when quality attributes are not met.
 - Response : asdf
 - Response measure : asdf
 
-#### Tactics
-
-blahblah
-
-#### Patterns
+#### Tactics & Patterns
 
 blahblah
 
