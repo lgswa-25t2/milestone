@@ -30,7 +30,7 @@ Some items may be added or changed.
 | 🔹 Prepare Demo & Presentation     | 6/29 ~ 7/1   | Presentation Slides       |
 | **🎯 Final Presentation**          | **7/2**      | Demo & Final Presentation |
 
-
+![Project Plan](../image/plan.png)
 
 ## Team Roles
 
