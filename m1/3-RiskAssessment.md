@@ -21,3 +21,18 @@ resource limitation
 network problem (same network between laptop and raspberry pi)
 
 deadline pressure
+
+
+
+
+
+## Risk Management
+
+| Risk                          | Impact | Mitigation Strategies                                |
+| ----------------------------- | ------ | ---------------------------------------------------- |
+| Change requirements           | High   | Daily adjustments through daily review and mentoring |
+| Lack of time                  | High   | Using AI coding tools                                |
+| Incorrect difficulty analysis | High   | Experiment before developing each features           |
+| Language barrier              | High   | Using Translator                                     |
+| CI/CD difficulties            | Medium | Provides a customized github usage guide             |
+

@@ -1,4 +1,4 @@
-# Project Plan – Flight Tracking Assistance
+# Project Plan
 
 This document presents the project's name, purpose, schedule, members, tools used, primary risks, and goals.
 
@@ -18,33 +18,37 @@ It may be updated as the project progresses.
 
 Some items may be added or changed.
 
-| **Phase**                         | **Duration** | **Key Deliverables**      |
-| --------------------------------- | ------------ | ------------------------- |
-| 🔹 Planning & Analyze Requirements | 6/2 ~ 6/8    | Architectural Drivers     |
-| **🟢 Milestone 1**                 | **6/10**     | —                         |
-| 🔹 System Design & Experiments     | 6/9 ~ 6/20   | Architecture              |
-| 🔹 Development 1                   | 6/11 ~ 6/22  | TBD (Before Milestone 2)  |
-| **🟡 Milestone 2**                 | **6/23**     | —                         |
-| 🔹 Development 2                   | 6/23 ~ 7/1   | TBD (After Milestone 2)   |
-| 🔹 Integration Test                | 6/23 ~ 7/1   | Test Results              |
-| 🔹 Prepare Demo & Presentation     | 6/29 ~ 7/1   | Presentation Slides       |
-| **🎯 Final Presentation**          | **7/2**      | Demo & Final Presentation |
+| **Phase**                            | **Duration** | **Key Deliverables**      |
+| ------------------------------------ | ------------ | ------------------------- |
+| 🔹 Planning & Analyze Requirements    | 6/2 ~ 6/8    | Architectural Drivers     |
+| **🟢 Milestone 1**                    | **6/10**     | Documents                 |
+| 🔹 System Design & Experiments        | 6/9 ~ 6/20   | Architecture              |
+| 🔹 Development 1 - Mandatory features | 6/11 ~ 6/22  | TBD (Before Milestone 2)  |
+| **🟡 Milestone 2**                    | **6/23**     | Documents                 |
+| 🔹 Development 2 - Desired features   | 6/23 ~ 7/1   | TBD (After Milestone 2)   |
+| 🔹 Integration & Test                 | 6/23 ~ 7/1   | Test Results              |
+| 🔹 Prepare Demo & Presentation        | 6/29 ~ 7/1   | Presentation Slides       |
+| **🎯 Milestone 3**                    | **7/2**      | Demo & Final Presentation |
 
-![Project Plan](../image/plan.png)
+<!-- ![Project Plan](../image/plan.png) -->
 
 ## Team Roles
 
 Some changes may apply.
 
-| Role         | Name          | Responsibility                      |
-| ------------ | ------------- | ----------------------------------- |
-| Team Manager | Yongshik Bae  | Manage schedule, Communication      |
-| Tech Leader  | Sujin Kim     | Analyze requirements, Development   |
-| Developer    | Navnit Kumar  | Architect, Code review, Development |
-| Developer    | Jaeyong Jeong | Analyze requirements, Development   |
-| Developer    | Sangyeob Na   | Analyze requirements, Development   |
-| Developer    | Seungsoon Lee | Analyze requirements, Development   |
-| DevOps       | Youngtae Kim  | CI/CD, Documentation, Test          |
+| Role               | Name          | Responsibility                                              |
+| ------------------ | ------------- | ----------------------------------------------------------- |
+| Project Manager    | Yongshik Bae  | Management, Communication, Development                      |
+| Project Leader     | Sujin Kim     | SW Architect, Development                                   |
+| Software Developer | Navnit Kumar  | Feasibility study & Development - focus on Desired features |
+| Software Developer | Jaeyong Jeong | Development - focus on Mandatory feature #1                 |
+| Software Developer | Sangyeob Na   | Development - focus on Mandatory feature #2                 |
+| Software Developer | Seungsoon Lee | Development - focus on Mandatory feature #3                 |
+| DevOps, QA         | Youngtae Kim  | Documentation, CI/CD, Test, Development                     |
+
+
+
+## Tasks
 
 
 
@@ -63,22 +67,8 @@ Some changes may apply.
 
 
 
-## Risk Management
-
-| Risk                          | Impact | Mitigation Strategies                                |
-| ----------------------------- | ------ | ---------------------------------------------------- |
-| Change requirements           | High   | Daily adjustments through daily review and mentoring |
-| Lack of time                  | High   | Using AI coding tools                                |
-| Incorrect difficulty analysis | High   | Experiment before developing each features           |
-| Language barrier              | High   | Using Translator                                     |
-| CI/CD difficulties            | Medium | Provides a customized github usage guide             |
-
-
-
 ## Success Criteria
 
-- 100% implementation and deployment of mandatory features within the schedule
-
-- Meeting key Quality Attributes
-  - Performance, Resiliency, Extensibility - top QA defined by project sponsor
-  - Modifiability, Maintainability, Usability - derived from QA score board and project description
+- Develop 100% of mandatory features within the schedule
+- Develop as many desired features as possible
+- SW architecture satisfying the derived Quality Attributes
