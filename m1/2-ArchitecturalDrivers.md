@@ -38,14 +38,14 @@ Please refer to [Requirements](./1-Requirements.md).
 
 The Quality Attributes selected based on the [Quality attribute requirements](./1-Requirements.md#quality-attribute-requirements) are as follows.
 
-| ID          | Scenario | Quality Attribute | Req. ID      |
-| ----------- | -------- | ----------------- | ------------ |
-| IFTA_QA_001 |          | Performance       | IFTA_QAR_001 |
-| IFTA_QA_002 |          | Resiliency        | IFTA_QAR_002 |
-| IFTA_QA_003 |          | Extensibility     | IFTA_QAR_003 |
-| IFTA_QA_004 |          | Modifiability     | IFTA_QAR_004 |
-| IFTA_QA_005 |          | Maintainability   | IFTA_QAR_005 |
-| IFTA_QA_006 |          | Usability         | IFTA_QAR_006 |
+| ID          | Scenario                                                     | Quality Attribute | Req. ID      |
+| ----------- | ------------------------------------------------------------ | ----------------- | ------------ |
+| IFTA_QA_001 |                                                              | Performance       | IFTA_QAR_001 |
+| IFTA_QA_002 |                                                              | Resiliency        | IFTA_QAR_002 |
+| IFTA_QA_003 |                                                              | Extensibility     | IFTA_QAR_003 |
+| IFTA_QA_004 | The system should allow developers to integrate a new map provider into the user interface with minimal code changes, low risk of introducing bugs, and without affecting unrelated parts of the system. | Modifiability     | IFTA_QAR_004 |
+| IFTA_QA_005 |                                                              | Maintainability   | IFTA_QAR_005 |
+| IFTA_QA_006 |                                                              | Usability         | IFTA_QAR_006 |
 
 
 
@@ -82,12 +82,16 @@ Quality attribute scenarios were written for each requirement of the defined QA 
 
 ### IFTA_QA_004 - Modifiability
 
-- Source
-- Stimulus
-- Artifact
-- Environment
-- Response
-- Response Measure
+- Source - Developer
+- Stimulus - Add a new map provider to the system
+- Artifact - Map rendering module in the Remote User Interface (RUI)
+- Environment - During iterative development or feature expansion
+- Response - The new map provider integrates seamlessly without affecting existing components
+- Response Measure - Integration completed in under 4 person-hours, no unintended side effects observed
+
+Related design decision : refer to ADRx
+
+
 
 ### IFTA_TA_005 - Maintainability
 
@@ -106,6 +110,14 @@ Quality attribute scenarios were written for each requirement of the defined QA 
 - Environment
 - Response
 - Response Measure
+
+
+
+
+
+
+
+
 
 
 

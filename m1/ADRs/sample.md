@@ -1,15 +1,32 @@
-# ADR N: brief decision title 
-Describe here the forces that influence the design decision, including technological, cost-related, and project local. 
+# ADR N: Select tactics for supporting new map provider 
+The system should allow developers to integrate a new map provider into the user interface with minimal code changes, low risk of introducing bugs, and without affecting unrelated parts of the system.
+
+We have two options.
+
+- Abstract Common Services with Map interface
+  - Define a common abstract interface for map services that all map providers implement.
+  - The RUI interacts only with this interface, allowing developers to add new providers without modifying core UI logic.
+  - This reduces coupling between the UI and specific providers while improving cohesion within map modules.
+- Modularize Map Component with Dependency Injection
+  - Encapsulate map logic into a standalone module injected at runtime into the RUI.
+  - New providers are integrated by injecting a module that adheres to the map interface.
+  - This defers binding decisions to runtime, enabling flexibility and clean separation of concerns.
 
 ## Decision 
-Describe here our response to these forces, that is, the design decision that was made. State the decision in full sentences, with active voice ("We will...").
+We will use abstract common services with Map Interface to enable structed, low-risk integration of new map providers without disrupting existing UI behavior.
 
 ## Rationale 
-Describe here the rationale for the design decision. Also indicate the rationale for significant *rejected* alternatives. This section may also indicate assumptions, constraints, requirements, and results of evaluations and experiments.
+- ✅ Abstract Common Services with Map Interface
+  - Provides compile-time safety and clarity.
+  - Ideal when new map providers are added occasionally.
+  - Promotes high cohesion within mapping logic and minimizes dependencies.
+- ⚠️ Modularize Map Component with Dependency Injection
+  - Suitable when map providers need to be added or replaced frequently.
+  - Increases flexibility through runtime configuration.
+  - Keeps UI logic unchanged, improving long-term maintainability.
 
 ## Status
-[Proposed | Accepted | Deprecated | Superseded]
-If deprecated, indicate why. If superseded, include a link to the new ADR. 
+[***Proposed*** | Accepted | Deprecated | Superseded]
 
 ## Consequences
-Describe here the resulting context, after applying the decision. All consequences should be listed, not just the "positive" ones. 
+Resulting context will be described.
