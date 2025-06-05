@@ -36,15 +36,15 @@ Some items may be added or changed.
 
 Some changes may apply.
 
-| Role               | Name          | Responsibility                                              |
-| ------------------ | ------------- | ----------------------------------------------------------- |
-| Project Manager    | Yongshik Bae  | Management, Communication, Development                      |
-| Project Leader     | Sujin Kim     | SW Architect, Development                                   |
-| Software Developer | Navnit Kumar  | Feasibility study & Development - focus on Desired features |
-| Software Developer | Jaeyong Jeong | Development - focus on Mandatory feature #1                 |
-| Software Developer | Sangyeob Na   | Development - focus on Mandatory feature #2                 |
-| Software Developer | Seungsoon Lee | Development - focus on Mandatory feature #3                 |
-| DevOps, QA         | Youngtae Kim  | Documentation, CI/CD, Test, Development                     |
+| Role                   | Name          | Responsibility                                              |
+| ---------------------- | ------------- | ----------------------------------------------------------- |
+| Project Manager        | Yongshik Bae  | Management, Communication, Development                      |
+| Project Leader         | Sujin Kim     | SW Architect, Development                                   |
+| Software Developer     | Navnit Kumar  | Feasibility study & Development - focus on Desired features |
+| Software Developer     | Jaeyong Jeong | Development - focus on Mandatory feature                    |
+| Software Developer     | Sangyeob Na   | Development - focus on Mandatory feature                    |
+| Software Developer     | Seungsoon Lee | Development - focus on QA improving                         |
+| DevOps, QA (Assurance) | Youngtae Kim  | Documentation, CI/CD, Test, Development                     |
 
 
 

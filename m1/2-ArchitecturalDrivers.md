@@ -89,7 +89,7 @@ Quality attribute scenarios were written for each requirement of the defined QA 
 - Response - The new map provider integrates seamlessly without affecting existing components
 - Response Measure - Integration completed in under 4 person-hours, no unintended side effects observed
 
-Related design decision : refer to ADRx
+**Related design decision** : refer to ADRx
 
 
 
@@ -110,43 +110,3 @@ Related design decision : refer to ADRx
 - Environment
 - Response
 - Response Measure
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-- 
-
-### Performance
-
-#### Scenario
-
-(briet summary of scenario)
-
-- Stimulus : asdf
-- Stimulus source : asdf
-- Artifact : asdf
-- Environment : asdf
-- Response : asdf
-- Response measure : asdf
-
-#### Tactics & Patterns
-
-blahblah
-
-#### Related Design Decisions
-
-link to design decisions documents
-
