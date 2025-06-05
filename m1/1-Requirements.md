@@ -6,23 +6,24 @@ This document contains Functional requirements and Quality attribute requirement
 
 Derived from features in Project Description documents.
 
-| ID          | Group                | Description                                                  | Feature type |
-| ----------- | -------------------- | ------------------------------------------------------------ | ------------ |
-| IFTA_FR_001 | Metadata             | Look up aircraft information (e.g., Airline)                 | Mandatory    |
-| IFTA_FR_002 | Metadata             | Look up route information                                    | Mandatory    |
-| IFTA_FR_003 | Metadata             | Determine aircraft point of origin and destination           | Mandatory    |
-| IFTA_FR_004 | Metadata             | Use APIs and pull information (e.g., https://vrs-standing-data.adsb.lol/ ) | Mandatory    |
-| IFTA_FR_005 | Time series Analysis | Track history - Flight tracking of time and location         | Mandatory    |
-| IFTA_FR_006 | Time series Analysis | Know age of track (drop after 30 seconds)                    | Mandatory    |
-| IFTA_FR_007 | UI                   | Improve the look and user experience with the user interface | Mandatory    |
-| IFTA_FR_008 | UI                   | Update map tiles                                             | Mandatory    |
-| IFTA_FR_009 | UI                   | Plot airports                                                | Mandatory    |
-| IFTA_FR_010 | UI                   | Modify aircraft icons and leaders                            | Mandatory    |
-| IFTA_FR_101 | Safety Analysis      | Collision avoidance - Assess aircraft within proximity to each other | Desired      |
-| IFTA_FR_102 | Safety Analysis      | Compare contrast a flight’s SBS or ADS-B data with planned route | Desired      |
-| IFTA_FR_103 | Safety Analysis      | Analyze aircraft flight profile for anomalies (e.g., flying to the wrong airport) Is the flight deviating from the flight plan? | Desired      |
-| IFTA_FR_104 | Time series Analysis | While receiving and recording data, play back tracks (Playback at 2x at 3x speed) by moving a mouse cursor | Desired      |
-| IFTA_FR_105 | Simulation           | Dead reckoning - plot tracks now or where they should be based upon constant velocity and altitude (parametric fit) | Desired      |
+| ID            | Group                | Brief                                 | Description                                                  |
+| ------------- | -------------------- | ------------------------------------- | ------------------------------------------------------------ |
+| IFTA_FR_01_01 | Metadata             | Aircraft information lookup           | The system shall be able to retrieve airline and aircraft type information in real time based on the aircraft's unique identifier (e.g. ICAO address) |
+| IFTA_FR_01_02 | Metadata             | Route information lookup              | The system shall be able to query flight route data and display major waypoints, route, altitude, etc |
+| IFTA_FR_01_03 | Metadata             | Origin and Destination identification | The system shall be able to identify and provide to the user the origin and destination of each aircraft |
+| IFTA_FR_02_01 | Time series Analysis | Flight history tracking               | The system must store data such as the aircraft's position, altitude, speed and heading in chronological order |
+| IFTA_FR_02_02 | Time series Analysis | Know age of track                     | For each aircraft, the system shall be able to store and visualize the last 30 seconds of tracks |
+| IFTA_FR_02_03 | Time series Analysis | Track playback                        | The system shall be capable of recording received aircraft track data and replaying it at 1x, 2x or 3x speed for selected flights or time ranges |
+| IFTA_FR_02_04 | Time series Analysis | Track simulation                      | The system shall be able to perform traffic simulations based on track data from past time periods. |
+| IFTA_FR_02_05 | Time series Analysis | Dead reckoning                        | The system must use the aircraft's current speed, heading and altitude, based on real-time or historical data, to predict its future position and display it on a map |
+| IFTA_FR_03_01 | UI                   | Improved UI/UX                        | The user interface shall be intuitive and responsive         |
+| IFTA_FR_03_02 | UI                   | Updated Map tiles                     | The system must load high resolution and user selected map tiles |
+| IFTA_FR_03_03 | UI                   | Airport plotting                      | It should be possible to display major airports (according to IATA/ICAO standards) on the map as icons or symbols |
+| IFTA_FR_03_04 | UI                   | Aircraft icons and leaders            | Icons and leaders indicating the direction of movement of the aircraft must be visually displayed on the map |
+| IFTA_FR_04_01 | Safety Analysis      | Collision avoidance                   | The system must detect aircraft in real time within certain distance and altitude criteria |
+| IFTA_FR_04_02 | Safety Analysis      | Route comparison                      | The system must be able to receive actual ADS-B / SBS position data from each aircraft and compare it to a predefined flight plan path. |
+| IFTA_FR_04_03 | Safety Analysis      | Flight profile normaly detection      | The system should be able to detect any deviation from the normal flight trajectory (e.g. wrong airport approach, reverse flight, etc) by analyzing the aircraft's path, direction, speed and destination |
+| IFTA_FR_04_04 | Safety Analysis      | Flight plan deviation analysis        | The system must compare the flight plan path with the real-time path to assess whether the flight is deviating from the path |
 
 \* Desired features are given an ID after 101.
 

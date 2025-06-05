@@ -4,106 +4,118 @@ This document outlines all the factors that affect system architecture, defining
 
 ## Stakeholders
 
-| Role          | Name               | Concerns                     |
-| ------------- | ------------------ | ---------------------------- |
-| Product Owner | Solvit Inc.        | Features, Quality attributes |
-| Dev team      | Team #2 Challenger | Rapid development            |
+| Role          | Name                    | Concerns                     |
+| ------------- | ----------------------- | ---------------------------- |
+| Product Owner | Solvit Inc.             | Features, Quality attributes |
+| Mentor        | Paulo Merson, Matt Bass | Quality attributes           |
+| Dev team      | Team #2 Challenger      | Rapid development, Features  |
+
+
 
 ## Requirements
 
 Please refer to [Requirements](./1-Requirements.md).
 
+
+
 ## Constraints
 
-- 5 weeks development period.
-- The original code is written in C++.
-- Since this is a Windows application using VCL (Visual Component Library), the IDE is set to RAD Studio.
-- DB must use Google BigQuery.
-- An antenna is Raspberry Pi 5.
+- Business Constraints
+  - 7 people in the development
+  - 5 weeks development period
+  - In addition to development, demo and presentation preparation are required.
 
-## Quality Attributes
-
-In addition to the key QA elements in description, additional items were derived through the QA scoreboard.
-
-#### Score board
-
-**Business importance** : Indicates how important quality attributes are to a successful system and to meeting requirements.
-
-**Risk** : This shows how dangerous it can be when quality attributes are not met.
-
-| Quality Attribute   | Business Importance | Risk | Score | Comments                                                     |
-| ------------------- | :-----------------: | :--: | :---: | ------------------------------------------------------------ |
-| ***Performance***   |         10          |  9   |  90   | - Quality req. #1 in description<br />- quick response       |
-| ***Resiliency***    |         10          |  10  |  100  | - Quality req. #2 in description<br />- connection lost      |
-| Reliability         |          8          |  3   |  24   | It is difficult for non-artificial failures to occur.        |
-| ***Extensibility*** |         10          |  9   |  90   | - Quality req. #3 in description<br />- add new features     |
-| **Usability**       |          9          |  7   |  63   | Make popup box when error is occuring.                       |
-| Scalability         |          7          |  5   |  35   | There is no requirement that performance remain constant as the number of aircraft increases. |
-| **Maintainability** |          8          |  7   |  56   | - Quality req. #5 in description                             |
-| Testability         |          3          |  2   |   6   | Out of scope                                                 |
-| **Modifiability**   |          8          |  8   |  64   | - Quality req. #4 in description<br />- Change map provider  |
-| Security            |          8          |  2   |  16   | Out of scope                                                 |
-
-- ***Performance***, ***Resiliency***, ***Extensibility*** - Top quality attributes determined by project sponsor
-- **Modifiability**, **Maintainability** - Derived from short brief of quality requirements in project description
-- **Usability** : additional derived from QA score board
+- Technical Constraints
+  - Use C++ for development
+  - Since this is a Windows application using VCL (Visual Component Library), the IDE is set to RAD Studio.
+  - DB must use Google BigQuery.
+  - An antenna is Raspberry Pi 5.
 
 
 
-#### Selected items and priorities
 
-(In order of importance based on score)
+## Define Quality Attributes
 
-Resiliency - Performance - Extensibility - Modifiability - Usability - Maintainability
+The Quality Attributes selected based on the [Quality attribute requirements](./1-Requirements.md#quality-attribute-requirements) are as follows.
 
-|      | Resiliency | Performance | Extensibility | Modifiability | Usability  | Maintainability |
-| :--: | :--------: | :---------: | :-----------: | :-----------: | :--------: | :-------------: |
-|  R   |     -      |   Strong    |     Weak      |     Weak      |    None    |      Weak       |
-|  P   |            |      -      |    Strong     |    Strong     | Complement |     Strong      |
-|  E   |            |             |       -       |  Complement   |    Weak    |   Complement    |
-|  M   |            |             |               |       -       | Complement |   Complement    |
-|  U   |            |             |               |               |     -      |   Complement    |
-|  M   |            |             |               |               |            |        -        |
-
-| - | Performance | Resiliency | Extensibility | Modifiability | Usability | Maintainability |
-
- | --------------- | ---------------- | ---------------- | ------------------- | ------------------- | --------------- | ------------------- |
-
- | Performance | - | Weak | Strong | Strong | Weak | Strong |
-
- | Resiliency | Weak | - | Complementary | Complementary | None | Complementary |
-
- | Extensibility | Strong | Complementary | - | Complementary | Weak | Complementary |
-
- | Modifiability | Strong | Complementary | Complementary | - | Weak | Complementary |
-
- | Usability | Weak | None | Weak | Weak | - | Weak |
-
- | Maintainability | Strong | Complementary | Complementary | Complementary | Weak | - |
+| ID          | Scenario | Quality Attribute | Req. ID      |
+| ----------- | -------- | ----------------- | ------------ |
+| IFTA_QA_001 |          | Performance       | IFTA_QAR_001 |
+| IFTA_QA_002 |          | Resiliency        | IFTA_QAR_002 |
+| IFTA_QA_003 |          | Extensibility     | IFTA_QAR_003 |
+| IFTA_QA_004 |          | Modifiability     | IFTA_QAR_004 |
+| IFTA_QA_005 |          | Maintainability   | IFTA_QAR_005 |
+| IFTA_QA_006 |          | Usability         | IFTA_QAR_006 |
 
 
 
-**Complementary (🟢)** 
+## Quality Attribute scenarios
 
-- **Modifiability ↔ Maintainability**: A well-modularized system is easier to modify and maintain.
+Quality attribute scenarios were written for each requirement of the defined QA list.
 
-- **Performance ↔ Usability**: Fast response times improve the user experience.
+### IFTA_TA_001 - Performance
 
-- **Extensibility ↔ Modifiability**: A flexible structure allows easier addition and modification of features.
+- Source
+- Stimulus
+- Artifact
+- Environment
+- Response
+- Response Measure
 
-**None** (⚪)
+### IFTA_QA_002 - Resiliency
 
-- **Usability ↔ Resiliency**: Resiliency mechanisms (e.g., backend redundancy) have minimal direct impact on user interface experience.
+- Source
+- Stimulus
+- Artifact
+- Environment
+- Response
+- Response Measure
 
-**Weak Trade-off** (🟠)
+### IFTA_TA_003 - Extensibility
 
-Conflicts may arise but can often be resolved through good design decisions.
-Example: A plugin-based architecture may slightly increase the complexity of error handling.
+- Source
+- Stimulus
+- Artifact
+- Environment
+- Response
+- Response Measure
 
-**Strong Trade-off (🔴)**
+### IFTA_QA_004 - Modifiability
 
-These attributes are difficult to optimize simultaneously. Architectural prioritization is necessary.
-Example: Performance vs. Extensibility, or Performance vs. Resiliency.
+- Source
+- Stimulus
+- Artifact
+- Environment
+- Response
+- Response Measure
+
+### IFTA_TA_005 - Maintainability
+
+- Source
+- Stimulus
+- Artifact
+- Environment
+- Response
+- Response Measure
+
+### IFTA_QA_006 - Usability
+
+- Source
+- Stimulus
+- Artifact
+- Environment
+- Response
+- Response Measure
+
+
+
+
+
+
+
+
+
+- 
 
 ### Performance
 
