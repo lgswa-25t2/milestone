@@ -4,12 +4,12 @@ This document outlines all the factors that affect system architecture, defining
 
 ## Stakeholders
 
-| Role          | Name               | Concerns          |
-| ------------- | ------------------ | ----------------- |
-| Product Owner | Solvit Inc.        | Features          |
-| Dev team      | Team #2 Challenger | Rapid development |
+| Role          | Name               | Concerns                     |
+| ------------- | ------------------ | ---------------------------- |
+| Product Owner | Solvit Inc.        | Features, Quality attributes |
+| Dev team      | Team #2 Challenger | Rapid development            |
 
-## Functional Requirements
+## Requirements
 
 Please refer to [Requirements](./1-Requirements.md).
 

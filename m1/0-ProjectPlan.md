@@ -6,7 +6,7 @@ It may be updated as the project progresses.
 
 ## Project Overview
 
-- **Project Name** : Intelligent Flight Tracking Assistance
+- **Project Name** : Intelligent Flight Tracking Assistance - IFTA
 
 - **Objective** : Improve a system that meets the objectives and requirements of the Federal Aviation Administration (FAA) issued request for proposal (RFP).
 
@@ -49,6 +49,8 @@ Some changes may apply.
 
 
 ## Tasks
+
+TODO - TBD
 
 
 
