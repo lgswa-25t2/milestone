@@ -1,4 +1,4 @@
-# Experiment 3: UI Input Stress Test (System Behavior Under Rapid Button Clicks) 
+# Experiment 3: UI Input Stress Test (System Behavior Under Rapid Button Clicks)
 
 
 ## Results and recommendations 
