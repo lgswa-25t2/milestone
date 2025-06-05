@@ -41,24 +41,31 @@ The experiment seeks to answer the following key questions:
 - Test Environment Setup
 
   Modify client code to log raw data from the ADS-B live feed
+  
   Install and configure the client on the test PC and ensure proper connection to the ADS-B Hub
   
 - Data Collection
 
   Verify that data is being collected correctly
+
   Check data quality, including missing position information and overall integrity
 
 - Data Analysis
 
   Analyze number of unique aircraft per minute/hour
+
   Calculate average and peak message ingestion rate (msg/sec)
+
   Determine update frequency per aircraft
+
   Create visualizations and graphs for all metrics
 
 - Summary and Review
 
   Write a summary report of results
+  
   Define data ingestion performance baselines to be reflected in system design
+  
   Evaluate the need for follow-up experiments
 
 ## Duration

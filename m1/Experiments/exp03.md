@@ -41,30 +41,39 @@ The goal is to identify potential bottlenecks or vulnerabilities in the UI event
 - Test Environment Setup
 
   Add logging code for button click events
+
   Set up and launch the client application with the automation tool
+
   Configure logging path and CPU/memory monitoring tools
 
 - Execute Stress Test
 
   Perform automated button clicks with different intervals (10ms, 100ms, 500ms) and repetition counts (50, 100, 500)
+
   Example: 100 consecutive clicks on a specific UI button and observe visual feedback and UI stability
 
 - Data Collection
 
   Measure UI response time and screen update delay
+  
   Check for dropped or unprocessed events
+  
   Record CPU and memory usage during each test
   
 - Analysis and Visualization
 
   Analyze delays, dropped events, and behavior under load
+  
   Create graphs of response time and resource usage for each scenario
+  
   Evaluate stability and recovery capacity
   
 - Summary and Review
 
   Write a summary report of findings
+  
   Identify problems and propose mitigation strategies
+  
   Determine the need for further experiments
 
 ## Duration

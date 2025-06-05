@@ -19,18 +19,25 @@ The results will help identify system performance thresholds, bottlenecks, and a
 
 ## Resources required
  - Software: Flight Tracker client
+
  - Hardware: One test laptop (Intel Core i7-1165G7 @ 2.80GHz / 16.0GB RAM)
+
  - Test data: Pre-recorded simulation files for different aircraft counts
    (50 / 100 / 200 / 300 / 500 / 1000 / 3000 / 5000 / 10000)
+   
  - UI automation macro scripts
+
  - Personnel: 3 people × 4 hours
+   
    (1 for test execution, 2 for preparation and support)
 
 ## Experiment description
 - Test Environment Setup
 
   Generate pre-recorded test data (using AI tools if needed)
+
   Prepare and configure a UI macro automation tool and scripts
+
   Implement logging functionality for screen update and user response time
 
 - Step-by-Step Execution
@@ -39,23 +46,33 @@ The results will help identify system performance thresholds, bottlenecks, and a
   50 → 100 → 200 → 300 → … → 10,000
 
   \* At each step, measure:
+
   Time from data load to aircraft appearing on map
+
   Response time when selecting an aircraft
+
   UI latency when switching menus
+
   Time to reflect map interactions (zoom, pan, switch)
+
   CPU and memory usage
 
 - Log Analysis and Visualization
 
   Organize collected logs and measured data
+
   Visualize results as graphs
+
   Identify performance thresholds and bottlenecks
+
   Detect any abnormal behavior under load
 
 - Conclusion and Review
 
   Summarize the findings in a final report
+  
   Propose improvements based on analysis
+  
   Plan follow-up experiments if necessary
 
 ## Duration
