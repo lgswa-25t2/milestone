@@ -9,13 +9,10 @@ The purpose of this experiment is to evaluate the responsiveness and stability o
 
 This test aims to answer the following key questions:
 
-​	Is the system responsive and stable when a UI button is clicked repeatedly at short intervals?
-
-​	Do duplicate or missed event processing issues occur?
-
-​	To what extent do CPU and memory usage increase due to repeated interactions?
-
-​	Can the system recover from freezes or crashes triggered by rapid input?
+- Is the system responsive and stable when a UI button is clicked repeatedly at short intervals?
+- Do duplicate or missed event processing issues occur?
+- To what extent do CPU and memory usage increase due to repeated interactions?
+- Can the system recover from freezes or crashes triggered by rapid input?
 
 The goal is to identify potential bottlenecks or vulnerabilities in the UI event handling mechanism and define optimization points for future improvements.
 
