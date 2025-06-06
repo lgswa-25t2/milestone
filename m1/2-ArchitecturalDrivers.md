@@ -46,8 +46,8 @@ The Quality Attributes selected based on the [Quality attribute requirements](./
 | IFTA_QA_004 | The system can be easily added an identifying unregisterd aircraft feature | Extensibility   | IFTA_QAR_004 |
 | IFTA_QA_005 | The system should allow developers to integrate a new map provider into the user interface with minimal code changes, low risk of introducing bugs, and without affecting unrelated parts of the system | Modifiability   | IFTA_QAR_005 |
 | IFTA_QA_006 | The system can be easily understood, corrected, improved, and adapted over time | Maintainability | IFTA_QAR_006 |
-| IFTA_QA_007 | Users shall be able to pause live aircraft data updates to analyze specific tracks without distraction, then resume updates smoothly | Usability       | IFTA_QAR_007 |
-| IFTA_QA_008 | The system shall remember user preferences such as Raspberry Pi IP address, map style, and display settings across sessions to minimize repetitive setup and enhance efficiency | Usability       | IFTA_QAR_008 |
+| IFTA_QA_007 | Users are using the replay function, and they want the pause/resump function to be supported. | Usability       | IFTA_QAR_007 |
+| IFTA_QA_008 | Users want their system usage settings to be maintained the same the next time they use it. | Usability       | IFTA_QAR_008 |
 
 
 
@@ -162,11 +162,11 @@ Quality attribute scenarios were written for each requirement of the defined QA 
 ### IFTA_QA_007
 
 - Source - User
-- Stimulus - User requests to pause live data stream
+- Stimulus - User requests to pause/resume function
 - Artifact - Remote User Interface (RUI) data display
 - Environment - Normal operation with active live data feed
 - Response - RUI pauses data updates while maintaining current display; on resume, data updates continue without loss
-- Response Measure - Data stream pauses/resumes within 1 second; no data loss or UI glitches observed
+- Response Measure - Data stream pauses/resumes successfully; no data loss or UI glitches observed
 
 **Related approach** : refer to [Approach 07](./approachs/approach07.md)
 
