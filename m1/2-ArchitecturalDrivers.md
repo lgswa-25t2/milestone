@@ -95,10 +95,10 @@ Quality attribute scenarios were written for each requirement of the defined QA 
 
 ### IFTA_QA_003
 
-- Source - System developer or data analysis engineer
+- Source - Solvit or Project leader
 - Stimulus - A requirement is raised to add a feature that detects deviations from registered flight paths
 - Artifact - Flight data analysis module and user interface
-- Environment - The system is operating under normal conditions and receiving real-time flight data
+- Environment - During normal development
 - Response
   - A new module for detecting path deviations is implemented independently
   - The user interface is updated to display alerts or map-based warnings
@@ -114,10 +114,10 @@ Quality attribute scenarios were written for each requirement of the defined QA 
 
 ### IFTA_QA_004
 
-- Source - Maintenance engineer or operations manager
+- Source - Solvit or Project leader
 - Stimulus - A requirement is raised to add a feature for identifying unregistered aircraft
 - Artifact - Aircraft identification database, real-time traffic analysis module, UI display components
-- Environment - The system is actively processing real-time flight information
+- Environment - During normal development
 - Response
   - Unregistered aircraft are visually flagged in the UI and recorded in system logs
   - The feature is implemented without altering existing aircraft tracking or display logic
