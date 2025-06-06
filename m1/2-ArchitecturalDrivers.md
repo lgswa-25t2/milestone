@@ -45,10 +45,9 @@ The Quality Attributes selected based on the [Quality attribute requirements](./
 | IFTA_QA_003 | The system can be easily added a deviation detection feature | Extensibility   | IFTA_QAR_003 |
 | IFTA_QA_004 | The system can be easily added an identifying unregisterd aircraft feature | Extensibility   | IFTA_QAR_004 |
 | IFTA_QA_005 | The system should allow developers to integrate a new map provider into the user interface with minimal code changes, low risk of introducing bugs, and without affecting unrelated parts of the system | Modifiability   | IFTA_QAR_005 |
-| IFTA_QA_006 |                                                              | Maintainability | IFTA_QAR_006 |
-| IFTA_QA_007 |                                                              | Maintainability | IFTA_QAR_007 |
+| IFTA_QA_006 | The software system can be easily understood, corrected, improved, and adapted over time. | Maintainability | IFTA_QAR_006 |
+| IFTA_QA_007 |                                                              | Usability       | IFTA_QAR_007 |
 | IFTA_QA_008 |                                                              | Usability       | IFTA_QAR_008 |
-| IFTA_QA_009 |                                                              | Usability       | IFTA_QAR_009 |
 
 
 
@@ -161,12 +160,17 @@ Quality attribute scenarios were written for each requirement of the defined QA 
 
 ### IFTA_QA_006
 
-- Source
-- Stimulus
-- Artifact
-- Environment
+- Source - Developer and maintainer
+- Stimulus - A need arises to correct a defect, enhance functionality, or adapt the UI to new requirements
+- Artifact - code with new requirement
+- Environment - During normal development and maintenance activities
 - Response
+  - The code is easy to understand and navigate
+  - Modifications are implemented with minimal risk of introducing new defects
+
 - Response Measure
+  - Developer is able to make changes within 2 day
+  - Average time to diagnose and fix a defect is within 1 day
 
 **Related approach** : refer to [Approach 06](./approachs/approach06.md)
 
@@ -185,9 +189,22 @@ Quality attribute scenarios were written for each requirement of the defined QA 
 
 
 
+### IFTA_QA_008
+
+- Source
+- Stimulus
+- Artifact
+- Environment
+- Response
+- Response Measure
+
+**Related approach** : refer to [Approach 08](./approachs/approach08.md)
+
+
+
 ## TODO - QA priority
 
-
+utility tree ?
 
 ## TODO - risk of QA elements
 
