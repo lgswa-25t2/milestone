@@ -189,9 +189,8 @@ Quality attribute scenarios were written for each requirement of the defined QA 
 
 ### Utility tree
 
-**Business importance** - The score assigned in the demo scoring was H if it was 30 points, M if it was 20 points, and L if it was 10 points or less.
-
-**Technical Risk** - Since all members are developers, we wrote subjectively based on our own development experience.
+- **Business importance** - The score assigned in the demo scoring was H if it was 30 points, M if it was 20 points, and L if it was 10 points or less.
+- **Technical Risk** - Since all members are developers, we wrote subjectively based on our own development experience.
 
 | ID   | Type            | Scenario                                                     | Business Importance | Technical Risk |
 | ---- | --------------- | ------------------------------------------------------------ | ------------------- | -------------- |
