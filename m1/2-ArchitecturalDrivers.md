@@ -56,7 +56,7 @@ The Quality Attributes selected based on the [Quality attribute requirements](./
 
 Quality attribute scenarios were written for each requirement of the defined QA list.
 
-### IFTA_TA_001
+### IFTA_QA_001
 
 - Source - User actions in the remote user interface
 - Stimulus - Interaction with mouse, including clicking craft, zoom in/out map, panning map, operating menu or control panel
@@ -97,7 +97,7 @@ Quality attribute scenarios were written for each requirement of the defined QA 
 
 **Related approach** : refer to [Approach 02](./approachs/approach02.md)
 
-### IFTA_TA_003
+### IFTA_QA_003
 
 - Source - System developer or data analysis engineer
 
@@ -161,7 +161,7 @@ Quality attribute scenarios were written for each requirement of the defined QA 
 
 
 
-### IFTA_TA_006
+### IFTA_QA_006
 
 - Source
 - Stimulus
