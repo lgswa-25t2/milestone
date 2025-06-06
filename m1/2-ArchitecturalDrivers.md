@@ -71,7 +71,7 @@ Quality attribute scenarios were written for each requirement of the defined QA 
   - Menu/control panel interaction response ≤ 150 milliseconds
   - Analytical feature display latency ≤ 1 second after user action
 
-**Related design decision** : refer to [ADR 02](./ADRs/adr02.md)
+**Related approach** : refer to [Approach 01](./approachs/approach01.md)
 
 ### IFTA_QA_002
 
@@ -93,7 +93,7 @@ Quality attribute scenarios were written for each requirement of the defined QA 
   - Upon connection recovery, system resumes normal operation within ≤ 1 second
   - System remains stable and responsive throughout the failure period (UI response time degradation < 10%)
 
-**Related design decision** : refer to [ADR 03](./ADRs/adr03.md)
+**Related approach** : refer to [Approach 02](./approachs/approach02.md)
 
 ### IFTA_TA_003
 
@@ -118,7 +118,7 @@ Quality attribute scenarios were written for each requirement of the defined QA 
   - Feature is deployed within 3 days
   - No regressions in existing functionality
 
-**Related design decision** : refer to [ADR 04](./ADRs/adr04.md)
+**Related approach** : refer to [Approach 03](./approachs/approach03.md)
 
 
 
@@ -142,7 +142,7 @@ Quality attribute scenarios were written for each requirement of the defined QA 
   - Feature added as separate module preserving existing modules
   - Implemented and tested within 3 days
 
-**Related design decision** : refer to [ADR 05](./ADRs/adr05.md)
+**Related approach** : refer to [Approach 04](./approachs/approach04.md)
 
 
 
@@ -155,20 +155,11 @@ Quality attribute scenarios were written for each requirement of the defined QA 
 - Response - The new map provider integrates seamlessly without affecting existing components
 - Response Measure - Integration completed in under 4 person-hours, no unintended side effects observed
 
-**Related design decision** : refer to [ADR 01](./ADRs/adr01.md)
+**Related approach** : refer to [Approach 05](./approachs/approach05.md)
 
 
 
-### IFTA_TA_005
-
-- Source
-- Stimulus
-- Artifact
-- Environment
-- Response
-- Response Measure
-
-### IFTA_QA_006
+### IFTA_TA_006
 
 - Source
 - Stimulus
@@ -177,7 +168,20 @@ Quality attribute scenarios were written for each requirement of the defined QA 
 - Response
 - Response Measure
 
+**Related approach** : refer to [Approach 06](./approachs/approach06.md)
 
+
+
+### IFTA_QA_007
+
+- Source
+- Stimulus
+- Artifact
+- Environment
+- Response
+- Response Measure
+
+**Related approach** : refer to [Approach 07](./approachs/approach07.md)
 
 
 

@@ -1,4 +1,4 @@
-# ADR 2: Improving UI respond time
+# Approach 1: Improving UI respond time
 There are general tactics for performance.
 - Resource Management
   - Increase computational resources

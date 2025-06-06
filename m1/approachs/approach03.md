@@ -1,4 +1,4 @@
-# ADR 4: Detecing/recovering failure conditions
+# Approach 3: not yet
 There are general tactics for performance.
 - Fault detection - TODO (is this heartbeat? not ping/echo?)
   - Heartbeat - Ping Rasp.PI every 1~2 seconds from GUI, check serial/USB data stream heartbeat
