@@ -84,7 +84,6 @@ Quality attribute scenarios were written for each requirement of the defined QA 
   - System automatically retries reconnection at regular intervals (e.g., every 5 seconds)
   - Application remains responsive and operational (no freeze or crash)
   - Once connectivity is restored, system resumes normal operation without requiring restart
-
 - Response Measure
   - System detects disconnection within ≤ 1 second
   - User notified of fault within ≤ 1 second
