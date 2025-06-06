@@ -1,23 +1,24 @@
-# Approach 3: not yet
+# Approach 3: Encapsulate deviation detection logic to isolate change
 There are general tactics for performance.
-- Fault detection - TODO (is this heartbeat? not ping/echo?)
-  - Heartbeat - Ping Rasp.PI every 1~2 seconds from GUI, check serial/USB data stream heartbeat
-- Fault notification
-  - User Feedback Mechanism - Show status banner or message box (e.g. Disconnected PI)
-- Fault isolation
-  - Component Encapsulation - Separate network, UI, data threads with fault boundaries and watchdog recovery
-- Fault recovery
-  - Automatic Reconnection - On connection loss, start retry logic with fixed backoff (e.g., 5s interval)
-  - Graceful Degradation - Keep UI interactive; freeze aircraft state; show “no data” indicator
+- Separate Interface from Implementation
+  - Keeps the UI and analysis logic decoupled, allowing new features to be added independently**.**
+- Encapsulate Change
+  - Isolates frequently changing logic (e.g., deviation algorithms) in separate components.
+
+- Strategy Pattern
+  - Enables easy replacement or extension of deviation detection algorithms.
+
+- Observer Pattern
+  - Allows the deviation module to respond to changes in real-time flight data.
 
 ## Decision 
-We can't decide yet. In order to make a decision, it is necessary to determine the current performance, check whether it is a applied, and check the improvement after applying the strategy.
+The deviation detection logic will be encapsulated in a separate, well-defined module to isolate it from the rest of the system.
 
 ## Rationale 
-TBD
+Deviation detection is a feature that is likely to evolve, with potential changes in algorithms or detection criteria. Encapsulating this logic reduces coupling and limits the impact of future changes to a single component. This supports extensibility and simplifies maintenance.
 
 ## Status
-[***Proposed*** | Accepted | Deprecated | Superseded]
+[Proposed | ***Accepted*** | Deprecated | Superseded]
 
 ## Consequences
 Resulting context will be described.

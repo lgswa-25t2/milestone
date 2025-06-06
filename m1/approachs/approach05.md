@@ -26,7 +26,7 @@ We will use abstract common services with Map Interface to enable structed, low-
   - Keeps UI logic unchanged, improving long-term maintainability.
 
 ## Status
-[***Proposed*** | Accepted | Deprecated | Superseded]
+[Proposed | ***Accepted*** | Deprecated | Superseded]
 
 ## Consequences
 Resulting context will be described.

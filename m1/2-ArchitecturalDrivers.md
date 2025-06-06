@@ -73,6 +73,8 @@ Quality attribute scenarios were written for each requirement of the defined QA 
 
 **Related approach** : refer to [Approach 01](./approachs/approach01.md)
 
+
+
 ### IFTA_QA_002
 
 - Source - Hardware or network failure, User

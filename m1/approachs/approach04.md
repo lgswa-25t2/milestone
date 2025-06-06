@@ -1,23 +1,25 @@
-# Approach 4: not yet
+# Approach 4: Introduce an Intermediary with a Filter Pipeline to Identify Unregistered Aircraft
 There are general tactics for performance.
-- Fault detection - TODO (is this heartbeat? not ping/echo?)
-  - Heartbeat - Ping Rasp.PI every 1~2 seconds from GUI, check serial/USB data stream heartbeat
-- Fault notification
-  - User Feedback Mechanism - Show status banner or message box (e.g. Disconnected PI)
-- Fault isolation
-  - Component Encapsulation - Separate network, UI, data threads with fault boundaries and watchdog recovery
-- Fault recovery
-  - Automatic Reconnection - On connection loss, start retry logic with fixed backoff (e.g., 5s interval)
-  - Graceful Degradation - Keep UI interactive; freeze aircraft state; show “no data” indicator
+- Introduce Intermediary (e.g., Filter or Mediator)
+
+  - Inserts a filtering step between data input and processing to isolate unregistered aircraft.
+
+- Abstract Common Services
+  - Encapsulates aircraft identification logic as a reusable service to support multiple use cases.
+
+- Parameterize Functionality
+  - Makes filtering behavior configurable, allowing future expansion without code changes.
+- Filter (Pipe and Filter Pattern)
+  - Processes data streams and isolates unregistered aircraft based on specific rules.
 
 ## Decision 
-We can't decide yet. In order to make a decision, it is necessary to determine the current performance, check whether it is a applied, and check the improvement after applying the strategy.
+To support the extensible and maintainable implementation of unregistered aircraft identification, we will introduce an intermediary component in the data processing flow. This intermediary will be structured using the Filter (Pipe and Filter) design pattern to isolate and process flight data based on registration status.
 
 ## Rationale 
-TBD
+Unregistered aircraft identification is a distinct function that should not affect core data processing logic. By introducing an intermediary, we can inject this logic cleanly between data ingestion and display. The Filter pattern enables us to modularize this logic as a composable step in a processing pipeline. This approach improves separation of concerns, promotes code reuse, and allows the system to evolve without impacting other components.
 
 ## Status
-[***Proposed*** | Accepted | Deprecated | Superseded]
+[Proposed | ***Accepted*** | Deprecated | Superseded]
 
 ## Consequences
 Resulting context will be described.
