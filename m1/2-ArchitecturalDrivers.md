@@ -66,8 +66,6 @@ Quality attribute scenarios were written for each requirement of the defined QA 
 - Response Measure
   - Aircraft click response time ≤ 100 milliseconds
   - Map zoom/pan completes within ≤ 200 milliseconds
-  - Map panning maintains 60 FPS (frames per second) without frame drops
-  - Rendering latency after receiving aircraft data ≤ 500 milliseconds for 5,000 aircraft
   - Menu/control panel interaction response ≤ 150 milliseconds
   - Analytical feature display latency ≤ 1 second after user action
 
