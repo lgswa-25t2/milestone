@@ -17,7 +17,7 @@ We have several options.
 
   - Description: Depend on interfaces or abstract classes instead of concrete implementations to allow for easier substitution or extension.
 
-  - Example: Define an interface like IAircraftIdentifier to allow swapping between different identification strategies.
+  - Example: Define an interface like Aircraft Identifier to allow swapping between different identification strategies.
 
 - Document Design Decisions
 
