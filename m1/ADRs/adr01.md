@@ -1,4 +1,4 @@
-# ADR N: Select tactics for supporting new map provider 
+# ADR 1: Supporting new map provider 
 The system should allow developers to integrate a new map provider into the user interface with minimal code changes, low risk of introducing bugs, and without affecting unrelated parts of the system.
 
 We have two options.
