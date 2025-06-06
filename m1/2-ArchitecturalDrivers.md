@@ -97,23 +97,15 @@ Quality attribute scenarios were written for each requirement of the defined QA 
 ### IFTA_QA_003
 
 - Source - System developer or data analysis engineer
-
 - Stimulus - A requirement is raised to add a feature that detects deviations from registered flight paths
-
 - Artifact - Flight data analysis module and user interface
-
 - Environment - The system is operating under normal conditions and receiving real-time flight data
-
 - Response
-
   - A new module for detecting path deviations is implemented independently
   - The user interface is updated to display alerts or map-based warnings
   - The new functionality is integrated with minimal changes to existing data processing and UI code
-
 - Response Measure
-
   - The feature is added as a plugin or separate module without modifying existing components
-
   - Feature is deployed within 3 days
   - No regressions in existing functionality
 
@@ -124,19 +116,12 @@ Quality attribute scenarios were written for each requirement of the defined QA 
 ### IFTA_QA_004
 
 - Source - Maintenance engineer or operations manager
-
 - Stimulus - A requirement is raised to add a feature for identifying unregistered aircraft
-
 - Artifact - Aircraft identification database, real-time traffic analysis module, UI display components
-
 - Environment - The system is actively processing real-time flight information
-
 - Response
-
   - Unregistered aircraft are visually flagged in the UI and recorded in system logs
-
   - The feature is implemented without altering existing aircraft tracking or display logic
-
 - Response Measure
   - Feature added as separate module preserving existing modules
   - Implemented and tested within 3 days
@@ -167,7 +152,6 @@ Quality attribute scenarios were written for each requirement of the defined QA 
 - Response
   - The code is easy to understand and navigate
   - Modifications are implemented with minimal risk of introducing new defects
-
 - Response Measure
   - Developer is able to make changes within 2 day
   - Average time to diagnose and fix a defect is within 1 day
