@@ -1,4 +1,4 @@
-# Approach 2: Detecing failure conditions
+# Approach 2: Detecting failure conditions
 There are general tactics for performance.
 - Fault detection
   - Heartbeat - Heatbeat from Rasp.PI every 500ms(TBD)
