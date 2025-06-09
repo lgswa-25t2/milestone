@@ -46,7 +46,7 @@ The Quality Attributes selected based on the [Quality attribute requirements](./
 | IFTA_QA_004 | The system can be easily added an identifying unregisterd aircraft feature | Extensibility   | IFTA_QAR_004 |
 | IFTA_QA_005 | The system should allow developers to integrate a new map provider into the user interface with minimal code changes, low risk of introducing bugs, and without affecting unrelated parts of the system | Modifiability   | IFTA_QAR_005 |
 | IFTA_QA_006 | The system can be easily understood, corrected, improved, and adapted over time | Maintainability | IFTA_QAR_006 |
-| IFTA_QA_007 | Users are using the replay function, and they want the pause/resump function to be supported. | Usability       | IFTA_QAR_007 |
+| IFTA_QA_007 | Users are using the replay function, and they want the pause/resume function to be supported. | Usability       | IFTA_QAR_007 |
 | IFTA_QA_008 | Users want their system usage settings to be maintained the same the next time they use it. | Usability       | IFTA_QAR_008 |
 
 
