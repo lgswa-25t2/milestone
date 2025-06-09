@@ -1,86 +1,80 @@
-# Experiment 5: TBD
+# Experiment 4: API Key Requirement and Limitation Test for Map Providers
 
+## Results and recommendations
 
-## Results and recommendations 
-To be completed after the experiment.
+To be written upon completion of the experiment.
 
-## Objective 
-The purpose of this experiment is to evaluate the responsiveness and stability of the system when exposed to rapid or excessive UI input events, such as continuous button clicks.
+## Objective
 
-This test aims to answer the following key questions:
-
-- Is the system responsive and stable when a UI button is clicked repeatedly at short intervals?
-- Do duplicate or missed event processing issues occur?
-- To what extent do CPU and memory usage increase due to repeated interactions?
-- Can the system recover from freezes or crashes triggered by rapid input?
-
-The goal is to identify potential bottlenecks or vulnerabilities in the UI event handling mechanism and define optimization points for future improvements.
+The objective of this experiment is to verify whether the currently used or candidate map providers require an API key, and to evaluate the impact of API key policies on system deployment and scalability.
+This will help determine whether the current architecture depends on API-key-restricted services and identify alternative options if necessary.
 
 ## Status
+
 [***Planned*** | In progress | Suspended | Canceled | Concluded]
 
 ## Expected outcomes
- - Event logs generated during rapid click input
- - Response time and processing speed measurements
- - CPU and memory usage patterns during the test
- - Error/crash detection and recovery behavior
- - Visualized graphs and a summary test report
+
+* A comparison table of map providers and their API key requirements
+* Identification of usage limits, pricing, and throttling policies
+* Feasibility analysis for API-key-free deployment
+* List of viable alternative providers or self-hosted options
 
 ## Resources required
- - Software: Flight Tracker client
- - Hardware: One test laptop (Intel Core i7-1165G7 @ 2.80GHz / 16.0GB RAM)
- - Personnel: 3 people × 4 hours
-   - Script creation and test execution: 1 person × 2 hours
-   - Log analysis and report writing: 1 person × 2 hours
-   
+
+* **Software**: Current system using embedded map services
+* **Network**: Internet access to external map APIs
+* **Test providers**:
+
+  * OpenStreetMap (default)
+  * Mapbox
+  * Google Maps
+  * HERE Maps
+  * Leaflet with various tile sources
+* **Personnel**: 2 people × 4 hours
+
+  * (1 for provider research and testing, 1 for documentation and evaluation)
 
 ## Experiment description
-- Test Environment Setup
 
-  Add logging code for button click events
+### 1. Provider Research and Environment Setup
 
-  Set up and launch the client application with the automation tool
+* Identify all map providers currently integrated or under consideration
+* Review documentation for each provider regarding API key requirements, usage quotas, and billing
 
-  Configure logging path and CPU/memory monitoring tools
+### 2. Test Scenarios
 
-- Execute Stress Test
+For each provider:
 
-  Perform automated button clicks with different intervals (10ms, 100ms, 500ms) and repetition counts (50, 100, 500)
+* Attempt map loading without an API key
+* Attempt map loading with a valid API key (if available)
+* Measure:
 
-  Example: 100 consecutive clicks on a specific UI button and observe visual feedback and UI stability
+  * Load success/failure
+  * Initial loading time
+  * Any request throttling or warnings
+  * Map tile availability and completeness
+* Check policy on commercial vs. non-commercial use
 
-- Data Collection
+### 3. Data Analysis
 
-  Measure UI response time and screen update delay
-  
-  Check for dropped or unprocessed events
-  
-  Record CPU and memory usage during each test
-  
-- Analysis and Visualization
+* Create a matrix comparing:
 
-  Analyze delays, dropped events, and behavior under load
-  
-  Create graphs of response time and resource usage for each scenario
-  
-  Evaluate stability and recovery capacity
-  
-- Summary and Review
+  * API key required (Yes/No)
+  * Free usage limit (tiles per day/month)
+  * Rate limits
+  * Behavior when quota exceeded
+  * API key security implications
+* Assess suitability for current project constraints (e.g., offline use, embedded deployment)
 
-  Write a summary report of findings
-  
-  Identify problems and propose mitigation strategies
-  
-  Determine the need for further experiments
+### 4. Conclusion and Review
+
+* Summarize risk level per provider
+* Identify preferred providers for API-key-free usage
+* Recommend fallback strategies (e.g., self-hosting OpenStreetMap tiles)
+* Document legal or licensing considerations
 
 ## Duration
-Start Date: June 13, 2025
 
-End Date: June 14, 2025
-
-## Links and references
-Software Architecture in Practice – Chapter 11: Performance Tactics
-
-Selenium Official Documentation
-
-AutoHotKey Scripting Examples
+Start Date: June 12, 2025
+End Date: June 13, 2025
