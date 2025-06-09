@@ -46,7 +46,7 @@ The Quality Attributes selected based on the [Quality attribute requirements](./
 | IFTA_QA_003 | The system shall allow developers to add a deviation detection feature | Extensibility   | IFTA_QAR_003 |
 | IFTA_QA_004 | The system shall allow developers to add new aircraft identification modules | Extensibility   | IFTA_QAR_004 |
 | IFTA_QA_005 | The system shall allow developers to integrate a new map provider into the user interface with minimal code changes, low risk of introducing bugs, and without affecting unrelated parts of the system | Modifiability   | IFTA_QAR_005 |
-| IFTA_QA_006 | Users want to know when there is an error situation.         | Usability       | IFTA_QAR_006 |
+| IFTA_QA_006 | When system errors occur, the system shall display clear error notifications         | Usability       | IFTA_QAR_006 |
 
 
 
