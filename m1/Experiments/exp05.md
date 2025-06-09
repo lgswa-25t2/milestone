@@ -26,9 +26,8 @@ This will help determine whether the current architecture depends on API-key-res
 * **Network**: Internet access to external map APIs
 * **Test providers**:
 
-  * OpenStreetMap (default)
+  * OpenStreetMap 
   * Mapbox
-  * Google Maps
   * HERE Maps
   * Leaflet with various tile sources
 * **Personnel**: 2 people × 4 hours
