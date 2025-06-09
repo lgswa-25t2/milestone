@@ -26,19 +26,29 @@ Ex ) 퍼포먼스 항목 -> 제한 시간안에 성공하지 못할경우 -> Pro
 
 ### Identification
 
-| ID   | Name                                       | Description                                                  | Cause                                           |
-| ---- | ------------------------------------------ | ------------------------------------------------------------ | ----------------------------------------------- |
-| TR_1 | Lack of Development Environment Experience | Team members have no prior experience with Borland C++, which is expected to cause significant difficulty in development, debugging, and build processes. | Use of uncommon IDE and non-standard syntax.    |
-| TR_2 | Difficulty in Code Analysis                | The legacy code is outdated, poorly documented, and lacks comments, making it difficult to analyze. | Legacy coding style, no documentation.          |
-| TR_3 | Tool DependencyTool Dependency             | Development is constrained to MS Windows due to specific tool dependencies. | Development tool is tightly coupled with the OS |
+| ID   | Refrence    | Description | L    | I    | Risk Level |
+| ---- | ----------- | ----------- | ---- | ---- | ---------- |
+| TR_1 | IFTA_QA_001 |             |      |      |            |
+| TR_2 | IFTA_QA_003 |             |      |      |            |
+| TR_3 | IFTA_QA_002 |             |      |      |            |
+| TR_4 | IFTA_QA_004 |             |      |      |            |
+| TR_5 | IFTA_QA_005 |             |      |      |            |
+| TR_6 | IFTA_QA_006 |             |      |      |            |
+| TR_7 | IFTA_QA_007 |             |      |      |            |
+| TR_8 | IFTA_QA_008 |             |      |      |            |
 
-### Prioritization and Mitigation
+### Prioritization, Mitigation, Experiments
 
-| ID   | Name                                       | L    | I    | Risk Level  | Mitigation Strategy                                          |
-| ---- | ------------------------------------------ | ---- | ---- | ----------- | ------------------------------------------------------------ |
-| TR_1 | Lack of Development Environment Experience | 5    | 5    | High (25)   | Careful review of installation guide documentation,  Conduct initial collaborative build practice sessions, Engage in structured tutorial-based learning. |
-| TR_2 | Difficulty in Code Analysis                | 4    | 5    | High (20)   | Conduct focused code analysis workshops to review legacy code, identify key modules. |
-| TR_3 | Tool Dependency                            | 3    | 5    | Medium (15) | Use VMware to install a Windows VM or configure dual-boot to run Borland tools in a compatible OS. |
+| ID   | Description | Risk Level | Mitigation Strategy | Linked Experiments |
+| ---- | ----------- | ---------- | ------------------- | ------------------ |
+| TR_1 |             |            |                     |                    |
+| TR_2 |             |            |                     |                    |
+| TR_3 |             |            |                     |                    |
+|      |             |            |                     |                    |
+|      |             |            |                     |                    |
+|      |             |            |                     |                    |
+|      |             |            |                     |                    |
+|      |             |            |                     |                    |
 
 
 
