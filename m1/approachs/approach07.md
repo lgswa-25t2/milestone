@@ -42,7 +42,7 @@ Quality Attribute Deferred Data Rendering Adaptive Data Throttling at Source Per
   - Close coordination between source and UI is manageable.
 
 ## Status
-[Proposed | ***Accepted*** | Deprecated | Superseded]
+[Proposed | Accepted | ***Deprecated*** | Superseded]
 
 ## Consequences
 Resulting context will be described.
