@@ -204,6 +204,67 @@ Quality attribute scenarios were written for each requirement of the defined QA 
 | 8    | Users want their system usage settings to be maintained the same the next time they use it. | Usability       | L                   | L              |
 
 
+## Potential Quality Attribute Trade-offs
+
+Based on the defined Quality Attributes (QAs), the following trade-offs may arise due to conflicting architectural goals:
+
+---
+
+### 🔁 1. Performance vs. Modifiability / Extensibility
+
+**QAs Involved**  
+- `IFTA_QA_001`: *UI responds immediately to user interaction* (Performance)  
+- `IFTA_QA_003 / 004 / 005`: *Ease of adding new features such as deviation detection, unregistered aircraft identification, and new map providers* (Extensibility / Modifiability)
+
+**Potential Conflict**  
+- Designing for modularity and flexibility often introduces layers of abstraction or interface boundaries, which can lead to increased data processing overhead and reduced performance.  
+- Conversely, tightly coupled code optimized for performance can be difficult to modify or extend without side effects.
+
+---
+
+### 🔁 2. Performance vs. Maintainability
+
+**QAs Involved**  
+- `IFTA_QA_001` (Performance)  
+- `IFTA_QA_006`: *System can be easily understood and modified* (Maintainability)
+
+**Potential Conflict**  
+- Highly optimized code (e.g., inline operations, caching layers, low-level memory management) may sacrifice clarity and readability, making future modifications more error-prone or time-consuming.
+
+---
+
+### 🔁 3. Performance vs. Resiliency
+
+**QAs Involved**  
+- `IFTA_QA_001` (Performance)  
+- `IFTA_QA_002`: *Detects and recovers from failure conditions* (Resiliency)
+
+**Potential Conflict**  
+- Adding frequent monitoring (e.g., heartbeat checks, retry loops) can introduce extra system load, potentially impacting real-time responsiveness.  
+- Balancing proactive failure detection with minimal overhead is essential.
+
+---
+
+### 🔁 4. Extensibility vs. Usability
+
+**QAs Involved**  
+- `IFTA_QA_003 / 004` (Extensibility)  
+- `IFTA_QA_007 / 008`: *Support pause/resume and retain user configuration* (Usability)
+
+**Potential Conflict**  
+- Continuously adding features and configuration options may lead to a more complex and crowded UI, making it harder for users to interact with the system intuitively.
+
+---
+
+## 🔍 Summary Table
+
+| QA A           | QA B           | Reason for Trade-off                                                |
+|----------------|----------------|----------------------------------------------------------------------|
+| Performance    | Modifiability  | Modular structure increases overhead; tight coupling boosts speed   |
+| Performance    | Maintainability| Optimized code may be harder to understand and modify               |
+| Performance    | Resiliency     | Monitoring and recovery add load and complexity                     |
+| Extensibility  | Usability      | More features may increase UI complexity and reduce clarity         |
+
 
 ## Risk assessment
 
