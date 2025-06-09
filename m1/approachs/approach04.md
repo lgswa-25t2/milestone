@@ -1,4 +1,4 @@
-# **Approach 4: Strategy-Based Plugin Architecture for Modular Aircraft Identification**
+# **Approach 4: Applying Architecture pattern for Modular Aircraft Identification**
 
 There are general design patterns for modularity and extensibility.
 
