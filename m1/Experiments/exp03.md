@@ -2,7 +2,7 @@
 
 
 ## Results and recommendations 
-To be completed after the experiment.
+This experiment is canceled. (low priority)
 
 ## Objective 
 The purpose of this experiment is to evaluate the responsiveness and stability of the system when exposed to rapid or excessive UI input events, such as continuous button clicks.
@@ -17,7 +17,7 @@ This test aims to answer the following key questions:
 The goal is to identify potential bottlenecks or vulnerabilities in the UI event handling mechanism and define optimization points for future improvements.
 
 ## Status
-[***Planned*** | In progress | Suspended | Canceled | Concluded]
+[Planned | In progress | Suspended | ***Canceled*** | Concluded]
 
 ## Expected outcomes
  - Event logs generated during rapid click input
@@ -74,13 +74,8 @@ The goal is to identify potential bottlenecks or vulnerabilities in the UI event
   Determine the need for further experiments
 
 ## Duration
-Start Date: June 13, 2025
+~~Start Date: June 13, 2025~~
 
-End Date: June 14, 2025
+~~End Date: June 14, 2025~~
 
-## Links and references
-Software Architecture in Practice – Chapter 11: Performance Tactics
-
-Selenium Official Documentation
-
-AutoHotKey Scripting Examples
+Canceled

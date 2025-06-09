@@ -2,7 +2,7 @@
 
 ## Results and recommendations
 
-To be written upon completion of the experiment.
+This experiment is canceled. (low priority)
 
 ## Objective
 
@@ -75,5 +75,8 @@ For each provider:
 
 ## Duration
 
-Start Date: June 12, 2025
-End Date: June 13, 2025
+~~Start Date: June 12, 2025~~
+
+~~End Date: June 13, 2025~~
+
+Canceled
