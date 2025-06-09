@@ -26,7 +26,6 @@ Risk Level = L × I
 | TR_2 | IFTA_QA_002 | VCL is not thread-safe.         |  3   |  1  |    3    |
 | TR_3 | IFTA_QA_002 | The Raspberry Pi can fail for various reasons, and it is unclear whether it provides the cause of failure depending on the situation.         |  4   |  2   |     8       |
 | TR_4 | IFTA_QA_003 | UI, network, and data processing are tightly coupled, making it unclear where to insert the deviation detection logic.            |  4   |  4   |    16     |
-| TR_5 | IFTA_QA_008 | User configuration may become invalid if it hasn't been saved for a long time.          |  3   |   2  |     6     |
 
 ### Prioritization, Mitigation, Experiments
 
@@ -36,7 +35,6 @@ Risk Level = L × I
 | TR_2 | VCL is not thread-safe.  |   Low     | Separate business logic from UI logic, and run the UI thread and the data processing thread independently.                    |                    |
 | TR_3 | Raspberry Pi can fail for various reasons, and it is unclear whether it provides the cause of failure depending on the situation.   |   Low     | Modify the Raspberry Pi to report its status information.| [Exp 6](./Experiments/exp06.md) |
 | TR_4 | UI, network, and data processing are tightly coupled, making it unclear where to insert the deviation detection logic.            |    Mid     | Separation of UI, network, and data processing components.                     | Planned draw diagrams |
-| TR_5 | User configuration may become invalid if it hasn't been saved for a long time.        |    Low     | Perform a validation check on the configuration values and provide default data if they are invalid.                   |                    |
 
 
 ## Non-technical Risk Assessment
