@@ -11,4 +11,4 @@ This document may be updated very frequently as it describes the experiments req
 | ~~EXP_05~~ | ~~System Behavior Test According to Playback Data Size~~       | [Link](./Experiments/exp05.md) |
 | EXP_06     | Verification of Error Cause Reporting and Connectivity Monitoring for Raspberry Pi | [Link](./Experiments/exp06.md) |
 
-\* exp 3,4 are canceled.
+\* exp 3,4,5 are canceled due to business priority
