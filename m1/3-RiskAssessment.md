@@ -28,28 +28,25 @@ Ex ) 퍼포먼스 항목 -> 제한 시간안에 성공하지 못할경우 -> Pro
 
 | ID   | Refrence    | Description | L    | I    | Risk Level |
 | ---- | ----------- | ----------- | ---- | ---- | ---------- |
-| TR_1 | IFTA_QA_001 |             |      |      |            |
-| TR_2 | IFTA_QA_003 |             |      |      |            |
-| TR_3 | IFTA_QA_002 |             |      |      |            |
-| TR_4 | IFTA_QA_004 |             |      |      |            |
-| TR_5 | IFTA_QA_005 |             |      |      |            |
-| TR_6 | IFTA_QA_006 |             |      |      |            |
-| TR_7 | IFTA_QA_007 |             |      |      |            |
-| TR_8 | IFTA_QA_008 |             |      |      |            |
+| TR_1 | IFTA_QA_001 | A large volume of aircraft data is received by the ADS-B server in a short period of time.            |  5    |      |            |
+| TR_2 | IFTA_QA_002 | VCL is not thread-safe.         |      |      |            |
+| TR_3 | IFTA_QA_002 | The Raspberry Pi can fail for various reasons, and it is unclear whether it provides the cause of failure depending on the situation.         |      |      |            |
+| TR_4 | IFTA_QA_003 | UI, network, and data processing are tightly coupled, making it unclear where to insert the deviation detection logic.            |      |      |            |
+| TR_5 | IFTA_QA_005 | The map provider may need API key |      |      |            |
+| TR_6 | IFTA_QA_007 | Large playback data size.            |      |      |            |
+| TR_7 | IFTA_QA_008 | User configuration may become invalid if it hasn't been saved for a long time.          |      |      |            |
 
 ### Prioritization, Mitigation, Experiments
 
 | ID   | Description | Risk Level | Mitigation Strategy | Linked Experiments |
 | ---- | ----------- | ---------- | ------------------- | ------------------ |
-| TR_1 |             |            |                     |                    |
-| TR_2 |             |            |                     |                    |
-| TR_3 |             |            |                     |                    |
-|      |             |            |                     |                    |
-|      |             |            |                     |                    |
-|      |             |            |                     |                    |
-|      |             |            |                     |                    |
-|      |             |            |                     |                    |
-
+| TR_1 | A large volume of aircraft data is received by the ADS-B server in a short period of time.            |            | consider Manage sampling rate to adjust the volume of aircraft data.                    | https://github.com/lgswa-25t2/milestone/blob/main/m1/Experiments/exp01.md |
+| TR_2 | VCL is not thread-safe.  |            | Separate business logic from UI logic, and run the UI thread and the data processing thread independently.                    |                    |
+| TR_3 | Raspberry Pi can fail for various reasons, and it is unclear whether it provides the cause of failure depending on the situation.   |            | Modify the Raspberry Pi to report its status information.|              |
+| TR_4 | UI, network, and data processing are tightly coupled, making it unclear where to insert the deviation detection logic.            |            | Separation of UI, network, and data processing components.                     |                    |
+| TR_5 | The map provider may need API key |            |  Use a map provider that does not require an API key. (ex. https://www.openstreetmap.org)                   |   exp04.md                |
+| TR_6 | Large playback data size            |            | limit recoding file size             |                    |
+| TR_7 | User configuration may become invalid if it hasn't been saved for a long time.        |            | Perform a validation check on the configuration values and provide default data if they are invalid.                   |                    |
 
 
 ## Non-technical Risk Assessment
