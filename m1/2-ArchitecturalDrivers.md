@@ -146,7 +146,7 @@ Quality attribute scenarios were written for each requirement of the defined QA 
 - Artifact - Remote User Interface (RUI)
 - Environment - Error occuring during operation
 - Response - The system immediately notifies the user of the issue in a clear and non-technical manner
-- Response Measure - Error message is displayed within 1 second of the failure
+- Response Measure - Error is informed to user within 1 second of the failure
 
 **Related approach** : refer to [Approach 07](./approachs/approach07.md)
 
