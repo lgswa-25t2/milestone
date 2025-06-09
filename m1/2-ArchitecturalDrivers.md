@@ -54,41 +54,44 @@ The Quality Attributes selected based on the [Quality attribute requirements](./
 
 Quality attribute scenarios were written for each requirement of the defined QA list.
 
-### IFTA_QA_001
+### IFTA_QA_001_01
 
 - Source - User actions in the remote user interface
-- Stimulus - Interaction with mouse, including clicking craft, zoom in/out map, panning map, operating menu or control panel
+- Stimulus - click air-craft
 - Artifact - User interface application
 - Environment - Runtime, the system is tracking 5000+ aircrafts simultaneously
-- Response - UI responds immediately to user interaction, including aircraft data displayed on the map, map is zoomed and panned smoothly without delay, analytical feature are displayed promptly
+- Response - UI responds immediately to user interaction, analytical feature are displayed promptly
 - Response Measure
   - Aircraft click response time ≤ 100 milliseconds
-  - Map zoom/pan completes within ≤ 200 milliseconds
-  - Menu/control panel interaction response ≤ 150 milliseconds
   - Analytical feature display latency ≤ 1 second after user action
 
 **Related approach** : refer to [Approach 01](./approachs/approach01.md)
 
+### IFTA_QA_001_02
+
+- Source - User actions in the remote user interface
+- Stimulus - operating menu or control panel
+- Artifact - User interface application
+- Environment - Runtime, the system is tracking 5000+ aircrafts simultaneously
+- Response - UI responds immediately to user interaction
+- Response Measure
+  - Menu/control panel interaction response ≤ 150 milliseconds
+
+**Related approach** : refer to [Approach 01](./approachs/approach01.md)
 
 
 ### IFTA_QA_002
 
-- Source - Hardware or network failure, User
+- Source - User
 - Stimulus - Wifi is turned off or USB cable is disconnected during runtime
 - Artifact - User interface application
 - Environment - Runtime, the system is tracking ADS-B datasets
 - Response
   - System detects failure conditions (e.g., disconnection)
   - User is notified with a clear UI message (e.g., “Lost connection to Raspberry Pi”)
-  - System automatically retries reconnection at regular intervals (e.g., every 5 seconds)
-  - Application remains responsive and operational (no freeze or crash)
-  - Once connectivity is restored, system resumes normal operation without requiring restart
 - Response Measure
   - System detects disconnection within ≤ 1 second
   - User notified of fault within ≤ 1 second
-  - Reconnection attempts initiated within ≤ 5 seconds and retried every 5 seconds
-  - Upon connection recovery, system resumes normal operation within ≤ 1 second
-  - System remains stable and responsive throughout the failure period (UI response time degradation < 10%)
 
 **Related approach** : refer to [Approach 02](./approachs/approach02.md)
 
@@ -99,13 +102,9 @@ Quality attribute scenarios were written for each requirement of the defined QA 
 - Artifact - Flight data analysis module and user interface
 - Environment - During normal development
 - Response
-  - A new module for detecting path deviations is implemented independently
-  - The user interface is updated to display alerts or map-based warnings
-  - The new functionality is integrated with minimal changes to existing data processing and UI code
+  - The new functionality is integrated
 - Response Measure
-  - The feature is added as a plugin or separate module without modifying existing components
-  - Feature is deployed within 3 days
-  - No regressions in existing functionality
+  - Feature is deployed within 3 person days without regressions in existing functionality
 
 **Related approach** : refer to [Approach 03](./approachs/approach03.md)
 
@@ -122,7 +121,7 @@ Quality attribute scenarios were written for each requirement of the defined QA 
   - The feature is implemented without altering existing aircraft tracking or display logic
 - Response Measure
   - Feature added as separate module preserving existing modules
-  - Implemented and tested within 3 days
+  - Implemented and tested within 3 person days
 
 **Related approach** : refer to [Approach 04](./approachs/approach04.md)
 
@@ -140,25 +139,7 @@ Quality attribute scenarios were written for each requirement of the defined QA 
 **Related approach** : refer to [Approach 05](./approachs/approach05.md)
 
 
-
 ### IFTA_QA_006
-
-- Source - Developer and maintainer
-- Stimulus - A need arises to correct a defect, enhance functionality, or adapt the UI to new requirements
-- Artifact - code with new requirement
-- Environment - During normal development and maintenance activities
-- Response
-  - The code is easy to understand and navigate
-  - Modifications are implemented with minimal risk of introducing new defects
-- Response Measure
-  - Developer is able to make changes within 2 day
-  - Average time to diagnose and fix a defect is within 1 day
-
-**Related approach** : refer to [Approach 06](./approachs/approach06.md)
-
-
-
-### IFTA_QA_007
 
 - Source - Internal system components or external dependencies
 - Stimulus - An unexpected error occurs due to a system failure or external service disruption
