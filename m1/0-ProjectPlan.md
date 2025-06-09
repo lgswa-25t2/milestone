@@ -76,7 +76,7 @@ Since there are many items to be implemented, the detailed status of each is upd
 - [ ] Evaluate performance of original codes according to the number of aircrafts
 - [ ] Analyze real-time aircraft data ingestion rate and volume via ADS-B hub
 - [ ] UI input stress test (System Behavior Under Rapid Button Clicks)
-- [ ] TODO - test for reducing risk
+- [ ] Test for reducing risk - Refer to [risk assessments](./3-RiskAssessment.md)
 
 ### 5. Quality Assurance & Release
 

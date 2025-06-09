@@ -1,4 +1,4 @@
-# Approach 6: Easily understood, corrected, improved, and adapted over time.  
+# Approach 6: Easily understood, corrected, improved, and adapted over time
 The system should allow developers to integrate a new map provider into the user interface with minimal code changes, low risk of introducing bugs, and without affecting unrelated parts of the system.
 
 We have several options.

@@ -1,6 +1,6 @@
 # Approach 2: Detecing/recovering failure conditions
 There are general tactics for performance.
-- Fault detection - TODO (is this heartbeat? not ping/echo?)
+- Fault detection
   - Heartbeat - Ping Rasp.PI every 1~2 seconds from GUI, check serial/USB data stream heartbeat
 - Fault notification
   - User Feedback Mechanism - Show status banner or message box (e.g. Disconnected PI)

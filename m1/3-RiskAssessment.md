@@ -18,12 +18,6 @@ Risk Level = L × I
 
 ## Technical Risk Assessment
 
-TODO - QA scenario 에 대한 risk 를 작성해야함
-
-Ex ) 퍼포먼스 항목 -> 제한 시간안에 성공하지 못할경우 -> Probability / Impact 를 H/M/L 로 평가
-
-그 후 해당 위험을 위한 experiment 를 계획하고 plan 업데이트
-
 ### Identification
 
 | ID   | Refrence    | Description | L    | I    | Risk Level |
