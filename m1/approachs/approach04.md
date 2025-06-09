@@ -1,25 +1,48 @@
-# Approach 4: Introduce an Intermediary with a Filter Pipeline to Identify Unregistered Aircraft
-There are general tactics for performance.
-- Introduce Intermediary (e.g., Filter or Mediator)
+# **Approach 4: Strategy-Based Plugin Architecture for Modular Aircraft Identification**
 
-  - Inserts a filtering step between data input and processing to isolate unregistered aircraft.
+There are general design patterns for modularity and extensibility.
 
-- Abstract Common Services
-  - Encapsulates aircraft identification logic as a reusable service to support multiple use cases.
+* **Strategy Pattern**
 
-- Parameterize Functionality
-  - Makes filtering behavior configurable, allowing future expansion without code changes.
-- Filter (Pipe and Filter Pattern)
-  - Processes data streams and isolates unregistered aircraft based on specific rules.
+  * Encapsulates each identification method (e.g., unregistered, military, VIP) as interchangeable strategy objects.
 
-## Decision 
-To support the extensible and maintainable implementation of unregistered aircraft identification, we will introduce an intermediary component in the data processing flow. This intermediary will be structured using the Filter (Pipe and Filter) design pattern to isolate and process flight data based on registration status.
+* **Plugin Registry**
 
-## Rationale 
-Unregistered aircraft identification is a distinct function that should not affect core data processing logic. By introducing an intermediary, we can inject this logic cleanly between data ingestion and display. The Filter pattern enables us to modularize this logic as a composable step in a processing pipeline. This approach improves separation of concerns, promotes code reuse, and allows the system to evolve without impacting other components.
+  * Supports dynamic loading and registration of identification strategies at runtime.
 
-## Status
-[Proposed | ***Accepted*** | Deprecated | Superseded]
+* **Observer Pattern**
 
-## Consequences
-Resulting context will be described.
+  * Notifies decoupled observers (e.g., UI alerts, logs) when identification events occur.
+
+* **Chain of Responsibility**
+
+  * Processes identification logic in sequence, handing off unhandled data to the next module.
+
+## **Decision**
+
+We can't decide yet.
+
+## **Rationale**
+
+TBD
+
+## **Status**
+
+**\[Proposed]**
+
+## **Consequences**
+
+### **Positive**
+
+* **Extensibility**: New strategies can be added or updated independently.
+* **Testability**: Strategies are isolated and easy to unit test.
+* **Configurability**: Admins can enable/disable modules via configuration files or UI.
+* **Performance**: Only active strategies consume runtime resources.
+* **Maintainability**: Separation between core logic and identification logic simplifies evolution.
+
+### **Negative**
+
+* **Complexity**: Requires an abstraction layer and runtime module management.
+* **Memory Overhead**: Plugin registration and multiple strategy objects consume additional memory.
+* **Debugging Difficulty**: Distributed logic may increase complexity during troubleshooting.
+* **Integration Risk**: Changes in the strategy interface can break compatibility with existing plugins.
