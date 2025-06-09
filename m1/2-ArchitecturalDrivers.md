@@ -161,13 +161,13 @@ Quality attribute scenarios were written for each requirement of the defined QA 
 
 | ID   | Scenario                                                     | Type            | Business Importance | Technical Risk |
 | ---- | ------------------------------------------------------------ | --------------- | ------------------- | -------------- |
-| 1    | UI responds immediately to user interaction                  | Performance     | H                   | H              |
-| 2    | The system detects/restores failure conditions               | Resiliency      | H                   | M              |
-| 3    | The system can be easily added a deviation detection feature | Extensibility   | H                   | H              |
-| 4    | The system can be easily added an identifying unregisterd aircraft feature | Extensibility   | H                   | M              |
-| 5    | The system should allow developers to integrate a new map provider into the user interface with minimal code changes, low risk of introducing bugs, and without affecting unrelated parts of the system | Modifiability   | M                   | H              |
-| 6    | The system can be easily understood, corrected, improved, and adapted over time | Maintainability | M                   | L              |
-| 7    | Users are using the replay function, and they want the pause/resume function to be supported. | Usability       | L                   | L              |
+| 1    | UI responds immediately to user interaction when click air-craf                 | Performance     | H                   | H              |
+| 2    | UI responds immediately to user interaction during operating menu or control panel | Performance     | H                   | H              |
+| 3    | The system detects/restores failure conditions               | Resiliency      | H                   | M              |
+| 4    | The system can be easily added a deviation detection feature | Extensibility   | H                   | H              |
+| 5    | The system can be easily added an identifying unregisterd aircraft feature | Extensibility   | H                   | M              |
+| 6    | The system should allow developers to integrate a new map provider into the user interface with minimal code changes, low risk of introducing bugs, and without affecting unrelated parts of the system | Modifiability   | M                   | H              |
+| 7    | Users want to know when there is an error situation.  | Usability       | L                   | L              |
 
 ### Potential Quality Attribute Trade-offs
 
@@ -185,18 +185,7 @@ Based on the defined Quality Attributes (QAs), the following trade-offs may aris
 - Designing for modularity and flexibility often introduces layers of abstraction or interface boundaries, which can lead to increased data processing overhead and reduced performance.  
 - Conversely, tightly coupled code optimized for performance can be difficult to modify or extend without side effects.
 
-#### 2. Performance vs. Maintainability
-
-**QAs Involved**  
-
-- `IFTA_QA_001` (Performance)  
-- `IFTA_QA_006`: *System can be easily understood and modified* (Maintainability)
-
-**Potential Conflict**  
-
-- Highly optimized code (e.g., inline operations, caching layers, low-level memory management) may sacrifice clarity and readability, making future modifications more error-prone or time-consuming.
-
-#### 3. Performance vs. Resiliency
+#### 2. Performance vs. Resiliency
 
 **QAs Involved**  
 
@@ -207,7 +196,7 @@ Based on the defined Quality Attributes (QAs), the following trade-offs may aris
 - Adding frequent monitoring (e.g., heartbeat checks, retry loops) can introduce extra system load, potentially impacting real-time responsiveness.  
 - Balancing proactive failure detection with minimal overhead is essential.
 
-#### 4. Extensibility vs. Usability
+#### 3. Extensibility vs. Usability
 
 **QAs Involved**  
 
@@ -222,7 +211,6 @@ Based on the defined Quality Attributes (QAs), the following trade-offs may aris
 | QA 1          | QA 2            | Reason for Trade-off                                         |
 | ------------- | --------------- | ------------------------------------------------------------ |
 | Performance   | Modifiability   | Modular structure increases overhead; tight coupling boosts speed |
-| Performance   | Maintainability | Optimized code may be harder to understand and modify        |
 | Performance   | Resiliency      | Monitoring and recovery add load and complexity              |
 | Extensibility | Usability       | More features may increase UI complexity and reduce clarity  |
 
