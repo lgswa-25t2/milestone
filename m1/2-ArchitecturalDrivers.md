@@ -161,13 +161,13 @@ Quality attribute scenarios were written for each requirement of the defined QA 
 
 | ID   | Scenario                                                     | Type            | Business Importance | Technical Risk |
 | ---- | ------------------------------------------------------------ | --------------- | ------------------- | -------------- |
-| 1    | UI responds immediately to user interaction when click air-craf                 | Performance     | H                   | H              |
-| 2    | UI responds immediately to user interaction during operating menu or control panel | Performance     | H                   | H              |
-| 3    | The system detects/restores failure conditions               | Resiliency      | H                   | M              |
-| 4    | The system shall allow developers to add a deviation detection feature | Extensibility   | H                   | H              |
-| 5    | The system shall allow developers to add new aircraft identification modules | Extensibility   | H                   | M              |
-| 6    | The system should allow developers to integrate a new map provider into the user interface with minimal code changes, low risk of introducing bugs, and without affecting unrelated parts of the system | Modifiability   | M                   | H              |
-| 7    | Users want to know when there is an error situation.  | Usability       | L                   | L              |
+| 1_1  | UI responds immediately to user interaction when click air-craft               | Performance     | H                   | H              |
+| 1_2  | UI responds immediately to user interaction during operating menu or control panel | Performance     | H                   | H              |
+| 2    | The system detects/restores failure conditions               | Resiliency      | H                   | M              |
+| 3    | The system shall allow developers to add a deviation detection feature | Extensibility   | H                   | H              |
+| 4    | The system shall allow developers to add new aircraft identification modules | Extensibility   | H                   | M              |
+| 5    | The system should allow developers to integrate a new map provider into the user interface with minimal code changes, low risk of introducing bugs, and without affecting unrelated parts of the system | Modifiability   | M                   | H              |
+| 6    | When system errors occur, the system shall display clear error notifications  | Usability       | L                   | L              |
 
 ### Potential Quality Attribute Trade-offs
 
@@ -201,7 +201,7 @@ Based on the defined Quality Attributes (QAs), the following trade-offs may aris
 **QAs Involved**  
 
 - `IFTA_QA_003 / 004` (Extensibility)  
-- `IFTA_QA_007`: *Support pause/resume and retain user configuration* (Usability)
+- `IFTA_QA_006`: *Notifying Users of System Errors in Real Time* (Usability)
 
 **Potential Conflict**  
 - Continuously adding features and configuration options may lead to a more complex and crowded UI, making it harder for users to interact with the system intuitively.
