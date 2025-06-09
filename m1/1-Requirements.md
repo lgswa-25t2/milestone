@@ -24,6 +24,8 @@ Derived from features in Project Description documents.
 | IFTA_FR_04_02 | Safety Analysis      | Route comparison                      | The system must be able to receive actual ADS-B / SBS position data from each aircraft and compare it to a predefined flight plan path. |
 | IFTA_FR_04_03 | Safety Analysis      | Flight profile normaly detection      | The system should be able to detect any deviation from the normal flight trajectory (e.g. wrong airport approach, reverse flight, etc) by analyzing the aircraft's path, direction, speed and destination |
 | IFTA_FR_04_04 | Safety Analysis      | Flight plan deviation analysis        | The system must compare the flight plan path with the real-time path to assess whether the flight is deviating from the path |
+| IFTA_FR_05_01 | Record & Playback    | Record                                | The system can write aircraft's data to local or external file. (BigQuery) |
+| IFTA_FR_05_02 | Record & Playback    | Playback                              | The system can read SBS records from local, and the recorded aircraft position data is displayed in UI. |
 
 
 
