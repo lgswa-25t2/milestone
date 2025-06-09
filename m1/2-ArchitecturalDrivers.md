@@ -46,8 +46,7 @@ The Quality Attributes selected based on the [Quality attribute requirements](./
 | IFTA_QA_004 | The system can be easily added an identifying unregisterd aircraft feature | Extensibility   | IFTA_QAR_004 |
 | IFTA_QA_005 | The system should allow developers to integrate a new map provider into the user interface with minimal code changes, low risk of introducing bugs, and without affecting unrelated parts of the system | Modifiability   | IFTA_QAR_005 |
 | IFTA_QA_006 | The system can be easily understood, corrected, improved, and adapted over time | Maintainability | IFTA_QAR_006 |
-| IFTA_QA_007 | Users are using the replay function, and they want the pause/resume function to be supported. | Usability       | IFTA_QAR_007 |
-| IFTA_QA_008 | Users want their system usage settings to be maintained the same the next time they use it. | Usability       | IFTA_QAR_008 |
+| IFTA_QA_007 | Users want to know when there is an error situation.         | Usability       | IFTA_QAR_007 |
 
 
 
@@ -161,27 +160,14 @@ Quality attribute scenarios were written for each requirement of the defined QA 
 
 ### IFTA_QA_007
 
-- Source - User
-- Stimulus - User requests to pause/resume function
-- Artifact - Remote User Interface (RUI) data display
-- Environment - Normal operation with active live data feed
-- Response - RUI pauses data updates while maintaining current display; on resume, data updates continue without loss
-- Response Measure - Data stream pauses/resumes successfully; no data loss or UI glitches observed
+- Source - Internal system components or external dependencies
+- Stimulus - An unexpected error occurs due to a system failure or external service disruption
+- Artifact - Remote User Interface (RUI)
+- Environment - Error occuring during operation
+- Response - The system immediately notifies the user of the issue in a clear and non-technical manner
+- Response Measure - Error message is displayed within 1 second of the failure
 
 **Related approach** : refer to [Approach 07](./approachs/approach07.md)
-
-
-
-### IFTA_QA_008
-
-- Source - User
-- Stimulus - User restarts or revisits the Remote User Interface (RUI)
-- Artifact - User preferences and interface settings (e.g., map type, IP address, zoom level)
-- Environment - Normal operation after UI reload or system reboot
-- Response - RUI restores previously saved settings automatically
-- Response Measure - Preferences are restored instantly upon startup; user does not need to reconfigure settings manually
-
-**Related approach** : refer to [Approach 08](./approachs/approach08.md)
 
 
 
@@ -201,7 +187,6 @@ Quality attribute scenarios were written for each requirement of the defined QA 
 | 5    | The system should allow developers to integrate a new map provider into the user interface with minimal code changes, low risk of introducing bugs, and without affecting unrelated parts of the system | Modifiability   | M                   | H              |
 | 6    | The system can be easily understood, corrected, improved, and adapted over time | Maintainability | M                   | L              |
 | 7    | Users are using the replay function, and they want the pause/resume function to be supported. | Usability       | L                   | L              |
-| 8    | Users want their system usage settings to be maintained the same the next time they use it. | Usability       | L                   | L              |
 
 ### Potential Quality Attribute Trade-offs
 
@@ -244,8 +229,9 @@ Based on the defined Quality Attributes (QAs), the following trade-offs may aris
 #### 4. Extensibility vs. Usability
 
 **QAs Involved**  
+
 - `IFTA_QA_003 / 004` (Extensibility)  
-- `IFTA_QA_007 / 008`: *Support pause/resume and retain user configuration* (Usability)
+- `IFTA_QA_007`: *Support pause/resume and retain user configuration* (Usability)
 
 **Potential Conflict**  
 - Continuously adding features and configuration options may lead to a more complex and crowded UI, making it harder for users to interact with the system intuitively.
