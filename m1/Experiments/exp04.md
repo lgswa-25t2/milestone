@@ -1,86 +1,72 @@
-# Experiment 4: TBD
 
+# Experiment 4: System Behavior Test According to Playback Data Size
 
-## Results and recommendations 
-To be completed after the experiment.
+## Results and recommendations
 
-## Objective 
-The purpose of this experiment is to evaluate the responsiveness and stability of the system when exposed to rapid or excessive UI input events, such as continuous button clicks.
+To be written upon completion of the experiment.
 
-This test aims to answer the following key questions:
+## Objective
 
-- Is the system responsive and stable when a UI button is clicked repeatedly at short intervals?
-- Do duplicate or missed event processing issues occur?
-- To what extent do CPU and memory usage increase due to repeated interactions?
-- Can the system recover from freezes or crashes triggered by rapid input?
-
-The goal is to identify potential bottlenecks or vulnerabilities in the UI event handling mechanism and define optimization points for future improvements.
+The goal of this experiment is to investigate how the system behaves as the size of playback data increases.
+We aim to determine the maximum data size the system can handle while maintaining acceptable load times, UI responsiveness, and memory usage.
+This will help identify performance bottlenecks and data handling limits.
 
 ## Status
+
 [***Planned*** | In progress | Suspended | Canceled | Concluded]
 
 ## Expected outcomes
- - Event logs generated during rapid click input
- - Response time and processing speed measurements
- - CPU and memory usage patterns during the test
- - Error/crash detection and recovery behavior
- - Visualized graphs and a summary test report
+
+* Playback performance logs and detailed metrics
+* Graphs showing how system behavior changes with data size
+* Thresholds for maximum playable data size without degradation
+* CPU and memory usage trends per playback size
 
 ## Resources required
- - Software: Flight Tracker client
- - Hardware: One test laptop (Intel Core i7-1165G7 @ 2.80GHz / 16.0GB RAM)
- - Personnel: 3 people × 4 hours
-   - Script creation and test execution: 1 person × 2 hours
-   - Log analysis and report writing: 1 person × 2 hours
-   
+
+* **Software**: Playback module integrated with logging
+* **Hardware**: One test laptop (Intel Core i7-1165G7 @ 2.80GHz / 16.0GB RAM)
+* **Test data**: Playback files of varying sizes
+  (5MB / 20MB / 50MB / 100MB / 200MB / 500MB / 1GB)
+* **Automation**: UI automation macros for playback start/stop
+* **Personnel**: 3 people × 4 hours
+
+  * (1 for test execution, 2 for setup, logging, and analysis)
 
 ## Experiment description
-- Test Environment Setup
 
-  Add logging code for button click events
+### 1. Test Environment Setup
 
-  Set up and launch the client application with the automation tool
+* Prepare playback files with realistic and representative aircraft movement data
+* Implement logging to measure load times, playback lag, memory usage, and responsiveness
+* Set up UI automation for consistent test execution
 
-  Configure logging path and CPU/memory monitoring tools
+### 2. Execution Plan
 
-- Execute Stress Test
+* Run playback tests with increasing file sizes
+* For each data size, measure:
 
-  Perform automated button clicks with different intervals (10ms, 100ms, 500ms) and repetition counts (50, 100, 500)
+  * Time to load playback file
+  * Time to start playback
+  * Average playback frame rate and lag
+  * Response time to playback controls (pause, seek, speed change)
+  * CPU and memory usage during playback
 
-  Example: 100 consecutive clicks on a specific UI button and observe visual feedback and UI stability
+### 3. Data Analysis
 
-- Data Collection
+* Collect and organize logs and metrics
+* Visualize results using line graphs or heatmaps
+* Identify thresholds where performance drops or failures occur
 
-  Measure UI response time and screen update delay
-  
-  Check for dropped or unprocessed events
-  
-  Record CPU and memory usage during each test
-  
-- Analysis and Visualization
+### 4. Conclusion and Review
 
-  Analyze delays, dropped events, and behavior under load
-  
-  Create graphs of response time and resource usage for each scenario
-  
-  Evaluate stability and recovery capacity
-  
-- Summary and Review
-
-  Write a summary report of findings
-  
-  Identify problems and propose mitigation strategies
-  
-  Determine the need for further experiments
+* Summarize key findings and thresholds
+* Propose architectural or design improvements
+* Recommend limits or data chunking strategies if needed
+* Suggest follow-up testing for real-world scenarios
 
 ## Duration
+
 Start Date: June 13, 2025
+End Date: June 15, 2025
 
-End Date: June 14, 2025
-
-## Links and references
-Software Architecture in Practice – Chapter 11: Performance Tactics
-
-Selenium Official Documentation
-
-AutoHotKey Scripting Examples
