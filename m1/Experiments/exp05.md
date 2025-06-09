@@ -13,7 +13,7 @@ This will help identify performance bottlenecks and data handling limits.
 
 ## Status
 
-[***Planned*** | In progress | Suspended | Canceled | Concluded]
+[ Planned | In progress | Suspended | ***Canceled*** | Concluded]
 
 ## Expected outcomes
 
