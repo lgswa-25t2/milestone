@@ -37,7 +37,7 @@ We will use *Use Abstract Interfaces* and *Document Design Decisions*.
 - Documenting decisions ensures future developers understand the rationale behind architectural choices. This minimizes rework, avoids repeated discussions, and helps with onboarding and system evolution.
 
 ## Status
-[Proposed | ***Accepted*** | Deprecated | Superseded]
+[Proposed | Accepted | ***Deprecated*** | Superseded]
 
 ## Consequences
 Resulting context will be described.
