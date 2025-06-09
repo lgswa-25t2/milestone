@@ -42,7 +42,7 @@ Quality Attribute Deferred Data Rendering Adaptive Data Throttling at Source Per
   - We want to **centralize configuration management**.
 
 ## Status
-[Proposed | ***Accepted*** | Deprecated | Superseded]
+[Proposed | Accepted | ***Deprecated*** | Superseded]
 
 ## Consequences
 Resulting context will be described.
