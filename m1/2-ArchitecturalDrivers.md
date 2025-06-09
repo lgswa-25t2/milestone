@@ -192,16 +192,16 @@ Quality attribute scenarios were written for each requirement of the defined QA 
 - **Business importance** - The score assigned in the demo scoring was H if it was 30 points, M if it was 20 points, and L if it was 10 points or less.
 - **Technical Risk** - Since all members are developers, we wrote subjectively based on our own development experience.
 
-| ID   | Type            | Scenario                                                     | Business Importance | Technical Risk |
-| ---- | --------------- | ------------------------------------------------------------ | ------------------- | -------------- |
-| 1    | Performance     | UI responds immediately to user interaction                  | H                   | H              |
-| 2    | Resiliency      | The system detects/restores failure conditions               | H                   | M              |
-| 3    | Extensibility   | The system can be easily added a deviation detection feature | H                   | H              |
-| 4    | Extensibility   | The system can be easily added an identifying unregisterd aircraft feature | H                   | M              |
-| 5    | Modifiability   | The system should allow developers to integrate a new map provider into the user interface with minimal code changes, low risk of introducing bugs, and without affecting unrelated parts of the system | M                   | H              |
-| 6    | Maintainability | The system can be easily understood, corrected, improved, and adapted over time | M                   | L              |
-| 7    | Usability       | Users are using the replay function, and they want the pause/resume function to be supported. | L                   | L              |
-| 8    | Usability       | Users want their system usage settings to be maintained the same the next time they use it. | L                   | L              |
+| ID   | Scenario                                                     | Type            | Business Importance | Technical Risk |
+| ---- | ------------------------------------------------------------ | --------------- | ------------------- | -------------- |
+| 1    | UI responds immediately to user interaction                  | Performance     | H                   | H              |
+| 2    | The system detects/restores failure conditions               | Resiliency      | H                   | M              |
+| 3    | The system can be easily added a deviation detection feature | Extensibility   | H                   | H              |
+| 4    | The system can be easily added an identifying unregisterd aircraft feature | Extensibility   | H                   | M              |
+| 5    | The system should allow developers to integrate a new map provider into the user interface with minimal code changes, low risk of introducing bugs, and without affecting unrelated parts of the system | Modifiability   | M                   | H              |
+| 6    | The system can be easily understood, corrected, improved, and adapted over time | Maintainability | M                   | L              |
+| 7    | Users are using the replay function, and they want the pause/resume function to be supported. | Usability       | L                   | L              |
+| 8    | Users want their system usage settings to be maintained the same the next time they use it. | Usability       | L                   | L              |
 
 
 
