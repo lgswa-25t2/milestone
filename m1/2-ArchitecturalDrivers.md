@@ -40,13 +40,13 @@ The Quality Attributes selected based on the [Quality attribute requirements](./
 
 | ID          | Scenario                                                     | QA Type         | Req. ID      |
 | ----------- | ------------------------------------------------------------ | --------------- | ------------ |
-| IFTA_QA_001 | UI responds immediately to user interaction                  | Performance     | IFTA_QAR_001 |
+| IFTA_QA_001_01 | UI responds immediately to user interaction when click air-craft  | Performance     | IFTA_QAR_001 |
+| IFTA_QA_001_02 | UI responds immediately to user interaction during operating menu or control panel  | Performance     | IFTA_QAR_001 |
 | IFTA_QA_002 | The system detects/restores failure conditions               | Resiliency      | IFTA_QAR_002 |
 | IFTA_QA_003 | The system can be easily added a deviation detection feature | Extensibility   | IFTA_QAR_003 |
 | IFTA_QA_004 | The system can be easily added an identifying unregisterd aircraft feature | Extensibility   | IFTA_QAR_004 |
 | IFTA_QA_005 | The system should allow developers to integrate a new map provider into the user interface with minimal code changes, low risk of introducing bugs, and without affecting unrelated parts of the system | Modifiability   | IFTA_QAR_005 |
-| IFTA_QA_006 | The system can be easily understood, corrected, improved, and adapted over time | Maintainability | IFTA_QAR_006 |
-| IFTA_QA_007 | Users want to know when there is an error situation.         | Usability       | IFTA_QAR_007 |
+| IFTA_QA_006 | Users want to know when there is an error situation.         | Usability       | IFTA_QAR_006 |
 
 
 
