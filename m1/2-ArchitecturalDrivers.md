@@ -43,9 +43,9 @@ The Quality Attributes selected based on the [Quality attribute requirements](./
 | IFTA_QA_001_01 | UI responds immediately to user interaction when click air-craft  | Performance     | IFTA_QAR_001 |
 | IFTA_QA_001_02 | UI responds immediately to user interaction during operating menu or control panel  | Performance     | IFTA_QAR_001 |
 | IFTA_QA_002 | The system detects/restores failure conditions               | Resiliency      | IFTA_QAR_002 |
-| IFTA_QA_003 | The system can be easily added a deviation detection feature | Extensibility   | IFTA_QAR_003 |
-| IFTA_QA_004 | The system can be easily added an identifying unregisterd aircraft feature | Extensibility   | IFTA_QAR_004 |
-| IFTA_QA_005 | The system should allow developers to integrate a new map provider into the user interface with minimal code changes, low risk of introducing bugs, and without affecting unrelated parts of the system | Modifiability   | IFTA_QAR_005 |
+| IFTA_QA_003 | The system shall allow developers to add a deviation detection feature | Extensibility   | IFTA_QAR_003 |
+| IFTA_QA_004 | The system shall allow developers to add new aircraft identification modules | Extensibility   | IFTA_QAR_004 |
+| IFTA_QA_005 | The system shall allow developers to integrate a new map provider into the user interface with minimal code changes, low risk of introducing bugs, and without affecting unrelated parts of the system | Modifiability   | IFTA_QAR_005 |
 | IFTA_QA_006 | Users want to know when there is an error situation.         | Usability       | IFTA_QAR_006 |
 
 
@@ -164,8 +164,8 @@ Quality attribute scenarios were written for each requirement of the defined QA 
 | 1    | UI responds immediately to user interaction when click air-craf                 | Performance     | H                   | H              |
 | 2    | UI responds immediately to user interaction during operating menu or control panel | Performance     | H                   | H              |
 | 3    | The system detects/restores failure conditions               | Resiliency      | H                   | M              |
-| 4    | The system can be easily added a deviation detection feature | Extensibility   | H                   | H              |
-| 5    | The system can be easily added an identifying unregisterd aircraft feature | Extensibility   | H                   | M              |
+| 4    | The system shall allow developers to add a deviation detection feature | Extensibility   | H                   | H              |
+| 5    | The system shall allow developers to add new aircraft identification modules | Extensibility   | H                   | M              |
 | 6    | The system should allow developers to integrate a new map provider into the user interface with minimal code changes, low risk of introducing bugs, and without affecting unrelated parts of the system | Modifiability   | M                   | H              |
 | 7    | Users want to know when there is an error situation.  | Usability       | L                   | L              |
 
