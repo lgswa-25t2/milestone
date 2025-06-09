@@ -22,7 +22,8 @@ Below is a summary schedule and you need to refer to the task list. Some items m
 | ------------------------------------ | ------------ | ------------------------- |
 | 🔹 Planning & Analyze Requirements    | 6/2 ~ 6/8    | Architectural Drivers     |
 | **🟢 Milestone 1**                    | **6/10**     | Documents                 |
-| 🔹 System Design & Experiments        | 6/9 ~ 6/20   | Architecture              |
+| 🔹 System Design & Experiments        | 6/9 ~ 6/17   | Draft Architecture        |
+| 🔹 Review System Design               | 6/18 ~ 6/20  | Architecture              |
 | 🔹 Development 1 - Mandatory features | 6/11 ~ 6/22  | TBD (Before Milestone 2)  |
 | **🟡 Milestone 2**                    | **6/23**     | Documents                 |
 | 🔹 Development 2 - Desired features   | 6/23 ~ 7/1   | TBD (After Milestone 2)   |
@@ -38,13 +39,13 @@ Below is a summary and you need to refer to the task list. Some changes may appl
 
 | Role               | Name          | Responsibility                                            |
 | ------------------ | ------------- | --------------------------------------------------------- |
-| Project Manager    | Yongshik Bae  | Management, Communication, Development - *metadata*       |
-| Software Developer | Sujin Kim     | Development - focus on *UI/UX*                            |
-| Software Developer | Navnit Kumar  | Development - focus on *Map provider*                     |
-| Software Developer | Jaeyong Jeong | Development - focus on *Response time & resiliency*       |
-| Software Developer | Sangyeob Na   | Development - focus on *Time series analysis*             |
-| Software Developer | Seungsoon Lee | Development - focus on *Response time & resiliency*       |
-| Developer, DevOps  | Youngtae Kim  | Operation, Documentation, Development - *safety analysis* |
+| Project Manager    | Yongshik Bae  | Management, Communication, implement functional requirment for *metadata*       |
+| Technical Leader   | Seungsoon Lee | Primary Architect, focused on experiment/implement for  *Response time & resiliency*       |
+| Software Developer | Sujin Kim     | Design Overall Architecture, implement functional requirment for *UI/UX*                            |
+| Software Developer | Navnit Kumar  | Design Overall Architecture, implement functional requirment for *Map provider*                     |
+| Software Developer | Jaeyong Jeong | Design Overall Architecture, focused on experiment/impelement for *Response time & resiliency*       |
+| Software Developer | Sangyeob Na   | Design Overall Architecture, implement functional requirment for *Time series analysis*             |
+| Developer, DevOps  | Youngtae Kim  | Design Overall Architecture, Operation, Documentation, implement for *safety analysis* |
 
 
 
