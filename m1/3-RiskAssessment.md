@@ -40,12 +40,12 @@ Ex ) 퍼포먼스 항목 -> 제한 시간안에 성공하지 못할경우 -> Pro
 
 | ID   | Description | Risk Level | Mitigation Strategy | Linked Experiments |
 | ---- | ----------- | ---------- | ------------------- | ------------------ |
-| TR_1 | A large volume of aircraft data is received by the ADS-B server in a short period of time.            |   High    | consider Manage sampling rate to adjust the volume of aircraft data.                    | https://github.com/lgswa-25t2/milestone/blob/main/m1/Experiments/exp01.md |
+| TR_1 | A large volume of aircraft data is received by the ADS-B server in a short period of time.            |   High    | consider Manage sampling rate to adjust the volume of aircraft data.                    | [Exp 1](./Experiments/exp01.md) |
 | TR_2 | VCL is not thread-safe.  |   Low     | Separate business logic from UI logic, and run the UI thread and the data processing thread independently.                    |                    |
 | TR_3 | Raspberry Pi can fail for various reasons, and it is unclear whether it provides the cause of failure depending on the situation.   |   Low     | Modify the Raspberry Pi to report its status information.|              |
-| TR_4 | UI, network, and data processing are tightly coupled, making it unclear where to insert the deviation detection logic.            |    Mid     | Separation of UI, network, and data processing components.                     |                    |
-| TR_5 | The map provider may need API key |    Low     |  Use a map provider that does not require an API key. (ex. https://www.openstreetmap.org)                   |   exp04.md                |
-| TR_6 | Large playback data size            |    Mid     | limit recoding file size             |                    |
+| TR_4 | UI, network, and data processing are tightly coupled, making it unclear where to insert the deviation detection logic.            |    Mid     | Separation of UI, network, and data processing components.                     | Planned draw diagrams |
+| TR_5 | The map provider may need API key |    Low     |  Use a map provider that does not require an API key. (ex. https://www.openstreetmap.org)                   | [Exp 4](./Experiments/exp04.md) |
+| TR_6 | Large playback data size            |    Mid     | limit recoding file size             | [Exp 5](./Experiments/exp05.md) |
 | TR_7 | User configuration may become invalid if it hasn't been saved for a long time.        |    Low     | Perform a validation check on the configuration values and provide default data if they are invalid.                   |                    |
 
 
