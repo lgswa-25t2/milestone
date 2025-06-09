@@ -7,6 +7,6 @@ This document clearly documents the key decisions made during the system design 
 | APPROACH_001 | IFTA_QA_001 | Improving UI respond time                                    | [Link](./approachs/approach01.md) |
 | APPROACH_002 | IFTA_QA_002 | Detecing/recovering failure conditions                       | [Link](./approachs/approach02.md) |
 | APPROACH_003 | IFTA_QA_003 | Encapsulate deviation detection logic to isolate change      | [Link](./approachs/approach03.md) |
-| APPROACH_004 | IFTA_QA_004 | Introduce an Intermediary with a Filter Pipeline to Identify Unregistered Aircraft | [Link](./approachs/approach04.md) |
+| APPROACH_004 | IFTA_QA_004 | Applying Architecture pattern for Modular Aircraft Identification | [Link](./approachs/approach04.md) |
 | APPROACH_005 | IFTA_QA_005 | Supporting new map provider                                  | [Link](./approachs/approach05.md) |
 | APPROACH_006 | IFTA_QA_006 | Quickly notification for error                               | [Link](./approachs/approach07.md) |
