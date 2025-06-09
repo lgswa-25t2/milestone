@@ -25,8 +25,6 @@ Derived from features in Project Description documents.
 | IFTA_FR_04_03 | Safety Analysis      | Flight profile normaly detection      | The system should be able to detect any deviation from the normal flight trajectory (e.g. wrong airport approach, reverse flight, etc) by analyzing the aircraft's path, direction, speed and destination |
 | IFTA_FR_04_04 | Safety Analysis      | Flight plan deviation analysis        | The system must compare the flight plan path with the real-time path to assess whether the flight is deviating from the path |
 
-\* Desired features are given an ID after 101.
-
 
 
 

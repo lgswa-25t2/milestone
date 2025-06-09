@@ -205,6 +205,6 @@ Quality attribute scenarios were written for each requirement of the defined QA 
 
 
 
-## TODO - risk of QA elements
+## Risk assessment
 
-Ex ) 퍼포먼스 항목 -> 제한 시간안에 성공하지 못할경우 -> Probability / Impact 를 H/M/L 로 평가
+Please refer to [Risk Assessment](./3-RiskAssessment.md)

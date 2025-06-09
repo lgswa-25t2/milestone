@@ -14,7 +14,15 @@ Risk Level = L × I
 - Medium: 12–19
 - Low: 1–11
 
+
+
 ## Technical Risk Assessment
+
+TODO - QA scenario 에 대한 risk 를 작성해야함
+
+Ex ) 퍼포먼스 항목 -> 제한 시간안에 성공하지 못할경우 -> Probability / Impact 를 H/M/L 로 평가
+
+그 후 해당 위험을 위한 experiment 를 계획하고 plan 업데이트
 
 ### Identification
 
@@ -31,6 +39,8 @@ Risk Level = L × I
 | TR_1 | Lack of Development Environment Experience | 5    | 5    | High (25)   | Careful review of installation guide documentation,  Conduct initial collaborative build practice sessions, Engage in structured tutorial-based learning. |
 | TR_2 | Difficulty in Code Analysis                | 4    | 5    | High (20)   | Conduct focused code analysis workshops to review legacy code, identify key modules. |
 | TR_3 | Tool Dependency                            | 3    | 5    | Medium (15) | Use VMware to install a Windows VM or configure dual-boot to run Borland tools in a compatible OS. |
+
+
 
 ## Non-technical Risk Assessment
 

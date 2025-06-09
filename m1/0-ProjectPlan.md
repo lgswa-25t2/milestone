@@ -1,6 +1,6 @@
 # Project Plan
 
-This document presents the project's name, purpose, schedule, members, tools used, primary risks, and goals.
+This document presents the project's name, purpose, schedule, members, list of tasks, tools used, and goals.
 
 It may be updated as the project progresses.
 
@@ -16,7 +16,7 @@ It may be updated as the project progresses.
 
 ## Timeline & Milestones
 
-Some items may be added or changed.
+Below is a summary schedule and you need to refer to the task list. Some items may be added or changed.
 
 | **Phase**                            | **Duration** | **Key Deliverables**      |
 | ------------------------------------ | ------------ | ------------------------- |
@@ -34,23 +34,56 @@ Some items may be added or changed.
 
 ## Team Roles
 
-Some changes may apply.
+Below is a summary and you need to refer to the task list. Some changes may apply.
 
-| Role                   | Name          | Responsibility                                              |
-| ---------------------- | ------------- | ----------------------------------------------------------- |
-| Project Manager        | Yongshik Bae  | Management, Communication, Development                      |
-| Project Leader         | Sujin Kim     | SW Architect, Development                                   |
-| Software Developer     | Navnit Kumar  | Feasibility study & Development - focus on Desired features |
-| Software Developer     | Jaeyong Jeong | Development - focus on Mandatory feature                    |
-| Software Developer     | Sangyeob Na   | Development - focus on Mandatory feature                    |
-| Software Developer     | Seungsoon Lee | Development - focus on QA improving                         |
-| DevOps, QA (Assurance) | Youngtae Kim  | Documentation, CI/CD, Test, Development                     |
+| Role               | Name          | Responsibility                                            |
+| ------------------ | ------------- | --------------------------------------------------------- |
+| Project Manager    | Yongshik Bae  | Management, Communication, Development - *metadata*       |
+| Software Developer | Sujin Kim     | Development - focus on *UI/UX*                            |
+| Software Developer | Navnit Kumar  | Development - focus on *Map provider*                     |
+| Software Developer | Jaeyong Jeong | Development - focus on *Response time & resiliency*       |
+| Software Developer | Sangyeob Na   | Development - focus on *Time series analysis*             |
+| Software Developer | Seungsoon Lee | Development - focus on *Response time & resiliency*       |
+| Developer, DevOps  | Youngtae Kim  | Operation, Documentation, Development - *safety analysis* |
 
 
 
 ## Tasks
 
-TODO - TBD
+### 1. Planning & Setup
+
+- [x] Read project description carefully
+- [x] Configure Miro board and GitHub organization
+- [x] Divide roles
+
+### 2. Architecture
+
+- [x] Derive functional requirements and quality attribute requirements
+- [x] Make architectural drivers
+- [ ] Create each view diagram (This item will be updated in detail after class.)
+
+### 3. Services Development
+
+Since there are many items to be implemented, the detailed status of each is updated on the [Miro Board](https://miro.com/app/board/uXjVIuV4obA=/?moveToWidget=3458764631066687663&cot=14).
+
+- [ ] Analyze current code and requirements
+- [ ] Make experiments for design decisions
+- [ ] Describe detailed scenarios
+- [ ] Development of each features - refer to Miro board.
+
+### 4. Technical Experiments
+
+- [ ] Evaluate performance of original codes according to the number of aircrafts
+- [ ] Analyze real-time aircraft data ingestion rate and volume via ADS-B hub
+- [ ] UI input stress test (System Behavior Under Rapid Button Clicks)
+- [ ] TODO - test for reducing risk
+
+### 5. Quality Assurance & Release
+
+- [x] Make deliverables for Milestone 1
+- [ ] Make deliverables for Milestone 2
+- [ ] Integration tests
+- [ ] Release final documents and presentation
 
 
 
@@ -69,7 +102,7 @@ TODO - TBD
 
 
 
-## Success Criteria
+## Goals
 
 - Develop 100% of mandatory features within the schedule
 - Develop as many desired features as possible
