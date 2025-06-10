@@ -1,4 +1,8 @@
-# **Approach 9: Notifying Users of System Errors in Real Time**
+# ~~**Approach 9: Notifying Users of System Errors in Real Time**~~
+
+***Deprecated***
+
+
 
 There are general tactics for usability and failure awareness.
 
@@ -12,8 +16,7 @@ There are general tactics for usability and failure awareness.
   * **Non-technical Messaging**: Ensure all error messages are clear, concise, and free from technical jargon to support end-user understanding.
 
 * **Response Time Optimization**
-
-  * Ensure notifications are displayed to the user within **1 second** of error detection to maintain user awareness and trust.
+* Ensure notifications are displayed to the user within **1 second** of error detection to maintain user awareness and trust.
 
 ## **Decision**
 
@@ -25,7 +28,7 @@ Users must be informed of system problems in real time to understand system stat
 
 ## **Status**
 
-[***Proposed*** | Accepted | Deprecated | Superseded]
+[Proposed | Accepted | ***Deprecated*** | Superseded]
 
 ## **Consequences**
 

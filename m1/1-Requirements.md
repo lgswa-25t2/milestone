@@ -16,7 +16,7 @@ Derived from features in Project Description documents.
 | IFTA_FR_02_03 | Time series Analysis | Track playback                        | The system shall be capable of recording received aircraft track data and replaying it at 1x, 2x or 3x speed for selected flights or time ranges |
 | IFTA_FR_02_04 | Time series Analysis | Track simulation                      | The system shall be able to perform traffic simulations based on track data from past time periods. |
 | IFTA_FR_02_05 | Time series Analysis | Dead reckoning                        | The system must use the aircraft's current speed, heading and altitude, based on real-time or historical data, to predict its future position and display it on a map |
-| IFTA_FR_03_01 | UI                   | Improved UI/UX                        | The user interface shall be intuitive and responsive         |
+| IFTA_FR_03_01 | UI                   | Improved UI/UX                        | Improvement UI Layout <br>- Applying better UI componenet design<br>- Icon categorization by aircraft type<br>- Modify font, alignment, checkbox, button |
 | IFTA_FR_03_02 | UI                   | Updated Map tiles                     | The system must load high resolution and user selected map tiles |
 | IFTA_FR_03_03 | UI                   | Airport plotting                      | It should be possible to display major airports (according to IATA/ICAO standards) on the map as icons or symbols |
 | IFTA_FR_03_04 | UI                   | Aircraft icons and leaders            | Icons and leaders indicating the direction of movement of the aircraft must be visually displayed on the map |

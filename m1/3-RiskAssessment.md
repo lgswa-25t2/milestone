@@ -22,18 +22,18 @@ Risk Level = L × I
 
 | ID   | Refrence    | Description | L    | I    | Risk Level |
 | ---- | ----------- | ----------- | ---- | ---- | ---------- |
-| TR_1 | IFTA_QA_001_01 | A large volume of aircraft data is received by the ADS-B server in a short period of time.            |   4   |  5   |   20     |
-| TR_2 | IFTA_QA_002 | VCL is not thread-safe.         |  3   |  1  |    3    |
-| TR_3 | IFTA_QA_002 | The Raspberry Pi can fail for various reasons, and it is unclear whether it provides the cause of failure depending on the situation.         |  4   |  2   |     8       |
+| TR_1 | IFTA_QA_001_01 | System may not be updated normally due to large volume of aircraft data is received by the ADS-B server in a short period of time. |   4   |  5   |   20     |
+| TR_2 | IFTA_QA_002 | We need to apply multi-thread in program, but the VCL framework is not thread-safe. If background threads directly access or modify UI components, it may result in application instability, race conditions, or unexpected crashes. |  3   |  1  |    3    |
+| TR_3 | IFTA_QA_002 | The Raspberry Pi can fail for various reasons (e.g. crash, out of memory), and it is unclear whether it provides the cause of failure depending on the situation. |  4   |  2   |     8       |
 | TR_4 | IFTA_QA_003 | UI, network, and data processing are tightly coupled, making it unclear where to insert the deviation detection logic.            |  4   |  4   |    16     |
 
 ### Prioritization, Mitigation, Experiments
 
 | ID   | Description | Risk Level | Mitigation Strategy | Linked Experiments |
 | ---- | ----------- | ---------- | ------------------- | ------------------ |
-| TR_1 | A large volume of aircraft data is received by the ADS-B server in a short period of time.            |   High    | consider Manage sampling rate to adjust the volume of aircraft data.                    | [Exp 1](./Experiments/exp01.md) , [Exp 2](./Experiments/exp02.md)|
-| TR_2 | VCL is not thread-safe.  |   Low     | Separate business logic from UI logic, and run the UI thread and the data processing thread independently.                    |                    |
-| TR_3 | Raspberry Pi can fail for various reasons, and it is unclear whether it provides the cause of failure depending on the situation.   |   Low     | Modify the Raspberry Pi to report its status information.| [Exp 6](./Experiments/exp06.md) |
+| TR_1 | System may not be updated normally due to large volume of aircraft data is received by the ADS-B server in a short period of time. |   High    | consider Manage sampling rate to adjust the volume of aircraft data.                    | [Exp 1](./Experiments/exp01.md) , [Exp 2](./Experiments/exp02.md)|
+| TR_2 | We need to apply multi-thread in program, but the VCL framework is not thread-safe. If background threads directly access or modify UI components, it may result in application instability, race conditions, or unexpected crashes. <!--We need to apply multi-thread in program, but VCL does not support multi-thread.                 Although the use of multithreading is considered to enhance performance, the VCL is not thread-safe. --> |   Low     | Separate business logic from UI logic, and run the UI thread and the data processing thread independently.                    | [Exp 7](./Experiments/exp07.md) |
+| TR_3 | Raspberry Pi can fail for various reasons, and it is unclear whether it provides the cause of failure depending on the situation.  |   Low     | Modify the Raspberry Pi to report its status information.| [Exp 6](./Experiments/exp06.md) |
 | TR_4 | UI, network, and data processing are tightly coupled, making it unclear where to insert the deviation detection logic.            |    Mid     | Separation of UI, network, and data processing components.                     | Planned draw diagrams |
 
 

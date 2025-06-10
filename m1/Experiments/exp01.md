@@ -80,7 +80,16 @@ Start Date: June 10, 2025
 
 End Date: June 12, 2025
 
+
+
+## Assignee
+
+Jaeyong Jeong, Seungsoon Lee
+
+
+
 ## Links and references
+
 Technical risk [TR_1](../3-RiskAssessment.md#prioritization-mitigation-experiments)
 
 Software Architecture in Practice – Chapter 11: Performance Tactics

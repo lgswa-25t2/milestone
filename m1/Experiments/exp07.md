@@ -1,4 +1,4 @@
-# Experiment 6: Verification of Error Cause Reporting and Connectivity Monitoring for Raspberry Pi
+# Experiment 7: TBD
 
 ## Results and recommendations
 
@@ -110,4 +110,4 @@ Jaeyong Jeong, Youngtae Kim
 
 ## Links and references
 
-Technical risk [TR_3](../3-RiskAssessment.md#prioritization-mitigation-experiments)
+Technical risk [TR_2](../3-RiskAssessment.md#prioritization-mitigation-experiments)
