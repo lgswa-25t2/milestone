@@ -84,7 +84,7 @@ Quality attribute scenarios were written for each requirement of the defined QA 
 
 - Source - User
 - Stimulus - turn off Wifi or disconnect USB cable during runtime
-- Artifact - User interface application
+- Artifact - Remote User Interface (RUI)
 - Environment - Runtime, the system is tracking ADS-B datasets
 - Response
   - System detects failure conditions (e.g., disconnection)
