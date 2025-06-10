@@ -1,4 +1,8 @@
-# Approach 8: Maintaining user model 
+# ~~Approach 8: Maintaining user model~~
+***Deprecated***
+
+
+
 The system shall remember user preferences such as Raspberry Pi IP address, map style, and display settings across sessions to minimize repetitive setup and enhance efficiency.
 
 We have two options.

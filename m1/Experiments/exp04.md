@@ -1,4 +1,4 @@
-# Experiment 4: API Key Requirement and Limitation Test for Map Providers
+# ~~Experiment 4: API Key Requirement and Limitation Test for Map Providers~~
 
 ## Results and recommendations
 

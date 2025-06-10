@@ -1,4 +1,8 @@
-# Approach 7: Providing pause/resume function 
+# ~~Approach 7: Providing pause/resume function~~
+***Deprecated***
+
+
+
 Users shall be able to pause live aircraft data updates to analyze specific tracks without distraction, then resume updates smoothly.
 
 We have two options.
