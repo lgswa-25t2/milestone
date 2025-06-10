@@ -22,8 +22,8 @@ Below is a summary schedule and you need to refer to the task list. Some items m
 | ------------------------------------ | ------------ | ------------------------- |
 | 🔹 Planning & Analyze Requirements    | 6/2 ~ 6/8    | Architectural Drivers     |
 | **🟢 Milestone 1**                    | **6/10**     | Documents                 |
-| 🔹 System Design & Experiments        | 6/9 ~ 6/13   | Architecture V0.9       |
-| 🔹 Review System Design               | 6/14 ~ 6/18  | Architecture V1.0         |
+| 🔹 System Design & Experiments        | 6/9 ~ 6/15   | Architecture V0.9       |
+| 🔹 Review System Design               | 6/16 ~ 6/18  | Architecture V1.0         |
 | 🔹 Development 1 - Mandatory features | 6/11 ~ 6/22  | TBD (Before Milestone 2)  |
 | **🟡 Milestone 2**                    | **6/23**     | Documents                 |
 | 🔹 Development 2 - Desired features   | 6/23 ~ 7/1   | TBD (After Milestone 2)   |
