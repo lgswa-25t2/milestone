@@ -183,7 +183,7 @@ Based on the defined Quality Attributes (QAs), the following trade-offs may aris
 **Potential Conflict**  
 
 - Designing for modularity and flexibility often introduces layers of abstraction or interface boundaries, which can lead to increased data processing overhead and reduced performance.  
-- Conversely, tightly coupled code optimized for performance can be difficult to modify or extend without side effects.
+- To improve performance, techniques such as caching, multithreading, and data prefetching can be applied. However, these techniques often introduce **state** into the system or cause **race conditions**, making the system harder to understand and modify.
 
 #### 2. Performance vs. Resiliency
 
