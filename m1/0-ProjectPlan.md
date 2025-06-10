@@ -20,15 +20,15 @@ Below is a summary schedule and you need to refer to the task list. Some items m
 
 | **Phase**                            | **Duration** | **Key Deliverables**      |  **Key Activities**    |
 | ------------------------------------ | ------------ | ------------------------- |------------------------|
-| 🔹 Planning & Analyze Requirements    | 6/2 ~ 6/8   | Architectural Drivers     | Understand requirements, identify stakeholders & constraints, define quality attributes|
+| 🔹 Planning & Analyze Requirements    | 6/2~6/8   | Architectural Drivers     | Understand requirements, identify stakeholders & constraints, define quality attributes|
 | **🟢 Milestone 1**                    | **6/10**     | Documents                 | Submit architectural drivers and requirement analysis |
-| 🔹 System Design & Experiments        | 6/9 ~ 6/15 | Architecture V0.9       | Create architecture models, design components, run QA experiments |
-| 🔹 Review System Design               | 6/16 ~ 6/18 | Architecture V1.0         | Refine and validate architecture with team/mentor feedback, resolve design trade-offs |
-| 🔹 Development 1 - Mandatory features | 6/11 ~ 6/22 | TBD (Before Milestone 2)  | Implement core features required for demo |
+| 🔹 System Design & Experiments        | 6/9~6/15 | Architecture V0.9       | Create architecture models, design components, run QA experiments |
+| 🔹 Review System Design               | 6/16~6/18 | Architecture V1.0         | Refine and validate architecture with team/mentor feedback, resolve design trade-offs |
+| 🔹 Development 1 - Mandatory features | 6/11~6/22 | TBD (Before Milestone 2)  | Implement core features required for demo |
 | **🟡 Milestone 2**                    | **6/23**     | Documents                 | Submit updated architecture |
-| 🔹 Development 2 - Desired features   | 6/23 ~ 7/1   | TBD (After Milestone 2)   | Implement optional/nice-to-have features |
-| 🔹 Integration & Test                 | 6/23 ~ 7/1   | Test Results              | Integrate components, run functional and QA-based testing |
-| 🔹 Prepare Demo & Presentation        | 6/29 ~ 7/1   | Presentation Slides       | Finalize slides, rehearse demo |
+| 🔹 Development 2 - Desired features   | 6/23~7/1   | TBD (After Milestone 2)   | Implement optional/nice-to-have features |
+| 🔹 Integration & Test                 | 6/23~7/1   | Test Results              | Integrate components, run functional and QA-based testing |
+| 🔹 Prepare Demo & Presentation        | 6/29~7/1   | Presentation Slides       | Finalize slides, rehearse demo |
 | **🎯 Milestone 3**                    | **7/2**      | Demo & Final Presentation | Present the system and architecture to stakeholders |
 
 <!-- ![Project Plan](../image/plan.png) -->
