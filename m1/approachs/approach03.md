@@ -1,7 +1,8 @@
 # Approach 3: Encapsulate deviation detection logic to isolate change
-There are general tactics for performance.
+There are general tactics for extensiblity.
 - Separate Interface from Implementation
   - Keeps the UI and analysis logic decoupled, allowing new features to be added independently**.**
+    
 - Encapsulate Change
   - Isolates frequently changing logic (e.g., deviation algorithms) in separate components.
 
