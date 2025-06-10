@@ -62,7 +62,7 @@ Quality attribute scenarios were written for each requirement of the defined QA 
 - Environment - Runtime, the system is tracking 5000+ aircrafts simultaneously
 - Response - UI responds immediately to user interaction, analytical feature are displayed promptly
 - Response Measure
-  - Aircraft click response time ≤ 100 milliseconds
+  - Aircraft click response time ≤ 100 (TBD) milliseconds
   - Analytical feature display latency ≤ 1 second after user action
 
 **Related approach** : refer to [Approach 01](./approachs/approach01.md)
@@ -75,7 +75,7 @@ Quality attribute scenarios were written for each requirement of the defined QA 
 - Environment - Runtime, the system is tracking 5000+ aircrafts simultaneously
 - Response - UI responds immediately to user interaction
 - Response Measure
-  - Menu/control panel interaction response ≤ 150 milliseconds
+  - Menu/control panel interaction response ≤ 150 (TBD) milliseconds
 
 **Related approach** : refer to [Approach 01](./approachs/approach01.md)
 
