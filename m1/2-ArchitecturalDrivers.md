@@ -88,7 +88,7 @@ Quality attribute scenarios were written for each requirement of the defined QA 
 - Response
   - System detects failure conditions (e.g., disconnection)
 - Response Measure
-  - System detects disconnection within ≤ 1 second
+  - System detects disconnection within 1 second
 
 **Related approach** : refer to [Approach 02](./approachs/approach02.md)
 
