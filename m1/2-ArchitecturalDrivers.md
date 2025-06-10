@@ -57,7 +57,7 @@ Quality attribute scenarios were written for each requirement of the defined QA 
 ### IFTA_QA_001_01
 
 - Source - User actions in the remote user interface
-- Stimulus - click air-craft
+- Stimulus - right click air-craft
 - Artifact - User interface application
 - Environment - Runtime, the system is tracking 5000+ aircrafts simultaneously
 - Response - UI responds immediately to user interaction, analytical feature are displayed promptly
@@ -83,7 +83,7 @@ Quality attribute scenarios were written for each requirement of the defined QA 
 ### IFTA_QA_002
 
 - Source - User
-- Stimulus - Wifi is turned off or USB cable is disconnected during runtime
+- Stimulus - turn off Wifi or disconnect USB cable during runtime
 - Artifact - User interface application
 - Environment - Runtime, the system is tracking ADS-B datasets
 - Response
@@ -91,7 +91,7 @@ Quality attribute scenarios were written for each requirement of the defined QA 
   - User is notified with a clear UI message (e.g., “Lost connection to Raspberry Pi”)
 - Response Measure
   - System detects disconnection within ≤ 1 second
-  - User notified of fault within ≤ 1 second
+  - User notified of fault within ≤ 1 second.
 
 **Related approach** : refer to [Approach 02](./approachs/approach02.md)
 
