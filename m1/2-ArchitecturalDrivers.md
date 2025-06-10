@@ -180,6 +180,9 @@ Based on the defined Quality Attributes (QAs), the following trade-offs may aris
 - Designing for modularity and flexibility often introduces layers of abstraction or interface boundaries, which can lead to increased data processing overhead and reduced performance.  
 - To improve performance, techniques such as caching, multithreading, and data prefetching can be applied. However, these techniques often introduce **state** into the system or cause **race conditions**, making the system harder to understand and modify.
 
+**Decision**
+- In case of conflict between performance and extensibility, we prioritized performance for core real-time features while isolating extension modules to minimize impact.
+
 #### 2. Performance vs. Resiliency
 
 **QAs Involved**  
@@ -191,6 +194,9 @@ Based on the defined Quality Attributes (QAs), the following trade-offs may aris
 - Adding frequent monitoring (e.g., heartbeat checks, retry loops) can introduce extra system load, potentially impacting real-time responsiveness.  
 - Balancing proactive failure detection with minimal overhead is essential.
 
+**Decision**
+- We prioritized performance for time-critical UI interactions, while applying lightweight monitoring mechanisms to minimize overhead.
+
 #### 3. Extensibility vs. Usability
 
 **QAs Involved**  
@@ -200,6 +206,9 @@ Based on the defined Quality Attributes (QAs), the following trade-offs may aris
 
 **Potential Conflict**  
 - Continuously adding features and configuration options may lead to a more complex and crowded UI, making it harder for users to interact with the system intuitively.
+
+**Decision**
+- We prioritized extensibility to support evolving feature requirements, while constraining UI complexity through modular and context-sensitive UI design.
 
 ### Summary Table
 
