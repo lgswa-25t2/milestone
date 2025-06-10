@@ -28,7 +28,7 @@ TBD
 
 ## **Status**
 
-**\[Proposed]**
+[***Proposed*** | Accepted | Deprecated | Superseded]
 
 ## **Consequences**
 

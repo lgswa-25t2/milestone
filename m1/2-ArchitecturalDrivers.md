@@ -56,9 +56,9 @@ Quality attribute scenarios were written for each requirement of the defined QA 
 
 ### IFTA_QA_001_01
 
-- Source - User actions in the remote user interface
-- Stimulus - right click air-craft
-- Artifact - User interface application
+- Source - User
+- Stimulus - right click air-craft in user interface
+- Artifact - Remote User Interface (RUI)
 - Environment - Runtime, the system is tracking 5000+ aircrafts simultaneously
 - Response - UI responds immediately to user interaction, analytical feature are displayed promptly
 - Response Measure
@@ -69,9 +69,9 @@ Quality attribute scenarios were written for each requirement of the defined QA 
 
 ### IFTA_QA_001_02
 
-- Source - User actions in the remote user interface
-- Stimulus - operating menu or control panel
-- Artifact - User interface application
+- Source - User
+- Stimulus - operating menu or control panel in user interface
+- Artifact - Remote User Interface (RUI)
 - Environment - Runtime, the system is tracking 5000+ aircrafts simultaneously
 - Response - UI responds immediately to user interaction
 - Response Measure
@@ -144,7 +144,7 @@ Quality attribute scenarios were written for each requirement of the defined QA 
 - Source - Internal system components or external dependencies
 - Stimulus - An unexpected error occurs due to a system failure or external service disruption
 - Artifact - Remote User Interface (RUI)
-- Environment - Error occuring during operation
+- Environment - Runtime, Error occuring during operation
 - Response - The system immediately notifies the user of the issue in a clear and non-technical manner
 - Response Measure - Error is informed to user within 1 second of the failure
 

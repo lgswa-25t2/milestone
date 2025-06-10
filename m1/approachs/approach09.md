@@ -25,7 +25,7 @@ Users must be informed of system problems in real time to understand system stat
 
 ## **Status**
 
-\[***Proposed***]
+[***Proposed*** | Accepted | Deprecated | Superseded]
 
 ## **Consequences**
 
