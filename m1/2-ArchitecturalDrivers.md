@@ -38,7 +38,7 @@ Please refer to [Requirements](./1-Requirements.md).
 
 The Quality Attributes selected based on the [Quality attribute requirements](./1-Requirements.md#quality-attribute-requirements) are as follows.
 
-| ID          | Scenario                                                     | QA Type         | Req. ID      |
+| ID          | Summary of Scenario                                          | QA Type         | Req. ID      |
 | ----------- | ------------------------------------------------------------ | --------------- | ------------ |
 | IFTA_QA_001_01 | UI responds immediately to user interaction when click air-craft  | Performance     | IFTA_QAR_001 |
 | IFTA_QA_001_02 | UI responds immediately to user interaction during operating menu or control panel  | Performance     | IFTA_QAR_001 |
