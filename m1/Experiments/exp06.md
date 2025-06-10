@@ -104,3 +104,6 @@ Perform the following fault injections and observe the system's response:
 Start Date: June 12, 2025
 End Date: June 13, 2025
 
+## Links and references
+
+Technical risk [TR_3](../3-RiskAssessment.md#prioritization-mitigation-experiments)
