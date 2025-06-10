@@ -21,7 +21,7 @@ We will implement a user feedback mechanism in the Remote User Interface (RUI) t
 
 ## **Rationale**
 
-Users must be informed of system problems in real time to understand system status and prevent confusion or incorrect assumptions. Clear, timely, and non-technical error messages improve user trust and overall usability, particularly in mission-critical systems such as aircraft tracking or control environments. This aligns with usability quality attributes like **user awareness**, **error recovery**, and **interface clarity**.
+Users must be informed of system problems in real time to understand system status and prevent confusion or incorrect assumptions. Clear, timely, and non-technical error messages improve user trust and overall usability, particularly in mission-critical systems such as aircraft tracking or control environments. This aligns with usability quality attributes like **user awareness**, **error recovery**.
 
 ## **Status**
 
