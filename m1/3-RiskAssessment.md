@@ -31,7 +31,7 @@ Risk Level = L × I
 
 | ID   | Description | Risk Level | Mitigation Strategy | Linked Experiments |
 | ---- | ----------- | ---------- | ------------------- | ------------------ |
-| TR_1 | A large volume of aircraft data is received by the ADS-B server in a short period of time.            |   High    | consider Manage sampling rate to adjust the volume of aircraft data.                    | [Exp 1](./Experiments/exp01.md) |
+| TR_1 | A large volume of aircraft data is received by the ADS-B server in a short period of time.            |   High    | consider Manage sampling rate to adjust the volume of aircraft data.                    | [Exp 1](./Experiments/exp01.md) , [Exp 2](./Experiments/exp02.md)|
 | TR_2 | VCL is not thread-safe.  |   Low     | Separate business logic from UI logic, and run the UI thread and the data processing thread independently.                    |                    |
 | TR_3 | Raspberry Pi can fail for various reasons, and it is unclear whether it provides the cause of failure depending on the situation.   |   Low     | Modify the Raspberry Pi to report its status information.| [Exp 6](./Experiments/exp06.md) |
 | TR_4 | UI, network, and data processing are tightly coupled, making it unclear where to insert the deviation detection logic.            |    Mid     | Separation of UI, network, and data processing components.                     | Planned draw diagrams |
