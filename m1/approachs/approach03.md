@@ -2,13 +2,10 @@
 There are general tactics for extensiblity.
 - Separate Interface from Implementation
   - Keeps the UI and analysis logic decoupled, allowing new features to be added independently**.**
-    
 - Encapsulate Change
   - Isolates frequently changing logic (e.g., deviation algorithms) in separate components.
-
 - Strategy Pattern
   - Enables easy replacement or extension of deviation detection algorithms.
-
 - Observer Pattern
   - Allows the deviation module to respond to changes in real-time flight data.
 
@@ -23,3 +20,7 @@ Deviation detection is a feature that is likely to evolve, with potential change
 
 ## Consequences
 Resulting context will be described.
+
+## Related scenario
+
+[IFTA_QA_003](../2-ArchitecturalDrivers.md#ifta_qa_003)

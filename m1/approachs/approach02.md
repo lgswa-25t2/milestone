@@ -16,3 +16,7 @@ TBD
 
 ## Consequences
 Resulting context will be described.
+
+## Related scenario
+
+[IFTA_QA_002](../2-ArchitecturalDrivers.md#ifta_qa_002)

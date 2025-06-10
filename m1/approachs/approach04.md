@@ -46,3 +46,7 @@ TBD
 * **Memory Overhead**: Plugin registration and multiple strategy objects consume additional memory.
 * **Debugging Difficulty**: Distributed logic may increase complexity during troubleshooting.
 * **Integration Risk**: Changes in the strategy interface can break compatibility with existing plugins.
+
+## Related scenario
+
+[IFTA_QA_004](../2-ArchitecturalDrivers.md#ifta_qa_004)

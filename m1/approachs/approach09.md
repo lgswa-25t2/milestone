@@ -37,3 +37,7 @@ Users must be informed of system problems in real time to understand system stat
 ### **Negative**
 
 * **UI Complexity**: Requires designing and testing multiple UI states and messages.
+
+## Related scenario
+
+[IFTA_QA_006](../2-ArchitecturalDrivers.md#ifta_qa_006)

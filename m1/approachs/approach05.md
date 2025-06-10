@@ -30,3 +30,7 @@ We will use abstract common services with Map Interface to enable structed, low-
 
 ## Consequences
 Resulting context will be described.
+
+## Related scenario
+
+[IFTA_QA_005](../2-ArchitecturalDrivers.md#ifta_qa_005)

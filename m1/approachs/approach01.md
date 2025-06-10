@@ -21,3 +21,9 @@ TBD
 
 ## Consequences
 Resulting context will be described.
+
+## Related scenario
+
+[IFTA_QA_001_01](../2-ArchitecturalDrivers.md#ifta_qa_001_01)
+
+[IFTA_QA_001_02](../2-ArchitecturalDrivers.md#ifta_qa_001_02)
