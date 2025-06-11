@@ -16,7 +16,7 @@ It may be updated as the project progresses.
 
 ## Timeline & Milestones
 
-Below is a summary schedule and you need to refer to the task list. Some items may be added or changed.
+Below is a summary schedule and you need to refer to the task list. Some items may be added or changed. For each detailed information, please refer to [Schedule](./schedule.md).
 
 | **Phase**                            | **Duration** | **Key Deliverables**      |  **Key Activities**    |
 | ------------------------------------ | ------------ | ------------------------- |------------------------|
