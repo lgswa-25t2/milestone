@@ -1,4 +1,4 @@
-# Experiment 6: Verification of Error Cause Reporting and Connectivity Monitoring for Raspberry Pi
+# Experiment 7: TBD
 
 ## Results and recommendations
 
@@ -101,9 +101,13 @@ Perform the following fault injections and observe the system's response:
 
 ## Duration
 
-Start Date: June 12, 2025
-End Date: June 13, 2025
+Start Date: June 14, 2025
+End Date: June 16, 2025
+
+## Assignee
+
+Jaeyong Jeong, Youngtae Kim
 
 ## Links and references
 
-Technical risk [TR_3](../3-RiskAssessment.md#prioritization-mitigation-experiments)
+Technical risk [TR_2](../3-RiskAssessment.md#prioritization-mitigation-experiments)

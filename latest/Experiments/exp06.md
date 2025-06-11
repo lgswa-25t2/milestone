@@ -101,8 +101,12 @@ Perform the following fault injections and observe the system's response:
 
 ## Duration
 
-Start Date: June 12, 2025
-End Date: June 13, 2025
+Start Date: June 14, 2025
+End Date: June 16, 2025
+
+## Assignee
+
+Jaeyong Jeong, Youngtae Kim
 
 ## Links and references
 
