@@ -24,11 +24,11 @@ Below is a summary schedule and you need to refer to the task list. Some items m
 | **🟢 Milestone 1**                    | **6/10**     | Documents                 | Submit architectural drivers and requirement analysis |
 | 🔹 System Design & Experiments        | 6/9~6/15 | Architecture V0.9       | Create architecture models, design components, run QA experiments |
 | 🔹 Review System Design               | 6/16~6/18 | Architecture V1.0         | Refine and validate architecture with team/mentor feedback, resolve design trade-offs |
-| 🔹 Development 1 - Mandatory features | 6/11~6/22 | TBD (Before Milestone 2)  | Implement core features required for demo, [Detail](./schedule.md) |
+| 🔹 Development 1 - Mandatory features | 6/11~6/22 | TBD (Before Milestone 2)  | Implement core features required for demo, [Detail](../schedule.md) |
 | Improve Quality Attribute | 6/11~6/22 |  |  |
 | Reassessment of QA | 6/20~6/22 | | |
 | **🟡 Milestone 2**                    | **6/23**     | Documents                 | Submit updated architecture |
-| 🔹 Development 2 - Desired features   | 6/23~7/1   | TBD (After Milestone 2)   | Implement optional/nice-to-have features, [Detail](./schedule.md) |
+| 🔹 Development 2 - Desired features   | 6/23~7/1   | TBD (After Milestone 2)   | Implement optional/nice-to-have features, [Detail](../schedule.md) |
 | Improve Quality Attribute | 6/23~7/1 |  |  |
 | Reassessment of QA | 6/29~7/1 |  |  |
 | 🔹 Integration & Test                 | 6/23~7/1   | Test Results              | Integrate components, run functional and QA-based testing |
@@ -70,6 +70,8 @@ Below is a summary and you need to refer to the task list. Some changes may appl
 ### 3. Services Development
 
 Since there are many items to be implemented, the detailed status of each is updated on the [Miro Board](https://miro.com/app/board/uXjVIuV4obA=/?moveToWidget=3458764631066687663&cot=14).
+
+This miro board will be move to [schedule.md](../schedule.md)
 
 - [ ] Analyze current code and requirements
 - [ ] Make experiments for design decisions
