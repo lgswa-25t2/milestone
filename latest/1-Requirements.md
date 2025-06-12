@@ -17,12 +17,12 @@ Derived from features in Project Description documents.
 | IFTA_FR_02_04 | Time series Analysis | Track simulation                      | The system shall be able to perform traffic simulations based on track data from past time periods. |
 | IFTA_FR_02_05 | Time series Analysis | Dead reckoning                        | The system must use the aircraft's current speed, heading and altitude, based on real-time or historical data, to predict its future position and display it on a map |
 | IFTA_FR_03_01 | UI                   | Improved UI/UX                        | The systam shll better ux: Re-organize information and buttons & modify font, alignment, checkbox, button in right panel |
-| IFTA_FR_03_01 | UI                   | Improved UI/UX                        | Icon categorization by aircraft typel |
-| IFTA_FR_03_01 | UI                   | Improved UI/UX                        | Configure icon colors for each map to improve visual clarity |
-| IFTA_FR_03_02 | UI                   | Updated Map tiles                     | The system shall(may) adjust resolution by zoom-in / zoom-out. |
-| IFTA_FR_03_03 | UI                   | Airport plotting                      | The system shall display major airports (according to IATA/ICAO standards) on the map as icons or symbols |
-| IFTA_FR_03_04 | UI                   | Aircraft icons and leaders            | Icons and leaders indicating the direction of movement of the aircraft must be visually displayed on the map |
-| IFTA_FR_03_05 | UI                   | Area polygons                         | The system shall display polygons and show only aircraft that are within the defined waypoints on the map |
+| IFTA_FR_03_02 | UI                   | Improved UI/UX                        | Icon categorization by aircraft typel |
+| IFTA_FR_03_03 | UI                   | Improved UI/UX                        | Configure icon colors for each map to improve visual clarity |
+| IFTA_FR_03_04 | UI                   | Updated Map tiles                     | The system shall(may) adjust resolution by zoom-in / zoom-out. |
+| IFTA_FR_03_05 | UI                   | Airport plotting                      | The system shall display major airports (according to IATA/ICAO standards) on the map as icons or symbols |
+| IFTA_FR_03_06 | UI                   | Aircraft icons and leaders            | Icons and leaders indicating the direction of movement of the aircraft must be visually displayed on the map |
+| IFTA_FR_03_07 | UI                   | Area polygons                         | The system shall display polygons and show only aircraft that are within the defined waypoints on the map |
 | IFTA_FR_04_01 | Safety Analysis      | Collision avoidance                   | The system must detect two aircraft within 1 nm (nautical mile) or within 5 nm from the airport |
 | IFTA_FR_04_02 | Safety Analysis      | Route comparison                      | The system must display the current ADS-B / SBS position and predefined flight plan path of the selected plane. |
 | IFTA_FR_04_03 | Safety Analysis      | Flight profile normaly detection      | The system should be able to detect any deviation from the normal flight trajectory (wrong airport approach, reverse flight, unregistered flight) by analyzing the aircraft's path, direction, speed and destination |
