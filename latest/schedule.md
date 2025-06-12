@@ -88,7 +88,14 @@ Assigned to Youngtae
 - The system should be able to detect any deviation from the normal flight trajectory (wrong airport approach, reverse flight, unregistered flight) by analyzing the aircraft's path, direction, speed and destination
 - The system must compare the flight plan route with the real-time route to detect whether the flight is more than 5 nm off the route
 
+#### Detailed Schedule
 
+- 6/9 ~ 6/13 : Analysis current code
+- 6/14 ~ 6/16 : Development - Detecting the aircraft within 5 nm from the airport
+- 6/17 ~ 6/18 : Development - Detecting two aircraft within 1nm 
+- 6/19 : Check feasibility - Get predefined flight plan
+- 6/20 ~ 6/23 : Developement - Detecting abnormal flight and deviation
+- 6/24 ~ 6/26 : Discuss how to display the detected flight
 
 ## Time series analysis 2
 
