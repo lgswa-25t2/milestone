@@ -20,10 +20,10 @@ Derived from features in Project Description documents.
 | IFTA_FR_03_02 | UI                   | Updated Map tiles                     | The system must load high resolution and user selected map tiles |
 | IFTA_FR_03_03 | UI                   | Airport plotting                      | It should be possible to display major airports (according to IATA/ICAO standards) on the map as icons or symbols |
 | IFTA_FR_03_04 | UI                   | Aircraft icons and leaders            | Icons and leaders indicating the direction of movement of the aircraft must be visually displayed on the map |
-| IFTA_FR_04_01 | Safety Analysis      | Collision avoidance                   | The system must detect aircraft in real time within certain distance and altitude criteria |
-| IFTA_FR_04_02 | Safety Analysis      | Route comparison                      | The system must be able to receive actual ADS-B / SBS position data from each aircraft and compare it to a predefined flight plan path. |
-| IFTA_FR_04_03 | Safety Analysis      | Flight profile normaly detection      | The system should be able to detect any deviation from the normal flight trajectory (e.g. wrong airport approach, reverse flight, etc) by analyzing the aircraft's path, direction, speed and destination |
-| IFTA_FR_04_04 | Safety Analysis      | Flight plan deviation analysis        | The system must compare the flight plan path with the real-time path to assess whether the flight is deviating from the path |
+| IFTA_FR_04_01 | Safety Analysis      | Collision avoidance                   | The system must detect two aircraft within 1 nm (nautical mile) or within 5 nm from the airport |
+| IFTA_FR_04_02 | Safety Analysis      | Route comparison                      | The system must display the current ADS-B / SBS position and predefined flight plan path of the selected plane. |
+| IFTA_FR_04_03 | Safety Analysis      | Flight profile normaly detection      | The system should be able to detect any deviation from the normal flight trajectory (wrong airport approach, reverse flight, unregistered flight) by analyzing the aircraft's path, direction, speed and destination |
+| IFTA_FR_04_04 | Safety Analysis      | Flight plan deviation analysis        | The system must compare the flight plan route with the real-time route to detect whether the flight is more than 5 nm off the route |
 | IFTA_FR_05_01 | Record & Playback    | Record                                | The system can write aircraft's data to local or external file. (BigQuery) |
 | IFTA_FR_05_02 | Record & Playback    | Playback                              | The system can read SBS records from local, and the recorded aircraft position data is displayed in UI. |
 
