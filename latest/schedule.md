@@ -106,7 +106,8 @@ Assigned to Sangyeob.
 - While receiving and recording data, play back tracks (playback at 2x at 3x speed) by moving a mouse cursor
 - Track simulation
 - Dead reckoning - plot tracks now or where they should be based upon constant velocity and altitude (parametric fit)
-
+#### Detailed Schedule
+TBD
 
 
 ## Performance & Resiliency
