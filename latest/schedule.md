@@ -99,7 +99,7 @@ Assigned to Youngtae
 
 ## Time series analysis 2
 
-TBD
+Assigned to Sangyeob.
 
 #### Description
 
