@@ -62,18 +62,20 @@ Assigned to Sujin.
 
 - 6/9 ~ 6/10 : Analysis current code
 - 6/11 : Describe detailed requirements
-- 6/12 ~ 6/15 : Update map tiles
+- 6/11 ~ 6/12 : configure air-craft Icon
+  - IFTA_FR_03_02 Icon categorization by aircraft type
+  - IFTA_FR_03_03 Configure icon colors for each map to improve visual clarity
+- 6/12 ~ 6/13 : IFTA_FR_03_04(1/2) Update map tiles
   - optimized TileManager
   - improve tile caching mechanism
-- 6/16 ~ 6/18 : Plot airports data
-- 6/19 ~ 6/23 : Improvement UI layout
-  - refactoring `DisplayGUI.cpp`
-  - applying better UI components design
-  - Color / Icon update
-- 6/23 ~ 6/27 : Improve Aircraft Icon
-  - Dynamic icon resizing (based on zoom level)
-  - Icon categorization by aircraft type
-  - Improved leader line styling
+- 6/13 ~ 6/15 : IFTA_FR_03_05Plot airports data
+- 6/16 ~ 6/17 : IFTA_FR_03_01	Improvement UI layout
+  - Re-organize information and button
+  - modify font, alignment, checkbox, button in right panel
+- 6/18 ~ 6/19 : IFTA_FR_03_07 display polygons and show only aircraft that are within the defined waypoints on the map
+- 6/20 ~ 6/21 : IFTA_FR_03_06 Icons and leaders indicating the direction of movement of the aircraft must be visually displayed on the map
+- 6/22 ~ 6/23 : IFTA_FR_03_04(2/2) Update map tiles
+  - adjust resolution by zoom-in / zoom-out
 
 ## Safety and Deviation Analysis
 
