@@ -79,13 +79,16 @@ Assigned to Sujin.
 
 ## Safety and Deviation Analysis
 
-TBD
+Assigned to Youngtae
 
 #### Description
 
-- Compare contrast a flight's SBS or ADS-B data with planned route
-- Analyze aircraft flight profile for anomalies (e.g. flying to the wrong airport)
-- Is the flight deviating from the flight plan?
+- The system must detect two aircraft within 1 nm (nautical mile) or within 5 nm from the airport
+- The system must display the current ADS-B / SBS position and predefined flight plan path of the selected plane
+- The system should be able to detect any deviation from the normal flight trajectory (wrong airport approach, reverse flight, unregistered flight) by analyzing the aircraft's path, direction, speed and destination
+- The system must compare the flight plan route with the real-time route to detect whether the flight is more than 5 nm off the route
+
+
 
 ## Time series analysis 2
 
