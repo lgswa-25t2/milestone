@@ -68,13 +68,13 @@ Assigned to Sujin.
 - 6/12 ~ 6/13 : IFTA_FR_03_04(1/2) Update map tiles
   - optimized TileManager
   - improve tile caching mechanism
-- 6/13 ~ 6/15 : IFTA_FR_03_05Plot airports data
+- 6/13 ~ 6/15 : IFTA_FR_03_05 Plot airports data
 - 6/16 ~ 6/17 : IFTA_FR_03_01	Improvement UI layout
   - Re-organize information and button
   - modify font, alignment, checkbox, button in right panel
-- 6/18 ~ 6/19 : IFTA_FR_03_07 display polygons and show only aircraft that are within the defined waypoints on the map
-- 6/20 ~ 6/21 : IFTA_FR_03_06 Icons and leaders indicating the direction of movement of the aircraft must be visually displayed on the map
-- 6/22 ~ 6/23 : IFTA_FR_03_04(2/2) Update map tiles
+- 6/18 ~ 6/20 : IFTA_FR_03_07 display polygons and show only aircraft that are within the defined waypoints on the map
+- 6/22 ~ 6/24 : IFTA_FR_03_06 Icons and leaders indicating the direction of movement of the aircraft must be visually displayed on the map
+- 6/24 ~ 6/28 : IFTA_FR_03_04(2/2) Update map tiles
   - adjust resolution by zoom-in / zoom-out
 
 ## Safety and Deviation Analysis
