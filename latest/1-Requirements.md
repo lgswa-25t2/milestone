@@ -14,7 +14,7 @@ Derived from features in Project Description documents.
 | IFTA_FR_02_01 | Time series Analysis | Flight history tracking               | Saves the location and time information of the airplane in order and displays the data on the screen in an appropriate way |
 | IFTA_FR_02_02 | Time series Analysis | Know age of track                     | After receiving the flight information, we check the validity of the data and delete it if it is determined to be invalid |
 | IFTA_FR_02_03 | Time series Analysis | Track playback                        | The system shall be capable of recording received aircraft track data and replaying it at 1x, 2x or 3x speed for selected flights or time ranges |
-| IFTA_FR_02_04 | Time series Analysis | Track simulation                      | The system shall be able to perform traffic simulations based on track data from past time periods |
+| IFTA_FR_02_04 | Time series Analysis | Track simulation                      | The system shall be able to perform track simulation based on track history |
 | IFTA_FR_02_05 | Time series Analysis | Dead reckoning                        | The system use the aircraft's current speed, heading and altitude, based on real-time or historical data, to predict its future position and display it on a map |
 | IFTA_FR_03_01 | UI                   | Improved UI/UX                        | The systam shll better ux: Re-organize information and buttons & modify font, alignment, checkbox, button in right panel |
 | IFTA_FR_03_02 | UI                   | Improved UI/UX                        | Icon categorization by aircraft typel                        |
