@@ -1,3 +1,5 @@
+## Part 1
+
 - What is the desired round-trip time to fetch aircraft and route metadata information?
 
   - Assuming this question refers to active aircraft tracks, the time round trip time must be less than 1 second. However, Solvit, Inc will be looking at which team can attain the fastest time.
@@ -189,3 +191,27 @@
 - 부하 하에서 시스템 동작을 평가하기 위해 평가 중에 사용될 정의된 정량적 성능 표준 또는 스트레스 테스트 시나리오가 있습니까?
 
   좋은 질문입니다. 최종 데모의 세부 사항이 마무리되고 있습니다. 게시된 최종 데모 기준이 이 질문에 답할 것입니다. 6월 중순에 채점 기준과 최종 데모 지침이 게시될 것으로 예상합니다.
+
+
+
+
+
+## Part 2
+
+- Page 18 of project description mentions "Lookup aircraft information", may we know does it mean the feature that displays the information such as ICAO on the side bar when we choose an aircraft?
+  - When you run the application, two windows open up. One is the main user interface, and one looks like a terminal or command prompt window. When you hook a track, the terminal / command prompt window shows a lot of information about the aircraft, such as aircraft model, aircraft owner, and more. Use this information as the “aircraft information”.
+
+- Among the mandatory features on page 9, there is a track history which should be dropped after 30 seconds. It seems that one is different from the recording feature (dumps to file). Please let us know if our understanding is not correct.
+  - The feature is asking the teams to track the duration of time between ADS-B / SBS messages for each track. For example, which tracks have not received a recent message greater than 5 sec, 10 sec, etc. Any track that has not been updated longer than 30 seconds should be removed from the user interface display.
+
+- May I ask is there any specific reason that SolveIt decides the duration of track history as 30 seconds? (page 9 Prj description)
+  - 30 seconds was based upon an assumption that there are no longer ADS-B receivers to provide information (e.g., over the ocean) or the aircraft has landed. Maintaining the track on the map display no longer provides useful information. Teams are welcome to conduct analysis and modify the 30 second requirement if the evidence supports their change.
+
+- To limit the amount of work & increase the success rate of this project, we assume that the maximum number of aircrafts is 10,000, what do you think of that decision?
+  - Concur. Solvit generally observes between 6000-8000 tracks, so this provides a good margin for any anomalies in high track observations.
+
+- We're not sure what kind of modifications are expected for the "leaders" mentioned in the "Enhancements to User Interface." (page 10)
+  - Leaders are the velocity vectors. These are the lines that extend beyond the nose of the aircraft track.
+
+- How many man-days do you expect it would take to add a new map provider?
+  - The answer is it depends on several factors, such as experience and library / tool use. Recommend looking at provided code to see how Solvit implemented the existing map data. Recommend the teams plan 1-3 days to complete this requirement. If after a genuine 3 days of effort and your team is still challenged with adding map data, please contact Solvit Inc.

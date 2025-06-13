@@ -2,26 +2,12 @@
 
 This is a repository for milestones' documents.
 
-## M1
+The folder ***latest*** is the most recent documents. Each milestone (m1, m2, m3) point copies the contents of the ***latest*** folder at that point to the ***m1***, ***m2***, ***m3*** folders and creates a tag.
 
-Due to 6/10 (Tue)
 
-**Requirements, project plan, plan for experimentation, and risks**
 
-For the first milestone the team will turn in the prioritized architectural drivers, any draft design decisions they are considering, the technical risks identified, and the experimentation plans (or any results already achieved).
+## Due data
 
-## M2
-
-Due to  6/23 (Mon)
-
-**Experimentation results, design, plan for construction**
-
-The team will turn in the results of experiments conducted, a design description with different architecture views, and the plan for construction.
-
-## M3
-
-Due to 7/2 (Wed)
-
-**Demo and lessons learned**
-
-For the final milestone, the team will demo the completed system, and present the lessons learned.
+- M1 : 6/10 (Tue) - [Link](./m1)
+- M2 : 6/23 (Mon)
+- M3 : 7/2 (Wed)
