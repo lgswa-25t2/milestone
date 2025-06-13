@@ -2,6 +2,8 @@
 
 This document outlines all the factors that affect system architecture, defining key QA elements and providing a basis for design decisions.
 
+
+
 ## Stakeholders
 
 | Role          | Name                    | Concerns                     |
@@ -12,130 +14,135 @@ This document outlines all the factors that affect system architecture, defining
 
 
 
-## Requirements
+## Functional Requirements
 
-Please refer to [Requirements](./1-Requirements.md).
+Derived from features in Project Description documents.
 
-
-
-## Constraints
-
-- Business Constraints
-  - 7 people in the development
-  - 5 weeks development period
-  - In addition to development, demo and presentation preparation are required.
-
-- Technical Constraints
-  - Use C++ for development
-  - Since this is a Windows application using VCL (Visual Component Library), the IDE is set to RAD Studio.
-  - DB must use Google BigQuery.
-  - An antenna is Raspberry Pi 5.
-
-
-
-
-## Define Quality Attributes
-
-The Quality Attributes selected based on the [Quality attribute requirements](./1-Requirements.md#quality-attribute-requirements) are as follows.
-
-| ID          | Summary of Scenario                                          | QA Type         | Req. ID      |
-| ----------- | ------------------------------------------------------------ | --------------- | ------------ |
-| QA_001_01 | UI responds immediately to user interaction when click air-craft  | Performance     | QAR_001 |
-| QA_001_02 | UI responds immediately to user interaction during operating menu or control panel  | Performance     | QAR_001 |
-| QA_002_01 | The system detects network failure     | Resiliency      | QAR_002 |
-| QA_002_02 | The system detects disconnection of USB antenna in raspberry pi | Resiliency | QAR_002 |
-| QA_003 | The system shall allow developers to add a deviation detection feature | Extensibility   | QAR_003 |
-| QA_004 | The system shall allow developers to add new aircraft identification modules | Extensibility   | QAR_004 |
-| QA_005 | The system shall allow developers to integrate a new map provider into the user interface with minimal code changes, low risk of introducing bugs, and without affecting unrelated parts of the system | Modifiability   | QAR_005 |
+| ID       | Group                | Brief                                 | Description                                                  |
+| -------- | -------------------- | ------------------------------------- | ------------------------------------------------------------ |
+| FR_01_01 | Metadata             | Aircraft information lookup           | The system shall be able to retrieve aircraft information (e.g., airline, aircraft type etc.) in real time based on ICAO address |
+| FR_01_02 | Metadata             | Route information lookup              | The system shall be able to query and display flight route data (e.g., airways, waypoints etc) |
+| FR_01_03 | Metadata             | Origin and Destination identification | The system shall be able to identify and provide to the user the origin and destination information (e.g. Departure/Destination Airport Codes) of each aircraft |
+| FR_02_01 | Time series Analysis | Flight history tracking               | Saves the location and time information of the airplane in order and displays the data on the screen in an appropriate way |
+| FR_02_02 | Time series Analysis | Know age of track                     | After receiving the flight information, we check the validity of the data and delete it if it is determined to be invalid |
+| FR_02_03 | Time series Analysis | Track playback                        | The system shall be capable of recording received aircraft track data and replaying it at 1x, 2x or 3x speed for selected flights or time ranges |
+| FR_02_04 | Time series Analysis | Track simulation                      | The system shall be able to perform flight simulation with arrival destination information |
+| FR_02_05 | Time series Analysis | Dead reckoning                        | If real-time data is temporarily interrupted or delayed, estimate the aircraft's current position based on the last position, speed and altitude and display it on a map |
+| FR_03_01 | UI                   | Improved UI/UX                        | The systam shall support better UX : Re-organize information and buttons & modify font, alignment, checkbox, button in right panel |
+| FR_03_02 | UI                   | Improved UI/UX                        | Icon categorization by aircraft typel                        |
+| FR_03_03 | UI                   | Improved UI/UX                        | Configure icon colors for each map to improve visual clarity |
+| FR_03_04 | UI                   | Updated Map tiles                     | The system shall(may) adjust resolution by zoom-in / zoom-out. |
+| FR_03_05 | UI                   | Airport plotting                      | The system shall display major airports (according to IATA/ICAO standards) on the map as icons or symbols |
+| FR_03_06 | UI                   | Aircraft icons and leaders            | Icons and leaders indicating the direction of movement of the aircraft must be visually displayed on the map |
+| FR_03_07 | UI                   | Area polygons                         | The system shall display polygons and show only aircraft that are within the defined waypoints on the map |
+| FR_04_01 | Safety Analysis      | Collision avoidance                   | The system must detect two aircraft within 1 nm (nautical mile) or within 5 nm from the airport |
+| FR_04_02 | Safety Analysis      | Route comparison                      | The system must display the current ADS-B / SBS position and predefined flight plan path of the selected plane |
+| FR_04_03 | Safety Analysis      | Flight profile normaly detection      | The system should be able to detect any deviation from the normal flight trajectory (wrong airport approach, reverse flight, unregistered flight) by analyzing the aircraft's path, direction, speed and destination |
+| FR_04_04 | Safety Analysis      | Flight plan deviation analysis        | The system must compare the flight plan route with the real-time route to detect whether the flight is more than 5 nm off the route |
+| FR_05_01 | Record & Playback    | Record                                | The system can write aircraft's data to local or external file. (BigQuery) |
+| FR_05_02 | Record & Playback    | Playback                              | The system can read SBS records from local, and the recorded aircraft position data is displayed in UI. |
 
 
 
-## Quality Attribute scenarios
 
-Quality attribute scenarios were written for each requirement of the defined QA list.
+## Quality Attributes Requirements
 
-### QA_001_01
+Derived from Section. *System and Software Quality Attributes* & Section. *Demo Scoring* in project description. Each item can be added or changed and can be specified through discussion with sponsor.
+
+| ID          | Summary of Scenario                                          | QA Type         |
+| ----------- | ------------------------------------------------------------ | --------------- |
+| QAR_001_01 | UI responds immediately to user interaction when click air-craft and the UI is operating with raw connect mode or SBS connect mode | Performance     |
+| QAR_001_02 | When the UI is operating with raw connect mode or SBS connect mode, it immediately responds to user interaction by manipulating the menu or control panel. | Performance     |
+| QAR_002_01 | The system detects network failure when the UI is operating with SBS connect mode | Resiliency      |
+| QAR_002_02 | The system detects disconnection of USB antenna in raspberry pi when the UI is operating with SBS connect mode | Resiliency |
+| QAR_003 | The system shall allow developers to add a deviation detection feature | Extensibility   |
+| QAR_004 | The system shall allow developers to add new aircraft identification modules | Extensibility   |
+| QAR_005 | The system shall allow developers to integrate a new map provider into the user interface with minimal code changes, low risk of introducing bugs, and without affecting unrelated parts of the system | Modifiability   |
+
+### Priority
+
+- **Business importance** - The score assigned in the demo scoring was H if it was 30 points, M if it was 20 points, and L if it was 10 points or less.
+- **Technical Risk** - Since all members are developers, we wrote subjectively based on our own development experience.
+
+| ID      | Scenario                                                     | Type          | Business Importance | Technical Risk |
+| ------- | ------------------------------------------------------------ | ------------- | ------------------- | -------------- |
+| QAR_1_1 | UI responds immediately to user interaction when click air-craft and the UI is operating with raw connect mode or SBS connect mode | Performance   | H                   | H              |
+| QAR_1_2 | When the UI is operating with raw connect mode or SBS connect mode, it immediately responds to user interaction by manipulating the menu or control panel. | Performance   | H                   | H              |
+| QAR_2_1 | The system detects network failure when the UI is operating with SBS connect mode | Resiliency    | H                   | M              |
+| QAR_2_2 | The system detects disconnection of USB antenna in raspberry pi when the UI is operating with SBS connect mode | Resiliency    | H                   | M              |
+| QAR_3   | The system shall allow developers to add a deviation detection feature | Extensibility | H                   | H              |
+| QAR_4   | The system shall allow developers to add new aircraft identification modules | Extensibility | H                   | M              |
+| QAR_5   | The system shall allow developers to integrate a new map provider into the user interface with minimal code changes, low risk of introducing bugs, and without affecting unrelated parts of the system | Modifiability | M                   | H              |
+
+### Six parts of each scenarios
+
+#### QA_001_01
 
 - Source - User
 - Stimulus - right click air-craft in user interface
 - Artifact - Remote User Interface (RUI)
-- Environment - Normal mode, The system is tracking 5000 aircrafts simultaneously
+- Environment - Normal raw connect or SBS connect mode, The system is tracking 5000 aircrafts simultaneously
 - Response - Analytical feature are displayed promptly
-- Response Measure
-  - Analytical feature display latency up to 1 second after user action
+- Response Measure - Analytical feature display latency up to 1 second after user action
 
 **Related approach** : refer to [Approach 01](./approachs/approach01.md)
 
-### QA_001_02
+#### QA_001_02
 
 - Source - User
 - Stimulus - Toggle Display Map checkbox in user interface
 - Artifact - Remote User Interface (RUI)
-- Environment - Normal mode, The system is tracking 5000 aircrafts simultaneously
+- Environment - Normal raw connect or SBS connect mode, The system is tracking 5000 aircrafts simultaneously
 - Response - UI responds to user interaction
-- Response Measure
-  - Map toggle interaction response ≤ 150 (TBD) milliseconds
+- Response Measure - Map toggle interaction response ≤ 150 (TBD) milliseconds
 
 **Related approach** : refer to [Approach 01](./approachs/approach01.md)
 
-
-### QA_002_01
+#### QA_002_01
 
 - Source - User
 - Stimulus - turn off system wifi
 - Artifact - System
-- Environment - Normal mode, the system is tracking ADS-B datasets
-- Response
-  - System detects network failure and notifies the user
-- Response Measure
-  - System detects disconnection within 1 second and notifies the user within 1 second
+- Environment - Normal SBS connect mode, the system is tracking ADS-B datasets
+- Response - System detects network failure and notifies the user
+- Response Measure - System detects disconnection within 1 second and notifies the user within 1 second
 
 **Related approach** : refer to [Approach 02](./approachs/approach02.md)
 
-### QA_002_02
+#### QA_002_02
 
 - Source - User
 - Stimulus - disconnect USB cable during runtime
 - Artifact - System
-- Environment - Normal mode, the system is tracking ADS-B datasets
-- Response
-  - System detects failure conditions (e.g., disconnection) and notifies the user
-- Response Measure
-  - System detects disconnection within 1 second and notifies the user within 1 second
+- Environment - Normal SBS connect mode, the system is tracking ADS-B datasets
+- Response - System detects failure conditions (e.g., disconnection) and notifies the user
+- Response Measure - System detects disconnection within 1 second and notifies the user within 1 second
 
 **Related approach** : refer to [Approach 02](./approachs/approach02.md)
 
-### QA_003
+#### QA_003
 
 - Source - Solvit or Project leader
 - Stimulus - A requirement is raised to add a feature that detects deviations from registered flight paths
 - Artifact - Flight data analysis module and user interface
 - Environment - During normal development
-- Response
-  - The new functionality is integrated
-- Response Measure
-  - Feature is deployed within 3 person days without regressions in existing functionality
+- Response - The new functionality is integrated
+- Response Measure - Feature is deployed within 3 person days without regressions in existing functionality
 
 **Related approach** : refer to [Approach 03](./approachs/approach03.md)
 
-
-
-### QA_004
+#### QA_004
 
 - Source - Solvit or Project leader
 - Stimulus - A requirement is raised to add a feature for identifying unregistered aircraft
 - Artifact - Aircraft identification database, real-time traffic analysis module, UI display components
 - Environment - During normal development
-- Response
-  - Unregistered aircraft are visually flagged in the UI and recorded in system logs
-- Response Measure
-  - Implemented and tested within 3 person days
+- Response - Unregistered aircraft are visually flagged in the UI and recorded in system logs
+- Response Measure - Implemented and tested within 3 person days
 
 **Related approach** : refer to [Approach 04](./approachs/approach04.md)
 
-
-
-### QA_005
+#### QA_005
 
 - Source - Developer
 - Stimulus - Add a new map provider to the system
@@ -145,24 +152,6 @@ Quality attribute scenarios were written for each requirement of the defined QA 
 - Response Measure - Integration completed in under 4 person-hours, no unintended side effects observed
 
 **Related approach** : refer to [Approach 05](./approachs/approach05.md)
-
-
-
-## QA priority
-
-### Utility tree
-
-- **Business importance** - The score assigned in the demo scoring was H if it was 30 points, M if it was 20 points, and L if it was 10 points or less.
-- **Technical Risk** - Since all members are developers, we wrote subjectively based on our own development experience.
-
-| ID   | Scenario                                                     | Type          | Business Importance | Technical Risk |
-| ---- | ------------------------------------------------------------ | ------------- | ------------------- | -------------- |
-| 1_1  | UI responds immediately to user interaction when click air-craft | Performance   | H                   | H              |
-| 1_2  | UI responds immediately to user interaction during operating menu or control panel | Performance   | H                   | H              |
-| 2    | The system detects/restores failure conditions               | Resiliency    | H                   | M              |
-| 3    | The system shall allow developers to add a deviation detection feature | Extensibility | H                   | H              |
-| 4    | The system shall allow developers to add new aircraft identification modules | Extensibility | H                   | M              |
-| 5    | The system should allow developers to integrate a new map provider into the user interface with minimal code changes, low risk of introducing bugs, and without affecting unrelated parts of the system | Modifiability | M                   | H              |
 
 ### Potential Quality Attribute Trade-offs
 
@@ -181,20 +170,23 @@ Based on the defined Quality Attributes (QAs), the following trade-offs may aris
 - To improve performance, techniques such as caching, multithreading, and data prefetching can be applied. However, these techniques often introduce **state** into the system or cause **race conditions**, making the system harder to understand and modify.
 
 **Decision**
+
 - In case of conflict between performance and extensibility, we prioritized performance for core real-time features while isolating extension modules to minimize impact.
 
 #### 2. Performance vs. Resiliency
 
 **QAs Involved**  
 
-- `QA_001` (Performance)  
+- `QA_001` (Performance)
 - `QA_002`: *Detects and recovers from failure conditions* (Resiliency)
 
 **Potential Conflict**  
-- Adding frequent monitoring (e.g., heartbeat checks, retry loops) can introduce extra system load, potentially impacting real-time responsiveness.  
+
+- Adding frequent monitoring (e.g., heartbeat checks, retry loops) can introduce extra system load, potentially impacting real-time responsiveness.
 - Balancing proactive failure detection with minimal overhead is essential.
 
 **Decision**
+
 - We prioritized performance for time-critical UI interactions, while applying lightweight monitoring mechanisms to minimize overhead.
 
 ### Summary Table
@@ -208,3 +200,17 @@ Based on the defined Quality Attributes (QAs), the following trade-offs may aris
 ## Risk assessment
 
 Please refer to [Risk Assessment](./3-RiskAssessment.md)
+
+
+## Constraints
+
+- Business Constraints
+  - 7 people in the development
+  - 5 weeks development period
+  - In addition to development, demo and presentation preparation are required.
+
+- Technical Constraints
+  - Use C++ for development
+  - Since this is a Windows application using VCL (Visual Component Library), the IDE is set to RAD Studio.
+  - DB must use Google BigQuery.
+  - An antenna is Raspberry Pi 5.

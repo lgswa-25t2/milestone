@@ -4,6 +4,8 @@ This document presents the project's name, purpose, schedule, members, list of t
 
 It may be updated as the project progresses.
 
+
+
 ## Project Overview
 
 - **Project Name** : Intelligent Flight Tracking Assistance - IFTA
@@ -14,9 +16,48 @@ It may be updated as the project progresses.
 
 
 
+## Project Tasks
+
+### 1. Planning & Setup
+
+- [x] Read project description carefully
+- [x] Configure Miro board and GitHub organization
+- [x] Divide roles
+
+### 2. Architecture
+
+- [x] Derive functional requirements and quality attribute requirements
+- [x] Make architectural drivers
+- [ ] Create each view diagram (This item will be updated in detail after class.)
+
+### 3. Technical Experiments
+
+- [ ] Evaluate performance of original codes according to the number of aircrafts
+- [ ] Analyze real-time aircraft data ingestion rate and volume via ADS-B hub
+- [ ] UI input stress test (System Behavior Under Rapid Button Clicks)
+- [ ] Test for reducing risk - Refer to [risk assessments](./3-RiskAssessment.md)
+
+### 4. Services Development
+
+Since there are many items to be implemented, the detailed status of each is updated on the [schedule.md](./schedule.md).
+
+- [ ] Analyze current code and requirements
+- [ ] Make experiments for design decisions
+- [ ] Describe detailed scenarios
+- [ ] Development of each features - refer to Miro board.
+
+### 5. Quality Assurance & Release
+
+- [x] Make deliverables for Milestone 1
+- [ ] Make deliverables for Milestone 2
+- [ ] Integration tests
+- [ ] Release final documents and presentation
+
+
+
 ## Timeline & Milestones
 
-Below is a summary schedule and you need to refer to the task list. Some items may be added or changed. For each detailed information, please refer to [Schedule](./schedule.md).
+Below is a summary schedule. Some items may be added or changed. For each detailed information, please refer to [Schedule](./schedule.md).
 
 | **Phase**                            | **Duration** | **Key Deliverables**      |  **Key Activities**    |
 | ------------------------------------ | ------------ | ------------------------- |------------------------|
@@ -39,7 +80,7 @@ Below is a summary schedule and you need to refer to the task list. Some items m
 
 ## Team Roles
 
-Below is a summary and you need to refer to the task list. Some changes may apply.
+Below is a summary and you need to refer to the task list. Some changes may apply. For detailed work related to each member's role, please refer to [Schedule](./schedule.md).
 
 | Role               | Name          | Responsibility                                               |
 | ------------------ | ------------- | ------------------------------------------------------------ |
@@ -50,45 +91,6 @@ Below is a summary and you need to refer to the task list. Some changes may appl
 | Software Developer | Jaeyong Jeong | Design Overall Architecture, focused on experiment/impelement for *Response time & resiliency* |
 | Software Developer | Sangyeob Na   | Design Overall Architecture, implement functional requirment for *Time series analysis* |
 | Developer, DevOps  | Youngtae Kim  | Design Overall Architecture, Operation, Documentation, implement for *safety analysis* |
-
-
-
-## Tasks
-
-### 1. Planning & Setup
-
-- [x] Read project description carefully
-- [x] Configure Miro board and GitHub organization
-- [x] Divide roles
-
-### 2. Architecture
-
-- [x] Derive functional requirements and quality attribute requirements
-- [x] Make architectural drivers
-- [ ] Create each view diagram (This item will be updated in detail after class.)
-
-### 3. Services Development
-
-Since there are many items to be implemented, the detailed status of each is updated on the [schedule.md](./schedule.md).
-
-- [ ] Analyze current code and requirements
-- [ ] Make experiments for design decisions
-- [ ] Describe detailed scenarios
-- [ ] Development of each features - refer to Miro board.
-
-### 4. Technical Experiments
-
-- [ ] Evaluate performance of original codes according to the number of aircrafts
-- [ ] Analyze real-time aircraft data ingestion rate and volume via ADS-B hub
-- [ ] UI input stress test (System Behavior Under Rapid Button Clicks)
-- [ ] Test for reducing risk - Refer to [risk assessments](./3-RiskAssessment.md)
-
-### 5. Quality Assurance & Release
-
-- [x] Make deliverables for Milestone 1
-- [ ] Make deliverables for Milestone 2
-- [ ] Integration tests
-- [ ] Release final documents and presentation
 
 
 
