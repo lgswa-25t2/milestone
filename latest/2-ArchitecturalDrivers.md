@@ -40,13 +40,13 @@ The Quality Attributes selected based on the [Quality attribute requirements](./
 
 | ID          | Summary of Scenario                                          | QA Type         | Req. ID      |
 | ----------- | ------------------------------------------------------------ | --------------- | ------------ |
-| IFTA_QA_001_01 | UI responds immediately to user interaction when click air-craft  | Performance     | IFTA_QAR_001 |
-| IFTA_QA_001_02 | UI responds immediately to user interaction during operating menu or control panel  | Performance     | IFTA_QAR_001 |
-| IFTA_QA_002_01 | The system detects network failure     | Resiliency      | IFTA_QAR_002 |
-| IFTA_QA_002_02 | The system detects disconnection of USB antenna in raspberry pi | Resiliency | IFTA_QAR_002 |
-| IFTA_QA_003 | The system shall allow developers to add a deviation detection feature | Extensibility   | IFTA_QAR_003 |
-| IFTA_QA_004 | The system shall allow developers to add new aircraft identification modules | Extensibility   | IFTA_QAR_004 |
-| IFTA_QA_005 | The system shall allow developers to integrate a new map provider into the user interface with minimal code changes, low risk of introducing bugs, and without affecting unrelated parts of the system | Modifiability   | IFTA_QAR_005 |
+| QA_001_01 | UI responds immediately to user interaction when click air-craft  | Performance     | QAR_001 |
+| QA_001_02 | UI responds immediately to user interaction during operating menu or control panel  | Performance     | QAR_001 |
+| QA_002_01 | The system detects network failure     | Resiliency      | QAR_002 |
+| QA_002_02 | The system detects disconnection of USB antenna in raspberry pi | Resiliency | QAR_002 |
+| QA_003 | The system shall allow developers to add a deviation detection feature | Extensibility   | QAR_003 |
+| QA_004 | The system shall allow developers to add new aircraft identification modules | Extensibility   | QAR_004 |
+| QA_005 | The system shall allow developers to integrate a new map provider into the user interface with minimal code changes, low risk of introducing bugs, and without affecting unrelated parts of the system | Modifiability   | QAR_005 |
 
 
 
@@ -54,7 +54,7 @@ The Quality Attributes selected based on the [Quality attribute requirements](./
 
 Quality attribute scenarios were written for each requirement of the defined QA list.
 
-### IFTA_QA_001_01
+### QA_001_01
 
 - Source - User
 - Stimulus - right click air-craft in user interface
@@ -66,7 +66,7 @@ Quality attribute scenarios were written for each requirement of the defined QA 
 
 **Related approach** : refer to [Approach 01](./approachs/approach01.md)
 
-### IFTA_QA_001_02
+### QA_001_02
 
 - Source - User
 - Stimulus - Toggle Display Map checkbox in user interface
@@ -79,33 +79,33 @@ Quality attribute scenarios were written for each requirement of the defined QA 
 **Related approach** : refer to [Approach 01](./approachs/approach01.md)
 
 
-### IFTA_QA_002_01
+### QA_002_01
 
 - Source - User
 - Stimulus - turn off system wifi
 - Artifact - System
 - Environment - Normal mode, the system is tracking ADS-B datasets
 - Response
-  - System detects network failure
+  - System detects network failure and notifies the user
 - Response Measure
-  - System detects disconnection within 1 second
+  - System detects disconnection within 1 second and notifies the user within 1 second
 
 **Related approach** : refer to [Approach 02](./approachs/approach02.md)
 
-### IFTA_QA_002_02
+### QA_002_02
 
 - Source - User
 - Stimulus - disconnect USB cable during runtime
 - Artifact - System
 - Environment - Normal mode, the system is tracking ADS-B datasets
 - Response
-  - System detects failure conditions (e.g., disconnection)
+  - System detects failure conditions (e.g., disconnection) and notifies the user
 - Response Measure
-  - System detects disconnection within 1 second
+  - System detects disconnection within 1 second and notifies the user within 1 second
 
 **Related approach** : refer to [Approach 02](./approachs/approach02.md)
 
-### IFTA_QA_003
+### QA_003
 
 - Source - Solvit or Project leader
 - Stimulus - A requirement is raised to add a feature that detects deviations from registered flight paths
@@ -120,7 +120,7 @@ Quality attribute scenarios were written for each requirement of the defined QA 
 
 
 
-### IFTA_QA_004
+### QA_004
 
 - Source - Solvit or Project leader
 - Stimulus - A requirement is raised to add a feature for identifying unregistered aircraft
@@ -135,7 +135,7 @@ Quality attribute scenarios were written for each requirement of the defined QA 
 
 
 
-### IFTA_QA_005
+### QA_005
 
 - Source - Developer
 - Stimulus - Add a new map provider to the system
@@ -172,8 +172,8 @@ Based on the defined Quality Attributes (QAs), the following trade-offs may aris
 
 **QAs Involved**  
 
-- `IFTA_QA_001`: *UI responds immediately to user interaction* (Performance)  
-- `IFTA_QA_003 / 004 / 005`: *Ease of adding new features such as deviation detection, unregistered aircraft identification, and new map providers* (Extensibility / Modifiability)
+- `QA_001`: *UI responds immediately to user interaction* (Performance)  
+- `QA_003 / 004 / 005`: *Ease of adding new features such as deviation detection, unregistered aircraft identification, and new map providers* (Extensibility / Modifiability)
 
 **Potential Conflict**  
 
@@ -187,8 +187,8 @@ Based on the defined Quality Attributes (QAs), the following trade-offs may aris
 
 **QAs Involved**  
 
-- `IFTA_QA_001` (Performance)  
-- `IFTA_QA_002`: *Detects and recovers from failure conditions* (Resiliency)
+- `QA_001` (Performance)  
+- `QA_002`: *Detects and recovers from failure conditions* (Resiliency)
 
 **Potential Conflict**  
 - Adding frequent monitoring (e.g., heartbeat checks, retry loops) can introduce extra system load, potentially impacting real-time responsiveness.  

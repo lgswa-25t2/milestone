@@ -69,9 +69,7 @@ Below is a summary and you need to refer to the task list. Some changes may appl
 
 ### 3. Services Development
 
-Since there are many items to be implemented, the detailed status of each is updated on the [Miro Board](https://miro.com/app/board/uXjVIuV4obA=/?moveToWidget=3458764631066687663&cot=14).
-
-This miro board will be move to [schedule.md](./schedule.md)
+Since there are many items to be implemented, the detailed status of each is updated on the [schedule.md](./schedule.md).
 
 - [ ] Analyze current code and requirements
 - [ ] Make experiments for design decisions

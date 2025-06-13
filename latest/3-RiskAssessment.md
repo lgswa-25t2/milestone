@@ -22,10 +22,10 @@ Risk Level = L × I
 
 | ID   | Refrence    | Description | L    | I    | Risk Level |
 | ---- | ----------- | ----------- | ---- | ---- | ---------- |
-| TR_1 | IFTA_QA_001_01 | System may not be updated normally due to large volume of aircraft data is received by the ADS-B server in a short period of time. |   4   |  5   |   20     |
-| TR_2 | IFTA_QA_002 | We need to apply multi-thread in program, but the VCL framework is not thread-safe. If background threads directly access or modify UI components, it may result in application instability, race conditions, or unexpected crashes. |  3   |  1  |    3    |
-| TR_3 | IFTA_QA_002 | The Raspberry Pi can fail for various reasons (e.g. crash, out of memory), and it is unclear whether it provides the cause of failure depending on the situation. |  4   |  2   |     8       |
-| TR_4 | IFTA_QA_003 | UI, network, and data processing are tightly coupled, making it unclear where to insert the deviation detection logic.            |  4   |  4   |    16     |
+| TR_1 | QA_001_01 | System may not be updated normally due to large volume of aircraft data is received by the ADS-B server in a short period of time. |   4   |  5   |   20     |
+| TR_2 | QA_002 | We need to apply multi-thread in program, but the VCL framework is not thread-safe. If background threads directly access or modify UI components, it may result in application instability, race conditions, or unexpected crashes. |  3   |  1  |    3    |
+| TR_3 | QA_002 | The Raspberry Pi can fail for various reasons (e.g. crash, out of memory), and it is unclear whether it provides the cause of failure depending on the situation. |  4   |  2   |     8       |
+| TR_4 | QA_003 | UI, network, and data processing are tightly coupled, making it unclear where to insert the deviation detection logic.            |  4   |  4   |    16     |
 
 ### Prioritization, Mitigation, Experiments
 
