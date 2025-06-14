@@ -15,7 +15,7 @@ It may be updated as the project progresses.
 
 
 ## Project Shedule
-![image](../image/schedule0614.png)
+![image](../image/schedule.png)
 
 
 ### 🔹 Phase: Planning & Analyze Requirements (6/2–6/9)
