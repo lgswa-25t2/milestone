@@ -1,4 +1,4 @@
-# Experiment 7: TBD - about multi thread
+# Experiment 8: TBD - about BigQuery
 
 ## Results and recommendations
 

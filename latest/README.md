@@ -1,9 +1,15 @@
-# Latest documents - Under construction
+# IFTA SW architecture documents
 
-This is latest release of documents.
+The documents in this folder are constantly updated and periodically backed up to the archive folder.
 
-A tag is published and latest folder is copied to appropriate m`n` folder for each milestone.
+### Project Plan
 
-### tag
+The plan explains the outline of the project, members and roles, the task planned, and the milestones.
 
-v.1.0.0 - milestone 1 , refer to m1 folder
+[Link](./0-ProjectPlan.md)
+
+### Architectural Drivers
+
+This document describes all the factors that affect the system architecture, and provides risk assessment and experimental planning for the derived requirements.
+
+[Link](./2-ArchitecturalDrivers.md)
