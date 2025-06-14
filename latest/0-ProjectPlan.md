@@ -20,16 +20,21 @@ It may be updated as the project progresses.
 ### 🔹 Phase: Planning & Analyze Requirements (6/2–6/9)
 #### Understand requirements (Assigned: All)
 
-- 6/2–6/4: Understand requirements, identify stakeholders, define quality attributes  
-- 6/5–6/6: Derive functional and quality attribute requirements  
-- 6/7–6/9: Make architectural drivers
+- Understand requirements
+- identify stakeholders & constraints
+- define quality attributes   
 
+#### Derive functional and quality attribute requirements (Assigned: All)
+- Derive functional and quality attribute requirements
+- describe approach for each quality attributes
 
+#### Make architectural drivers (Assigned: All)
+- describe risk assessment
+- planning experiment for quality attributes
 
 ### 🟢 Milestone 1 (6/10)
 
 - Submit architectural drivers and requirement analysis
-
 
 
 ### 🔹 Phase: System Design & Experiments (6/10–6/22)
@@ -40,11 +45,10 @@ It may be updated as the project progresses.
 - 6/18–6/20: Run QA Experiment ③ – UI input stress test  
 - 6/18–6/20: Design Architecture (deployment view, key decisions, views)
 
-#### Create architecture models, design components (Assigned: Seungsoon, Jaeyoung)
--	6/18~6/19: A deployment view that shows the supporting infrastructure and high-level component allocation. 
+#### Create architecture models, design components (Assigned: All)
+-	6/18~6/19: A deployment view that shows the supporting infrastructure and high-level component allocation.
+-	6/20~6/21 : Draw Diagram for Module View, C&C View
 -	6/20~6/22: key design decisions reflected in the architecture views and how they address the high priority requirements.
-
-
 
 
 ### 🔹 Development – Mandatory Features (6/9~6/28)
