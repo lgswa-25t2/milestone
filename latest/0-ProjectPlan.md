@@ -4,7 +4,6 @@ This document presents the project's name, purpose, schedule, members, list of t
 
 It may be updated as the project progresses.
 
----
 
 ## Project Overview
 
@@ -14,9 +13,9 @@ It may be updated as the project progresses.
 
 - **Scope** : Windows based GUI application
 
----
+
 ## Project Shedule
-![image](https://github.com/user-attachments/assets/a4f609cd-c652-4cc5-ae1e-ef9967e00956)
+![image](../image/schedule0614.png)
 
 
 ### 🔹 Phase: Planning & Analyze Requirements (6/2–6/9)
@@ -153,7 +152,6 @@ Submit updated architecture
 
 #### presentation and demonstration
 
----
 
 ## Tools & Technologies
 
