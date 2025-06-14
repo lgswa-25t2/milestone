@@ -18,19 +18,19 @@ It may be updated as the project progresses.
 ## Project Shedule
 
 ### 🔹 Phase: Planning & Analyze Requirements (6/2–6/9)
-#### Understand requirements (Assigned: All) (6/2~6/4)
+#### Understand requirements (Assigned: All) 
 
-- Understand requirements
-- identify stakeholders & constraints
-- define quality attributes   
+- 6/2: Understand requirements
+- 6/3: identify stakeholders & constraints
+- 6/4: define quality attributes   
 
 #### Derive functional and quality attribute requirements (Assigned: All) (6/5~6/6)
-- Derive functional and quality attribute requirements
-- describe approach for each quality attributes
+- 6/5: Derive functional and quality attribute requirements
+- 6/6: describe approach for each quality attributes
 
 #### Make architectural drivers (Assigned: All) (6/7~6/9)
-- describe risk assessment
-- planning experiment for quality attributes
+- 6/7: describe risk assessment
+- 6/8~6/9: planning experiment for quality attributes
 
 ### 🟢 Milestone 1 (6/10)
 
