@@ -201,17 +201,49 @@
 - Page 18 of project description mentions "Lookup aircraft information", may we know does it mean the feature that displays the information such as ICAO on the side bar when we choose an aircraft?
   - When you run the application, two windows open up. One is the main user interface, and one looks like a terminal or command prompt window. When you hook a track, the terminal / command prompt window shows a lot of information about the aircraft, such as aircraft model, aircraft owner, and more. Use this information as the “aircraft information”.
 
+- 프로젝트 설명의 18페이지에 "항공기 정보 조회"가 언급되어 있는데, 우리가 항공기를 선택할 때 사이드바에 ICAO와 같은 정보를 표시하는 기능을 의미하는 것인지 알 수 있을까요?
+
+  - 응용 프로그램을 실행하면 두 개의 창이 열립니다. 하나는 기본 사용자 인터페이스이고 하나는 터미널 또는 명령 프롬프트 창처럼 보입니다. 트랙을 연결하면 터미널/명령 프롬프트 창에 항공기 모델, 항공기 소유자 등과 같은 항공기에 대한 많은 정보가 표시됩니다. 이 정보를 "항공기 정보"로 사용하십시오.
+
+
+
 - Among the mandatory features on page 9, there is a track history which should be dropped after 30 seconds. It seems that one is different from the recording feature (dumps to file). Please let us know if our understanding is not correct.
   - The feature is asking the teams to track the duration of time between ADS-B / SBS messages for each track. For example, which tracks have not received a recent message greater than 5 sec, 10 sec, etc. Any track that has not been updated longer than 30 seconds should be removed from the user interface display.
+
+- 9페이지의 필수 기능 중에는 30초 후에 삭제되어야 하는 트랙 기록이 있습니다. 하나는 녹음 기능(파일로 덤프)과 다른 것 같습니다. 우리의 이해가 정확하지 않다면 저희에게 알려주세요.
+  - 이 기능은 팀에게 각 트랙에 대한 ADS-B/SBS 메시지 간의 시간을 추적하도록 요청하고 있습니다. 예를 들어, 어떤 트랙이 5초, 10초 이상의 최근 메시지를 받지 않았는가? 30초 이상 업데이트되지 않은 트랙은 사용자 인터페이스 디스플레이에서 제거해야 합니다.
+
+
 
 - May I ask is there any specific reason that SolveIt decides the duration of track history as 30 seconds? (page 9 Prj description)
   - 30 seconds was based upon an assumption that there are no longer ADS-B receivers to provide information (e.g., over the ocean) or the aircraft has landed. Maintaining the track on the map display no longer provides useful information. Teams are welcome to conduct analysis and modify the 30 second requirement if the evidence supports their change.
 
+- SolveIt이 트랙 기록의 지속 시간을 30초로 결정하는 특별한 이유가 있는지 여쭤봐도 될까요? (페이지 9 Prj 설명)
+
+  - 30초는 더 이상 정보를 제공할 ADS-B 수신기가 없거나(예: 바다 위) 항공기가 착륙했다는 가정에 근거했다. 지도 디스플레이에서 트랙을 유지하는 것은 더 이상 유용한 정보를 제공하지 않습니다. 팀은 분석을 수행하고 증거가 변경 사항을 뒷받침하는 경우 30초 요구 사항을 수정할 수 있습니다.
+
+
+
 - To limit the amount of work & increase the success rate of this project, we assume that the maximum number of aircrafts is 10,000, what do you think of that decision?
   - Concur. Solvit generally observes between 6000-8000 tracks, so this provides a good margin for any anomalies in high track observations.
+
+- 작업량을 제한하고 이 프로젝트의 성공률을 높이기 위해, 우리는 항공기의 최대 수가 10,000대라고 가정합니다. 그 결정에 대해 어떻게 생각하세요?
+
+  - 동의해. Solvit은 일반적으로 6000-8000 트랙 사이를 관찰하므로, 이는 높은 트랙 관측에서 모든 이상에 대한 좋은 마진을 제공합니다.
+
+
 
 - We're not sure what kind of modifications are expected for the "leaders" mentioned in the "Enhancements to User Interface." (page 10)
   - Leaders are the velocity vectors. These are the lines that extend beyond the nose of the aircraft track.
 
+- "사용자 인터페이스에 대한 향상"에 언급된 "리더"에 대해 어떤 종류의 수정이 예상되는지 확실하지 않습니다. (10페이지)
+
+  - 리더는 속도 벡터입니다. 이것들은 항공기 선로의 기수 너머로 뻗어 있는 선이다.
+
+
+
 - How many man-days do you expect it would take to add a new map provider?
   - The answer is it depends on several factors, such as experience and library / tool use. Recommend looking at provided code to see how Solvit implemented the existing map data. Recommend the teams plan 1-3 days to complete this requirement. If after a genuine 3 days of effort and your team is still challenged with adding map data, please contact Solvit Inc.
+- 새로운 지도 제공자를 추가하는 데 며칠이 걸릴 것으로 예상하십니까?
+
+  - 답은 경험과 라이브러리/도구 사용과 같은 몇 가지 요인에 따라 달라진다는 것입니다. Solvit이 기존 지도 데이터를 어떻게 구현했는지 확인하기 위해 제공된 코드를 살펴보는 것이 좋습니다. 팀이 이 요구 사항을 완료하기 위해 1~3일 계획을 세우도록 권장합니다. 진정한 3일간의 노력 후에도 당신의 팀이 여전히 지도 데이터를 추가하는 데 어려움을 겪고 있다면, Solvit Inc.에 연락하십시오.

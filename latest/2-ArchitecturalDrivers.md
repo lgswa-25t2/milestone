@@ -14,6 +14,21 @@ This document outlines all the factors that affect system architecture, defining
 
 
 
+## Constraints
+
+- Business Constraints
+  - 7 people in the development
+  - 5 weeks development period
+  - In addition to development, demo and presentation preparation are required.
+
+- Technical Constraints
+  - Use C++ for development
+  - Since this is a Windows application using VCL (Visual Component Library), the IDE is set to RAD Studio.
+  - DB must use Google BigQuery.
+  - An antenna is Raspberry Pi 5.
+
+
+
 ## Functional Requirements
 
 Derived from features in Project Description documents.
@@ -28,7 +43,7 @@ Derived from features in Project Description documents.
 | FR_02_03 | Time series Analysis | Track playback                        | The system shall be capable of recording received aircraft track data and replaying it at 1x, 2x or 3x speed for selected flights or time ranges |
 | FR_02_04 | Time series Analysis | Track simulation                      | The system shall be able to perform flight simulation with arrival destination information |
 | FR_02_05 | Time series Analysis | Dead reckoning                        | If real-time data is temporarily interrupted or delayed, estimate the aircraft's current position based on the last position, speed and altitude and display it on a map |
-| FR_03_01 | UI                   | Improved UI/UX                        | The systam shall support better UX : Re-organize information and buttons & modify font, alignment, checkbox, button in right panel |
+| FR_03_01 | UI                   | Improved UI/UX                        | The systam shall support UX : Re-organize information and buttons & modify font, alignment, checkbox, button in right panel |
 | FR_03_02 | UI                   | Improved UI/UX                        | Icon categorization by aircraft typel                        |
 | FR_03_03 | UI                   | Improved UI/UX                        | Configure icon colors for each map to improve visual clarity |
 | FR_03_04 | UI                   | Updated Map tiles                     | The system shall(may) adjust resolution by zoom-in / zoom-out. |
@@ -49,30 +64,20 @@ Derived from features in Project Description documents.
 
 Derived from Section. *System and Software Quality Attributes* & Section. *Demo Scoring* in project description. Each item can be added or changed and can be specified through discussion with sponsor.
 
-| ID          | Summary of Scenario                                          | QA Type         |
-| ----------- | ------------------------------------------------------------ | --------------- |
-| QAR_001_01 | UI responds immediately to user interaction when click air-craft and the UI is operating with raw connect mode or SBS connect mode | Performance     |
-| QAR_001_02 | When the UI is operating with raw connect mode or SBS connect mode, it immediately responds to user interaction by manipulating the menu or control panel. | Performance     |
-| QAR_002_01 | The system detects network failure when the UI is operating with SBS connect mode | Resiliency      |
-| QAR_002_02 | The system detects disconnection of USB antenna in raspberry pi when the UI is operating with SBS connect mode | Resiliency |
-| QAR_003 | The system shall allow developers to add a deviation detection feature | Extensibility   |
-| QAR_004 | The system shall allow developers to add new aircraft identification modules | Extensibility   |
-| QAR_005 | The system shall allow developers to integrate a new map provider into the user interface with minimal code changes, low risk of introducing bugs, and without affecting unrelated parts of the system | Modifiability   |
+In order to prioritize, ***I*** and ***R*** scores were given according to the following criteria.
 
-### Priority
+- ***I*** (Business importance) - The score assigned in the demo scoring was H if it was 30 points, M if it was 20 points, and L if it was 10 points or less.
+- ***R*** (Technical Risk) - Since all members are developers, we wrote subjectively based on our own development experience.
 
-- **Business importance** - The score assigned in the demo scoring was H if it was 30 points, M if it was 20 points, and L if it was 10 points or less.
-- **Technical Risk** - Since all members are developers, we wrote subjectively based on our own development experience.
-
-| ID      | Scenario                                                     | Type          | Business Importance | Technical Risk |
-| ------- | ------------------------------------------------------------ | ------------- | ------------------- | -------------- |
-| QAR_1_1 | UI responds immediately to user interaction when click air-craft and the UI is operating with raw connect mode or SBS connect mode | Performance   | H                   | H              |
-| QAR_1_2 | When the UI is operating with raw connect mode or SBS connect mode, it immediately responds to user interaction by manipulating the menu or control panel. | Performance   | H                   | H              |
-| QAR_2_1 | The system detects network failure when the UI is operating with SBS connect mode | Resiliency    | H                   | M              |
-| QAR_2_2 | The system detects disconnection of USB antenna in raspberry pi when the UI is operating with SBS connect mode | Resiliency    | H                   | M              |
-| QAR_3   | The system shall allow developers to add a deviation detection feature | Extensibility | H                   | H              |
-| QAR_4   | The system shall allow developers to add new aircraft identification modules | Extensibility | H                   | M              |
-| QAR_5   | The system shall allow developers to integrate a new map provider into the user interface with minimal code changes, low risk of introducing bugs, and without affecting unrelated parts of the system | Modifiability | M                   | H              |
+| ID          | Summary of Scenario                                          | QA Type         | I        | R        |
+| ----------- | ------------------------------------------------------------ | --------------- | --------------- | --------------- |
+| QAR_001_01 | UI responds immediately to user interaction when click air-craft and the UI is operating with raw connect mode or SBS connect mode | Performance     | H    | H    |
+| QAR_001_02 | When the UI is operating with raw connect mode or SBS connect mode, it immediately responds to user interaction by manipulating the menu or control panel. | Performance     | H    | H    |
+| QAR_002_01 | The system detects network failure when the UI is operating with SBS connect mode | Resiliency      | H     | M     |
+| QAR_002_02 | The system detects disconnection of USB antenna in raspberry pi when the UI is operating with SBS connect mode | Resiliency | H | M |
+| QAR_003 | The system shall allow developers to add a deviation detection feature | Extensibility   | H  | L  |
+| QAR_004 | The system shall allow developers to add new aircraft identification modules | Extensibility   | H  | L  |
+| QAR_005 | The system shall allow developers to integrate a new map provider into the user interface with minimal code changes, low risk of introducing bugs, and without affecting unrelated parts of the system | Modifiability   | M  | M  |
 
 ### Six parts of each scenarios
 
@@ -153,6 +158,8 @@ Derived from Section. *System and Software Quality Attributes* & Section. *Demo 
 
 **Related approach** : refer to [Approach 05](./approachs/approach05.md)
 
+
+
 ### Potential Quality Attribute Trade-offs
 
 Based on the defined Quality Attributes (QAs), the following trade-offs may arise due to conflicting architectural goals:
@@ -189,7 +196,7 @@ Based on the defined Quality Attributes (QAs), the following trade-offs may aris
 
 - We prioritized performance for time-critical UI interactions, while applying lightweight monitoring mechanisms to minimize overhead.
 
-### Summary Table
+#### Summary Table
 
 | QA 1        | QA 2          | Reason for Trade-off                                         |
 | ----------- | ------------- | ------------------------------------------------------------ |
@@ -197,20 +204,27 @@ Based on the defined Quality Attributes (QAs), the following trade-offs may aris
 | Performance | Resiliency    | Monitoring and recovery add load and complexity              |
 
 
+
 ## Risk assessment
 
-Please refer to [Risk Assessment](./3-RiskAssessment.md)
+- Likelihood (L): Probability that the risk will occur
+- Impact (I): Level of damage if the risk occurs
 
+### Technical Risk Assessment
 
-## Constraints
+| ID   | Description                                                  | L    | I    | Mitigation Strategy                                          | Link                                                         |
+| ---- | ------------------------------------------------------------ | ---- | ---- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| TR_1 | System may not be updated normally due to large volume of aircraft data is received by the ADS-B server in a short period of time. | H    | H    | consider Manage sampling rate to adjust the volume of aircraft data. | [Exp 1](./experiments/exp01.md) , [Exp 2](./experiments/exp02.md) |
+| TR_2 | We need to apply multi-thread in program, but the VCL framework does not support multi thread. If background threads directly access or modify UI components, it may result in application instability, race conditions, or unexpected crashes. | M    | L    | Separate business logic from UI logic, and run the UI thread and the data processing thread independently. | [Exp 7](./experiments/exp07.md)                              |
+| TR_3 | The Raspberry Pi can fail for various reasons (e.g. crash, out of memory), and it is unclear whether it provides the cause of failure depending on the situation. | H    | L    | Modify the Raspberry Pi to report its status information.    | [Exp 6](./experiments/exp06.md)                              |
+| TR_4 | UI, network, and data processing are tightly coupled, making it unclear where to insert the deviation detection logic. | H    | H    | Separation of UI, network, and data processing components.   | Planned draw diagrams                                        |
 
-- Business Constraints
-  - 7 people in the development
-  - 5 weeks development period
-  - In addition to development, demo and presentation preparation are required.
+### Non-technical Risk Assessment
 
-- Technical Constraints
-  - Use C++ for development
-  - Since this is a Windows application using VCL (Visual Component Library), the IDE is set to RAD Studio.
-  - DB must use Google BigQuery.
-  - An antenna is Raspberry Pi 5.
+| ID    | Description                                                  | Cause                                                        | L    | I    | Mitigation Strategy                                          |
+| ----- | ------------------------------------------------------------ | ------------------------------------------------------------ | ---- | ---- | ------------------------------------------------------------ |
+| NTR_1 | Some requirement documents lack clarity, making analysis difficult. Clarification is only possible through assumptions or direct contact with the project sponsor. unclear requirements can lead to rework, misalignment, and missed goals. | Ambiguous documents and vague requirements                   | H    | H    | Clarify ambiguous requirements by maintaining continuous, question-and-answer-based communication with Solvelt throughout the project lifecycle.Seek solutions via regular meetings with mentors and expedite requirement confirmation by suggesting common assumptions. |
+| NTR_2 | Communication within the team is limited to English due to diverse nationalities. | Different native languages                                   | H    | H    | Leverage visual collaboration tools such as Miro, along with AI-powered translation tools, to facilitate effective communication across language barriers. |
+| NTR_3 | Communication is limited to Solvelt and email, resulting in long delays in receiving responses. | Lack of proper decision-making channels                      | M    | H    | Proactively reach out to mentors and maintain regular contact with Solvelt |
+| NTR_4 | LG company PC security tools hinder development and test environment setup. | Network blocks and data transfer restrictions by security software | M    | M    | Use alternative devices (e.g., mobile), request exception handling from IT security team |
+| NTR_5 | The project duration is limited to approximately 4 weeks, with additional assignments affecting overall work efforts. | Short project timeline and parallel other tasks(Assignment, Quiz). | H    | H    | Focus on essential features, utilize planning tools and AI assistance for efficiency. |
