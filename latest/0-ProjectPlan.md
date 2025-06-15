@@ -28,7 +28,7 @@ It may be updated as the project progresses.
 
 The picture below was expressed as a progress of 6/14.
 
-![image](https://github.com/user-attachments/assets/46d38c02-8838-4a2c-a2a4-19b1c3ce8316)
+<!-- ![image](https://github.com/user-attachments/assets/46d38c02-8838-4a2c-a2a4-19b1c3ce8316) -->
 
 If the assignee is not specifically mentioned in the plan below, it is a collaboration of the whole team.
 
@@ -36,10 +36,10 @@ If the assignee is not specifically mentioned in the plan below, it is a collabo
 - [*System Design & Experiments*](#system-design--experiments) (6/10 – 6/22)
 - [*Development – Mandatory Features*](#development--mandatory-features) (6/9~6/28)
 - [*Improve Quality Attribute*](#improve-quality-attribute)
-- *Development – Desirable Features* (6/9~6/30)
-- *Reassessment of QA* (6/20–6/22)
-- *Integration & Test* (6/28–7/1)
-- *Final Demo* (7/2)
+- [*Development – Desirable Features*](#development--desirable-features) (6/9~6/30)
+- [*Reassessment of QA*](#reassessment-of-qa) (6/20–6/22)
+- [*Integration & Test*](#integration--test) (6/28–7/1)
+- [*Final Demo*](#final-demo) (7/2)
 
 
 
