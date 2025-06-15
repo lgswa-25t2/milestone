@@ -90,8 +90,6 @@ In order to prioritize, ***I*** and ***R*** scores were given according to the f
 - Response - Analytical feature are displayed promptly
 - Response Measure - Analytical feature display latency up to 1 second after user action
 
-**Related approach** : refer to [Approach 01](./approachs/approach01.md)
-
 #### QA_001_02
 
 - Source - User
@@ -100,8 +98,6 @@ In order to prioritize, ***I*** and ***R*** scores were given according to the f
 - Environment - Normal raw connect or SBS connect mode, The system is tracking 5000 aircrafts simultaneously
 - Response - UI responds to user interaction
 - Response Measure - Map toggle interaction response ≤ 150 (TBD) milliseconds
-
-**Related approach** : refer to [Approach 01](./approachs/approach01.md)
 
 #### QA_002_01
 
@@ -112,8 +108,6 @@ In order to prioritize, ***I*** and ***R*** scores were given according to the f
 - Response - System detects network failure and notifies the user
 - Response Measure - System detects disconnection within 1 second and notifies the user within 1 second
 
-**Related approach** : refer to [Approach 02](./approachs/approach02.md)
-
 #### QA_002_02
 
 - Source - User
@@ -122,8 +116,6 @@ In order to prioritize, ***I*** and ***R*** scores were given according to the f
 - Environment - Normal SBS connect mode, the system is tracking ADS-B datasets
 - Response - System detects failure conditions (e.g., disconnection) and notifies the user
 - Response Measure - System detects disconnection within 1 second and notifies the user within 1 second
-
-**Related approach** : refer to [Approach 02](./approachs/approach02.md)
 
 #### QA_003
 
@@ -134,8 +126,6 @@ In order to prioritize, ***I*** and ***R*** scores were given according to the f
 - Response - The new functionality is integrated
 - Response Measure - Feature is deployed within 3 person days without regressions in existing functionality
 
-**Related approach** : refer to [Approach 03](./approachs/approach03.md)
-
 #### QA_004
 
 - Source - Solvit or Project leader
@@ -145,8 +135,6 @@ In order to prioritize, ***I*** and ***R*** scores were given according to the f
 - Response - Unregistered aircraft are visually flagged in the UI and recorded in system logs
 - Response Measure - Implemented and tested within 3 person days
 
-**Related approach** : refer to [Approach 04](./approachs/approach04.md)
-
 #### QA_005
 
 - Source - Developer
@@ -155,8 +143,6 @@ In order to prioritize, ***I*** and ***R*** scores were given according to the f
 - Environment - During iterative development or feature expansion
 - Response - The new map provider integrates seamlessly without affecting existing components
 - Response Measure - Integration completed in under 4 person-hours, no unintended side effects observed
-
-**Related approach** : refer to [Approach 05](./approachs/approach05.md)
 
 
 
