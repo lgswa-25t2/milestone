@@ -111,4 +111,4 @@ Jaeyong Jeong, Youngtae Kim
 
 ## Links and references
 
-Technical risk [TR_3](../3-RiskAssessment.md#prioritization-mitigation-experiments)
+Technical risk [TR2](../2-ArchitecturalDrivers.md#technical-risk-assessment)

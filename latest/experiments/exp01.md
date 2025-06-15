@@ -90,6 +90,6 @@ Jaeyong Jeong, Seungsoon Lee
 
 ## Links and references
 
-Technical risk [TR_1](../3-RiskAssessment.md#prioritization-mitigation-experiments)
+Technical risk [TR2](../2-ArchitecturalDrivers.md#technical-risk-assessment)
 
 Software Architecture in Practice – Chapter 11: Performance Tactics

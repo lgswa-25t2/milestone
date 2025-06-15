@@ -6,7 +6,7 @@ The folder ***latest*** is the most recent documents. Each milestone (m1, m2, m3
 
 Please check the [latest](./latest) folder for the latest information.
 
-## Due date
+## Archived
 
 - M1 : 6/10 (Tue) - [Link](./archive/m1)
 - M2 : 6/23 (Mon)

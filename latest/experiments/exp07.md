@@ -1,4 +1,4 @@
-# Experiment 7: TBD - about multi thread
+# Experiment 7: Measuring performance improvement by introducing multi-threading
 
 ## Results and recommendations
 
@@ -8,6 +8,8 @@ To be written upon completion of the experiment.
 
 The purpose of this experiment is to check whether the Raspberry Pi reports connectivity-related failures (e.g., Wi-Fi disconnect, antenna removal, system lock-up) to our system.
 Additionally, the experiment will confirm whether the Raspberry Pi has a working **heartbeat mechanism**, and whether our system performs **ping-based health checks** to detect failures passively.
+
+The purpose of this experiment is to measure how much performance is improved when the UI thread and business logic thread are separated as mitigation strategy in [TR2](../2-ArchitecturalDrivers.md#technical-risk-assessment). To compare the results, the results of [Exp1](./exp01.md) and [Exp2](./exp02.md), which are performance measurement results that have not been improved, and repeat the same experiment after the implementation is completed to check whether there is a difference.
 
 ## Status
 
@@ -21,60 +23,28 @@ Additionally, the experiment will confirm whether the Raspberry Pi has a working
 
 ## Resources required
 
-* **Hardware**:
+ - Software: Flight Tracker client
 
-  * Raspberry Pi 5
-  * Wi-Fi-enabled test environment
-  * Removable external antenna (if used)
-  * Power supply with switch (for simulating lock-up or forced reset)
+ - Hardware: One test laptop (Intel Core i7-1165G7 @ 2.80GHz / 16.0GB RAM)
 
-* **Software**:
+ - Personnel: 2 people × 4 hours
 
-  * Device-side agent expected to report error status or send heartbeat
-  * Network tools for ping/connection monitoring (e.g., `ping`, `fping`, custom watchdog)
+   - Test execution, data collection: 1 person × 4 hours
 
-* **Personnel**: 2 people × 5 hours
-
-  * (1 for physical and network testing, 1 for log capture and analysis)
+   - Data processing, analysis and visualization: 1 people × 4 hours
 
 ## Experiment description
 
-### 1. Setup
+### 1. Pre-experiment
 
-* Ensure Raspberry Pi is registered in our system and actively communicating
-* Enable log capture on both device and RUI (Windows) sides
-* Identify expected heartbeat mechanism (interval, format, channel)
-* Confirm if the central system sends periodic pings or has timeout logic
+* Need to implement the function first.
 
 ### 2. Test Scenarios
 
-Perform the following fault injections and observe the system's response:
+ Performance tests have already been carried out for two types, so the scenario is carried out in the same way.
 
-#### a) **Wi-Fi Disconnection**
-
-* Disconnect the Raspberry Pi from Wi-Fi (e.g., shutdown interface or pull router connection)
-* Observe:
-
-  * Whether an error cause is sent before disconnection
-  * If heartbeat stops, how long until the system notices
-  * Whether ping failure triggers a system alert
-
-#### b) **Antenna Removal (if applicable)**
-
-* Physically remove the external antenna to simulate degraded signal
-* Observe:
-
-  * Whether the Raspberry Pi detects and reports low signal or connectivity degradation
-  * Whether connection loss occurs and if it’s detected by our system
-
-#### c) **System Lock-up**
-
-* Simulate lock-up via CPU overload, infinite loop, or OS hang (e.g., `while(true)` on main thread)
-* Observe:
-
-  * Whether heartbeat stops
-  * If our system detects this via timeout or ping failure
-  * Whether any residual logs are sent on reboot
+- Scenario of Exp1 - [Link](./exp01.md#experiment-description)
+- Scenario of Exp2 - [Link](./exp02.md#experiment-description)
 
 ### 3. Data Analysis
 
@@ -101,14 +71,14 @@ Perform the following fault injections and observe the system's response:
 
 ## Duration
 
-Start Date: June 14, 2025
+Start Date: June 22, 2025
 
-End Date: June 16, 2025
+End Date: June 22, 2025
 
 ## Assignee
 
-Jaeyong Jeong, Youngtae Kim
+Youngtae Kim, Jaeyong Jeong
 
 ## Links and references
 
-Technical risk [TR_2](../3-RiskAssessment.md#prioritization-mitigation-experiments)
+Technical risk [TR2](../2-ArchitecturalDrivers.md#technical-risk-assessment)
