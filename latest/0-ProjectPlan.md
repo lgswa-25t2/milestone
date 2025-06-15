@@ -12,7 +12,7 @@ It may be updated as the project progresses.
 - **Objective** : Improve a system that meets the objectives and requirements of the Federal Aviation Administration (FAA) issued request for proposal (RFP).
 
 - **Scope** : Windows based GUI application
-
+---
 
 ## Project Shedule
 ![image](../image/schedule.png)
@@ -152,6 +152,7 @@ Submit updated architecture
 
 #### presentation and demonstration
 
+---
 
 ## Tools & Technologies
 
@@ -166,6 +167,7 @@ Submit updated architecture
 
 - **Communication** : MS Teams 
 
+---
 
 
 ## Goals
