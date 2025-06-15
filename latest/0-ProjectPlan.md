@@ -32,10 +32,10 @@ The picture below was expressed as a progress of 6/14.
 
 If the assignee is not specifically mentioned in the plan below, it is a collaboration of the whole team.
 
-- *Planning & Analyze Requirements* (6/2 - 6/9)
-- *System Design & Experiments* (6/10 – 6/22)
-- *Development – Mandatory Features* (6/9~6/28)
-- *Improve Quality Attribute*
+- [*Planning & Analyze Requirements*](#planning--analyze-requirements) (6/2 - 6/9)
+- [*System Design & Experiments*](#system-design--experiments) (6/10 – 6/22)
+- [*Development – Mandatory Features*](#development--mandatory-features) (6/9~6/28)
+- [*Improve Quality Attribute*](#improve-quality-attribute)
 - *Development – Desirable Features* (6/9~6/30)
 - *Reassessment of QA* (6/20–6/22)
 - *Integration & Test* (6/28–7/1)
