@@ -1,46 +1,27 @@
 # Design Decisions
 
-This document clearly documents the key decisions made during the system design process and explains the background, rationale, alternatives, and implications.
-
-| ID           | Related ID | Description                                                  | Link                              |
-| ------------ | ---------- | ------------------------------------------------------------ | --------------------------------- |
-| APPROACH_001 | QA_001     | Improving UI respond time                                    | [Link](./approachs/approach01.md) |
-| APPROACH_002 | QA_002     | Detecing/recovering failure conditions                       | [Link](./approachs/approach02.md) |
-| APPROACH_003 | QA_003     | Encapsulate deviation detection logic to isolate change      | [Link](./approachs/approach03.md) |
-| APPROACH_004 | QA_004     | Applying Architecture pattern for Modular Aircraft Identification | [Link](./approachs/approach04.md) |
-| APPROACH_005 | QA_005     | Supporting new map provider                                  | [Link](./approachs/approach05.md) |
-
-
-
-
-
-
-
-## TODO
-
-# Key Design Strategies
-
 This section describes the key architectural strategies that guide our system design, along with their motivation and impact. The content is organized thematically—not by ID—for better readability.
 
 ---
 
 ## 1. Improving UI Responsiveness
-
-To ensure smooth user interactions and fast map updates, we:
+**Decision:**
 
  - Minimize synchronous operations in the UI thread
 
- - Use background threads to fetch aircraft data
+ - Frequently used or repeated data is cached in memory to reduce rendering delays.
 
- - Apply throttling to reduce UI redraw rate without sacrificing usability
+ - Only changed UI regions are updated rather than redrawing the entire screen
 
 _This addresses the quality attribute: performance (QA_001)._
 
+
+**Rationale:**
+ - Fast and responsive is critical in real-time aircraft monitoring scenarios.
 ---
 
 ## 2. Detecting and Recovering from Failures
-
-The system employs:
+**Decision:**
 
  - Heartbeat monitoring from the Raspberry Pi every 500ms
 
@@ -50,23 +31,25 @@ The system employs:
 
 _This supports resilience and availability (QA_002)._
 
+**Rationale:**
+ - In real-time systems, high availability and fault isolation are essential to maintain service continuity.
+
 ---
 
 ## 3. Isolating Deviation Detection Logic
-
-To allow flexibility in changing the deviation-detection criteria without affecting other modules:
-
+**Decision:**
  - The logic is encapsulated in a separate service class
 
  - It only exposes a public method: `bool isDeviated(AircraftTrack track)`
 
 _This supports modifiability (QA_003)._
 
+**Rationale:**
+- Complex business logic must be isolated to minimize change impact and increase modularity.
 ---
 
 ## 4. Modular Aircraft Identification
-
-We apply a plugin-based architecture for aircraft identification:
+**Decision:**
 
  - Each module identifies aircraft based on a rule set (e.g., hex pattern, callsign prefix)
 
@@ -74,11 +57,12 @@ We apply a plugin-based architecture for aircraft identification:
 
 _This supports modifiability and extensibility (QA_004)._
 
+**Rationale:**
+- The identification process evolves rapidly and must be flexible and extensible by design.
 ---
 
 ## 5. Supporting New Map Providers
-
-To prepare for adding new map layers (e.g., OpenStreetMap):
+**Decision:**
 
  - We abstract the map engine behind a `MapProvider` interface
 
@@ -86,6 +70,6 @@ To prepare for adding new map layers (e.g., OpenStreetMap):
 
 _This promotes portability and vendor-independence (QA_005)._
 
+**Rationale:**
+- Avoid vendor lock-in and support different geographical or pricing requirements.
 ---
-
-### 🔧 Optional: Diagram Example (for e.g., Strategy #4)
