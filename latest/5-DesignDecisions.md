@@ -1,6 +1,6 @@
 # Design Decisions
 
-This section describes the key architectural strategies that guide our system design, along with their motivation and impact. The content is organized thematically—not by ID—for better readability.
+This document outlines the overall architectural strategy and key design principles of the system. The focus is on performance, resilence, availability, modifiability, extensibility and portability.
 
 ---
 
