@@ -13,3 +13,15 @@ The plan explains the outline of the project, members and roles, the task planne
 This document describes all the factors that affect the system architecture, and provides risk assessment and experimental planning for the derived requirements.
 
 [Link](./2-ArchitecturalDrivers.md)
+
+## Experiments
+
+TBD
+
+## Views
+
+TBD
+
+## ADRs
+
+TBD

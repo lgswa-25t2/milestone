@@ -48,26 +48,13 @@ The purpose of this experiment is to measure how much performance is improved wh
 
 ### 3. Data Analysis
 
-* Analyze logs to check:
-
-  * Whether meaningful error messages were sent from the Pi before or after each failure
-  * Time delay between failure and detection on our system
-  * Whether our system uses a polling/ping mechanism or relies solely on heartbeats
-* Categorize cases into:
-
-  * Actively reported error cause
-  * Detected via ping/timeout
-  * Not detected
+* Visualization
+* Comparison between Before and After
 
 ### 4. Conclusion and Review
 
-* Identify gaps in failure reporting or monitoring
-* Recommend:
-
-  * Adding/reinforcing heartbeat or watchdog mechanism on the Pi
-  * Implementing or tightening ping-based monitoring on our system
-  * Standardizing error reporting for connectivity issues
-* Propose next steps for automated recovery or redundancy
+* Check the performance improvement level
+* Write how the implementation affects other quality attributes and proceed with a team review.
 
 ## Duration
 
