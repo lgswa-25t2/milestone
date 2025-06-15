@@ -71,13 +71,13 @@ In order to prioritize, ***I*** and ***R*** scores were given according to the f
 
 | ID          | Summary of Scenario                                          | QA Type         | I        | R        |
 | ----------- | ------------------------------------------------------------ | --------------- | --------------- | --------------- |
-| QAR_001_01 | UI responds immediately to user interaction when click air-craft and the UI is operating with raw connect mode or SBS connect mode | Performance     | H    | H    |
-| QAR_001_02 | When the UI is operating with raw connect mode or SBS connect mode, it immediately responds to user interaction by manipulating the menu or control panel. | Performance     | H    | H    |
-| QAR_002_01 | The system detects network failure when the UI is operating with SBS connect mode | Resiliency      | H     | M     |
-| QAR_002_02 | The system detects disconnection of USB antenna in raspberry pi when the UI is operating with SBS connect mode | Resiliency | H | M |
-| QAR_003 | The system shall allow developers to add a deviation detection feature | Extensibility   | H  | L  |
-| QAR_004 | The system shall allow developers to add new aircraft identification modules | Extensibility   | H  | L  |
-| QAR_005 | The system shall allow developers to integrate a new map provider into the user interface with minimal code changes, low risk of introducing bugs, and without affecting unrelated parts of the system | Modifiability   | M  | M  |
+| [QAR_001_01](#qa_001_01) | UI responds immediately to user interaction when click air-craft and the UI is operating with raw connect mode or SBS connect mode | Performance     | H    | H    |
+| [QAR_001_02](#qa_001_02) | When the UI is operating with raw connect mode or SBS connect mode, it immediately responds to user interaction by manipulating the menu or control panel. | Performance     | H    | H    |
+| [QAR_002_01](#qa_002_01) | The system detects network failure when the UI is operating with SBS connect mode | Resiliency      | H     | M     |
+| [QAR_002_02](#qa_002_02) | The system detects disconnection of USB antenna in raspberry pi when the UI is operating with SBS connect mode | Resiliency | H | M |
+| [QAR_003](#qa_003) | The system shall allow developers to add a deviation detection feature | Extensibility   | H  | L  |
+| [QAR_004](#qa_004) | The system shall allow developers to add new aircraft identification modules | Extensibility   | H  | L  |
+| [QAR_005](#qa_005) | The system shall allow developers to integrate a new map provider into the user interface with minimal code changes, low risk of introducing bugs, and without affecting unrelated parts of the system | Modifiability   | M  | M  |
 
 ### Six parts of each scenarios
 
@@ -160,51 +160,6 @@ In order to prioritize, ***I*** and ***R*** scores were given according to the f
 
 
 
-### Potential Quality Attribute Trade-offs
-
-Based on the defined Quality Attributes (QAs), the following trade-offs may arise due to conflicting architectural goals:
-
-#### 1. Performance vs. Modifiability / Extensibility
-
-**QAs Involved**  
-
-- `QA_001`: *UI responds immediately to user interaction* (Performance)  
-- `QA_003 / 004 / 005`: *Ease of adding new features such as deviation detection, unregistered aircraft identification, and new map providers* (Extensibility / Modifiability)
-
-**Potential Conflict**  
-
-- Designing for modularity and flexibility often introduces layers of abstraction or interface boundaries, which can lead to increased data processing overhead and reduced performance.  
-- To improve performance, techniques such as caching, multithreading, and data prefetching can be applied. However, these techniques often introduce **state** into the system or cause **race conditions**, making the system harder to understand and modify.
-
-**Decision**
-
-- In case of conflict between performance and extensibility, we prioritized performance for core real-time features while isolating extension modules to minimize impact.
-
-#### 2. Performance vs. Resiliency
-
-**QAs Involved**  
-
-- `QA_001` (Performance)
-- `QA_002`: *Detects and recovers from failure conditions* (Resiliency)
-
-**Potential Conflict**  
-
-- Adding frequent monitoring (e.g., heartbeat checks, retry loops) can introduce extra system load, potentially impacting real-time responsiveness.
-- Balancing proactive failure detection with minimal overhead is essential.
-
-**Decision**
-
-- We prioritized performance for time-critical UI interactions, while applying lightweight monitoring mechanisms to minimize overhead.
-
-#### Summary Table
-
-| QA 1        | QA 2          | Reason for Trade-off                                         |
-| ----------- | ------------- | ------------------------------------------------------------ |
-| Performance | Modifiability | Modular structure increases overhead; tight coupling boosts speed |
-| Performance | Resiliency    | Monitoring and recovery add load and complexity              |
-
-
-
 ## Risk assessment
 
 - Likelihood (L): Probability that the risk will occur
@@ -228,3 +183,49 @@ Based on the defined Quality Attributes (QAs), the following trade-offs may aris
 | NTR_3 | Communication is limited to Solvelt and email, resulting in long delays in receiving responses. | Lack of proper decision-making channels                      | M    | H    | Proactively reach out to mentors and maintain regular contact with Solvelt |
 | NTR_4 | LG company PC security tools hinder development and test environment setup. | Network blocks and data transfer restrictions by security software | M    | M    | Use alternative devices (e.g., mobile), request exception handling from IT security team |
 | NTR_5 | The project duration is limited to approximately 4 weeks, with additional assignments affecting overall work efforts. | Short project timeline and parallel other tasks(Assignment, Quiz). | H    | H    | Focus on essential features, utilize planning tools and AI assistance for efficiency. |
+
+
+
+## Potential Quality Attribute Trade-offs
+
+Based on the defined Quality Attributes (QAs), the following trade-offs may arise due to conflicting architectural goals:
+
+#### 1. Performance vs. Modifiability / Extensibility
+
+*QAs Involved*
+
+- `QA_001`: *UI responds immediately to user interaction* (Performance)
+- `QA_003 / 004 / 005`: *Ease of adding new features such as deviation detection, unregistered aircraft identification, and new map providers* (Extensibility / Modifiability)
+
+*Potential Conflict*
+
+- Designing for modularity and flexibility often introduces layers of abstraction or interface boundaries, which can lead to increased data processing overhead and reduced performance.
+- To improve performance, techniques such as caching, multithreading, and data prefetching can be applied. However, these techniques often introduce **state** into the system or cause **race conditions**, making the system harder to understand and modify.
+
+*Decision*
+
+- In case of conflict between performance and extensibility, we prioritized performance for core real-time features while isolating extension modules to minimize impact.
+
+#### 2. Performance vs. Resiliency
+
+*QAs Involved*
+
+- `QA_001` (Performance)
+- `QA_002`: *Detects and recovers from failure conditions* (Resiliency)
+
+*Potential Conflict*
+
+- Adding frequent monitoring (e.g., heartbeat checks, retry loops) can introduce extra system load, potentially impacting real-time responsiveness.
+- Balancing proactive failure detection with minimal overhead is essential.
+
+*Decision*
+
+- We prioritized performance for time-critical UI interactions, while applying lightweight monitoring mechanisms to minimize overhead.
+
+#### Summary Table
+
+| QA 1        | QA 2          | Reason for Trade-off                                         |
+| ----------- | ------------- | ------------------------------------------------------------ |
+| Performance | Modifiability | Modular structure increases overhead; tight coupling boosts speed |
+| Performance | Resiliency    | Monitoring and recovery add load and complexity              |
+
