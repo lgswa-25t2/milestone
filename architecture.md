@@ -84,5 +84,12 @@ _This promotes portability and vendor-independence (QA_005)._
 
 **Rationale:**
 
-- Avoid vendor lock-in and support different geographical or pricing requirements.
+- ✅ Abstract Common Services with Map Interface
+  - Provides compile-time safety and clarity.
+  - Ideal when new map providers are added occasionally.
+  - Promotes high cohesion within mapping logic and minimizes dependencies.
+- ⚠️ Modularize Map Component with Dependency Injection
+  - Suitable when map providers need to be added or replaced frequently.
+  - Increases flexibility through runtime configuration.
+  - Keeps UI logic unchanged, improving long-term maintainability.
 ---
