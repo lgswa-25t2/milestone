@@ -14,9 +14,9 @@ This document describes all the factors that affect the system architecture, and
 
 This folder contains all experimental records that have been planned/conceed/cancelled during the project.
 
-### Views
+### [Diagrams](./diagrams)
 
-TBD
+This folder contains all architectural views.
 
 ### ADRs
 
