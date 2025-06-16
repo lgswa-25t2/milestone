@@ -78,6 +78,6 @@ End Date: June 12, 2025
 Jaeyong Jeong, Seungsoon Lee
 
 ## Links and references
-Technical risk [TR2](../2-ArchitecturalDrivers.md#technical-risk-assessment)
+Technical risk [TR2](../architectural-drivers.md#technical-risk-assessment)
 
 Software Architecture in Practice – Chapter 11: Performance Tactics

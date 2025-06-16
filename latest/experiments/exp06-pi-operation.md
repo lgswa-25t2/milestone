@@ -1,4 +1,4 @@
-# Experiment 8: TBD - about BigQuery
+# Experiment 6: Verification of Error Cause Reporting and Connectivity Monitoring for Raspberry Pi
 
 ## Results and recommendations
 
@@ -111,4 +111,4 @@ Jaeyong Jeong, Youngtae Kim
 
 ## Links and references
 
-Technical risk [TR2](../2-ArchitecturalDrivers.md#technical-risk-assessment)
+Technical risk [TR2](../architectural-drivers.md#technical-risk-assessment)

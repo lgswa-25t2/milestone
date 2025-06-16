@@ -9,7 +9,7 @@ To be written upon completion of the experiment.
 The purpose of this experiment is to check whether the Raspberry Pi reports connectivity-related failures (e.g., Wi-Fi disconnect, antenna removal, system lock-up) to our system.
 Additionally, the experiment will confirm whether the Raspberry Pi has a working **heartbeat mechanism**, and whether our system performs **ping-based health checks** to detect failures passively.
 
-The purpose of this experiment is to measure how much performance is improved when the UI thread and business logic thread are separated as mitigation strategy in [TR2](../2-ArchitecturalDrivers.md#technical-risk-assessment). To compare the results, the results of [Exp1](./exp01.md) and [Exp2](./exp02.md), which are performance measurement results that have not been improved, and repeat the same experiment after the implementation is completed to check whether there is a difference.
+The purpose of this experiment is to measure how much performance is improved when the UI thread and business logic thread are separated as mitigation strategy in [TR2](../architectural-drivers.md#technical-risk-assessment). To compare the results, the results of [Exp1](./exp01-aircraft-number.md) and [Exp2](./exp02-ingestion-rate.md), which are performance measurement results that have not been improved, and repeat the same experiment after the implementation is completed to check whether there is a difference.
 
 ## Status
 
@@ -43,8 +43,8 @@ The purpose of this experiment is to measure how much performance is improved wh
 
  Performance tests have already been carried out for two types, so the scenario is carried out in the same way.
 
-- Scenario of Exp1 - [Link](./exp01.md#experiment-description)
-- Scenario of Exp2 - [Link](./exp02.md#experiment-description)
+- Scenario of Exp1 - [Link](./exp01-aircraft-number.md#experiment-description)
+- Scenario of Exp2 - [Link](./exp02-ingestion-rate.md#experiment-description)
 
 ### 3. Data Analysis
 
@@ -68,4 +68,4 @@ Youngtae Kim, Jaeyong Jeong
 
 ## Links and references
 
-Technical risk [TR2](../2-ArchitecturalDrivers.md#technical-risk-assessment)
+Technical risk [TR2](../architectural-drivers.md#technical-risk-assessment)
