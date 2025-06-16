@@ -3,29 +3,38 @@
 
 ## Results and recommendations 
 **1. Average and Peak Message Ingestion Rate (msg/sec)**
+
 Observation Period: June 14, 01:00 – 10:00
 
 Average Rate: 4,100.58 messages per second
+
 Peak Rate: 9,367 messages per second
 
 ![image](https://github.com/user-attachments/assets/d80f5a90-71a4-4ba3-8c8d-73a85ca57504)
 
 **2. Number of Aircraft Observed per Minute/Hour**
+
 Observation Period: June 14, 01:00 – 10:00
 
 [Total Aircraft Observed]
+
 Average: 5,157.92 aircraft
+
 Maximum: 7,808 aircraft
 
 [Visible Aircraft Only]
+
 Average: 4,633.20 aircraft
+
 Maximum: 7,015 aircraft
 
 ![image](https://github.com/user-attachments/assets/d548447e-fe80-4adc-8d58-edf3f19ac02f)
 
-3. Update Frequency per Aircraft
+**3. Update Frequency per Aircraft**
+   
 Observation Period: From June 13, 01:04 (based on 100,000 data points)
-Average Update Frequency: 15.815 messages per aircraft
+
+Average Update Interval: 15.815 seconds per aircraft
 
 ## Objective 
 The objective of this experiment is to quantitatively measure the rate and volume of real-time aircraft data streaming via ADS-B.
