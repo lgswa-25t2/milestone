@@ -162,13 +162,15 @@ In order to prioritize, ***I*** and ***R*** scores were given according to the f
 
 ### Non-technical Risk Assessment
 
-| ID    | Description                                                  | Cause                                                        | L    | I    | Mitigation Strategy                                          |
-| ----- | ------------------------------------------------------------ | ------------------------------------------------------------ | ---- | ---- | ------------------------------------------------------------ |
-| NTR_1 | Some requirement documents lack clarity, making analysis difficult. Clarification is only possible through assumptions or direct contact with the project sponsor. unclear requirements can lead to rework, misalignment, and missed goals. | Ambiguous documents and vague requirements                   | H    | H    | Clarify ambiguous requirements by maintaining continuous, question-and-answer-based communication with Solvelt throughout the project lifecycle.Seek solutions via regular meetings with mentors and expedite requirement confirmation by suggesting common assumptions. |
-| NTR_2 | Communication within the team is limited to English due to diverse nationalities. | Different native languages                                   | H    | H    | Leverage visual collaboration tools such as Miro, along with AI-powered translation tools, to facilitate effective communication across language barriers. |
-| NTR_3 | Communication is limited to Solvelt and email, resulting in long delays in receiving responses. | Lack of proper decision-making channels                      | M    | H    | Proactively reach out to mentors and maintain regular contact with Solvelt |
-| NTR_4 | LG company PC security tools hinder development and test environment setup. | Network blocks and data transfer restrictions by security software | M    | M    | Use alternative devices (e.g., mobile), request exception handling from IT security team |
-| NTR_5 | The project duration is limited to approximately 4 weeks, with additional assignments affecting overall work efforts. | Short project timeline and parallel other tasks(Assignment, Quiz). | H    | H    | Focus on essential features, utilize planning tools and AI assistance for efficiency. |
+Because there is no part that is linked to other parts of the documents, items didn't have an unnecessary ID.
+
+| Description                                                  | Cause                                                        | L    | I    | Mitigation Strategy                                          |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ---- | ---- | ------------------------------------------------------------ |
+| Some requirement documents lack clarity, making analysis difficult. Clarification is only possible through assumptions or direct contact with the project sponsor. unclear requirements can lead to rework, misalignment, and missed goals. | Ambiguous documents and vague requirements                   | H    | H    | Clarify ambiguous requirements by maintaining continuous, question-and-answer-based communication with Solvelt throughout the project lifecycle.Seek solutions via regular meetings with mentors and expedite requirement confirmation by suggesting common assumptions. |
+| Communication within the team is limited to English due to diverse nationalities. | Different native languages                                   | H    | H    | Leverage visual collaboration tools such as Miro, along with AI-powered translation tools, to facilitate effective communication across language barriers. |
+| Communication is limited to Solvelt and email, resulting in long delays in receiving responses. | Lack of proper decision-making channels                      | M    | H    | Proactively reach out to mentors and maintain regular contact with Solvelt |
+| LG company PC security tools hinder development and test environment setup. | Network blocks and data transfer restrictions by security software | M    | M    | Use alternative devices (e.g., mobile), request exception handling from IT security team |
+| The project duration is limited to approximately 4 weeks, with additional assignments affecting overall work efforts. | Short project timeline and parallel other tasks(Assignment, Quiz). | H    | H    | Focus on essential features, utilize planning tools and AI assistance for efficiency. |
 
 
 
