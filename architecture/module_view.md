@@ -48,8 +48,7 @@ class AreaDialog {
 ---
 
 ## Remote User Interface Layered View (Planned Architecture)
-![image](https://github.com/user-attachments/assets/3ce4248a-7fb6-4d2e-b2c8-b1ff1cc5927f)
-
+![image](https://github.com/user-attachments/assets/4a87d8eb-e43c-4ea7-8855-316e4a0bced9)
 
 ### Adopt a 5-Layer Architecture
 
