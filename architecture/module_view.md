@@ -5,7 +5,7 @@ Eliminate current cyclic dependencies in the system to improve maintainability a
 
 ---
 
-## Current Issues Analysis
+## Remote User Interface Usage View (Legacy Architecture)
 ![image](https://github.com/user-attachments/assets/cce8d1b4-f761-474b-9b79-91092e8658b4)
 
 
@@ -47,7 +47,7 @@ class AreaDialog {
 
 ---
 
-## Planed Architecture
+## Remote User Interface Layered View (Planned Architecture)
 ![image](https://github.com/user-attachments/assets/3ce4248a-7fb6-4d2e-b2c8-b1ff1cc5927f)
 
 
