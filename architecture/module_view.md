@@ -159,6 +159,15 @@ public:
                IGeometryService* geometryService);
 };
 ```
+
+```
+Layer 2 (UI)          →  Layer 3 (Interfaces)  ←  Layer 4 (Implementations)
+DisplayGUI            →  IAircraftService      ←  AircraftService
+                      →  IDataProcessor        ←  DataProcessor
+                      →  IGeometryService      ←  GeometryService
+```
+                      
+                      
 ### Phase 3: Introduce Event-Driven Communication
 #### 3.1 Implement Observer Pattern
 The bidirectional dependency issue between DisplayGUI and AreaDialog.
