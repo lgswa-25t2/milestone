@@ -3,14 +3,15 @@
 
 ## Results and recommendations 
 
-![Rendering Time vs. Number of Aircraft](../images/RenderingTime.png)
+
 
 #### Experiment Conditions  
 - Origin : Map rendering time on original source code  
 - DrawOnlyViewable : Render aircrafts only in the viewport  
 - DrawZoomIn0.00002 : Render when zoom-in (Number of aircraft is between 200 and 300)  
 - DrawZoomIn0.00005 : Render when zoom-in (Number of aricraft is between 1700 and 1800)  
-  
+
+![Rendering Time vs. Number of Aircraft](../images/RenderingTime.png)
 
 #### Conclusion  
 
@@ -20,11 +21,11 @@
 - **Only render aircrafts under specific zoom level**
   
     
-**[Original Rendering Style]**
+**[Original UI Style]**
 ![Original UI](../images/OriginalUI.png)
   
-**[Suggested Rendering Style - provide summarized information]**
-![Original UI](../images/BubbleStyleUI.png)
+**[Proposed UI Style - provide summarized information]**
+![Bubble Style UI](../images/BubbleStyleUI.png)
 
 
 
@@ -39,7 +40,7 @@ The results will help identify system performance thresholds, bottlenecks, and a
 ## Expected outcomes
  - Performance test logs and statistical data
  - Graphs showing performance changes according to the number of aircraft
- - CPU and memory usage analysis by aircraft count
+
 
 ## Resources required
  - Software: Flight Tracker client
@@ -47,11 +48,11 @@ The results will help identify system performance thresholds, bottlenecks, and a
  - Hardware: One test laptop (Intel Core i7-1165G7 @ 2.80GHz / 16.0GB RAM)
 
  - Test data: Pre-recorded simulation files for different aircraft counts
-   (50 / 100 / 200 / 300 / 500 / 1000 / 3000 / 5000 / 10000)
+   (50 / 100 / 200 / 300 / 500 / 1000 / 3000 / 5000 )
    
  - UI automation macro scripts
 
- - Personnel: 3 people × 4 hours
+ - Personnel: 2 people × 4 hours
    
    (1 for test execution, 2 for preparation and support)
 
@@ -60,26 +61,13 @@ The results will help identify system performance thresholds, bottlenecks, and a
 
   Generate pre-recorded test data (using AI tools if needed)
 
-  Prepare and configure a UI macro automation tool and scripts
-
   Implement logging functionality for screen update and user response time
 
-- Step-by-Step Execution
+- Logging under Normal Usage
 
-  Gradually increase the number of aircraft:
-  50 → 100 → 200 → 300 → … → 10,000
+  Playback recorded test data
 
-  \* At each step, measure:
-
-  Time from data load to aircraft appearing on map
-
-  Response time when selecting an aircraft
-
-  UI latency when switching menus
-
-  Time to reflect map interactions (zoom, pan, switch)
-
-  CPU and memory usage
+  Move map(drag), Zoom in/out(scrool), Click aircraft
 
 - Log Analysis and Visualization
 
