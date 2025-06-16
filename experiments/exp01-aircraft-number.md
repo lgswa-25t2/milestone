@@ -19,10 +19,10 @@
 - **By limiting the number of objects displayed on the map under 2000, can keep the response time under 100ms**  
 - **Only render aircrafts under specific zoom level**
 
-[Original Rendering Style] - not meaningful to users
+**[Original Rendering Style - not meaningful to users]**
 ![Original UI](../images/OriginalUI.png)
   
-[Suggested Rendering Style] - provide summarized information
+**[Suggested Rendering Style - provide summarized information]**
 ![Original UI](../images/BubbleStyleUI.png)
 
 
