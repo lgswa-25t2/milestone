@@ -5,14 +5,25 @@
 
 ![Rendering Time vs. Number of Aircraft](../images/RenderingTime.png)
 
-Origin : Map rendering time on original source code  
-DrawOnlyViewable : Render aircrafts only in the viewport  
-DrawZoomIn0.00002 : Render when zoom-in (Number of aircraft is 200 to 300)  
-DrawZoomIn0.00005 : Render when zoom-in (Number of aricraft is 1700 to 1800)  
+#### Experiment Conditions  
+- Origin : Map rendering time on original source code  
+- DrawOnlyViewable : Render aircrafts only in the viewport  
+- DrawZoomIn0.00002 : Render when zoom-in (Number of aircraft is between 200 and 300)  
+- DrawZoomIn0.00005 : Render when zoom-in (Number of aricraft is between 1700 and 1800)  
   
-- UI performance starts to degrade noticeably when the number of aircraft exceeds 2,000.  
-- Displaying too many aircraft on the map also negatively affects usability.  
 
+#### Conclusion  
+
+- UI performance starts to degrade noticeably when the number of aircraft exceeds 2000
+- Displaying too many aircraft on the map also negatively affects usability  
+- **By limiting the number of objects displayed on the map under 2000, can keep the response time under 100ms**  
+- **Only render aircrafts under specific zoom level**
+
+[Original Rendering Style] - not meaningful to users
+![Original UI](../images/OriginalUI.png)
+  
+[Suggested Rendering Style] - provide summarized information
+![Original UI](../images/BubbleStyleUI.png)
 
 
 
