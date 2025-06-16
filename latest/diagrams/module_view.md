@@ -51,8 +51,7 @@ class AreaDialog {
 ![image](https://github.com/user-attachments/assets/f33a59d1-fcd3-41a2-b245-8e323af8bcd3)
 
 //2.draw.io 에서 그림
-![image](https://github.com/user-attachments/assets/5cd44b1a-115c-40f9-8909-7d3b9a4507ee)
-
+![image](https://github.com/user-attachments/assets/fb08805a-1edb-41e5-b34e-e091b8725491)
 
 ### Adopt a 5-Layer Architecture
 
