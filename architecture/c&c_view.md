@@ -14,7 +14,6 @@
 | **Data Input**    | Direct input into DisplayGUI     | Message Receiver + Queue                 | Buffering, asynchronous handling  |
 | **Message Handling** | Immediate synchronous processing | Pipeline-based staged processing         | Throughput, reliability           |
 | **Data Storage**  | Global HashTable                 | Aircraft Repository                      | Thread safety, memory safety      |
-| **Error Handling**| Distributed & inconsistent       | Centralized Message Validator            | Consistency, recoverability       |
 
 ---
 
