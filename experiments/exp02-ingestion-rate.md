@@ -2,36 +2,29 @@
 
 
 ## Results and recommendations 
-
-![image](https://github.com/user-attachments/assets/d80f5a90-71a4-4ba3-8c8d-73a85ca57504)
-![image](https://github.com/user-attachments/assets/d548447e-fe80-4adc-8d58-edf3f19ac02f)
-
-
-1. Average and Peak Message Ingestion Rate (msg/sec)
+**1. Average and Peak Message Ingestion Rate (msg/sec)**
 Observation Period: June 14, 01:00 – 10:00
 
 Average Rate: 4,100.58 messages per second
-
 Peak Rate: 9,367 messages per second
 
-2. Number of Aircraft Observed per Minute/Hour
+![image](https://github.com/user-attachments/assets/d80f5a90-71a4-4ba3-8c8d-73a85ca57504)
+
+**2. Number of Aircraft Observed per Minute/Hour**
 Observation Period: June 14, 01:00 – 10:00
 
 [Total Aircraft Observed]
-
 Average: 5,157.92 aircraft
-
 Maximum: 7,808 aircraft
 
 [Visible Aircraft Only]
-
 Average: 4,633.20 aircraft
-
 Maximum: 7,015 aircraft
+
+![image](https://github.com/user-attachments/assets/d548447e-fe80-4adc-8d58-edf3f19ac02f)
 
 3. Update Frequency per Aircraft
 Observation Period: From June 13, 01:04 (based on 100,000 data points)
-
 Average Update Frequency: 15.815 messages per aircraft
 
 ## Objective 
@@ -50,11 +43,9 @@ The experiment seeks to answer the following key questions:
 [***Planned*** | In progress | Suspended | Canceled | Concluded]
 
 ## Expected outcomes
- - Timestamped aircraft message logs
  - Number of aircraft observed per minute/hour
  - Average and peak message ingestion rate (msg/sec)
  - Update frequency per aircraft
- - Visualization graphs for each data metric
 
 ## Resources required
  - Software: Flight Tracker client
@@ -88,8 +79,6 @@ The experiment seeks to answer the following key questions:
 
   Determine update frequency per aircraft
 
-  Create visualizations and graphs for all metrics
-
 - Summary and Review
 
   Write a summary report of results
@@ -99,9 +88,8 @@ The experiment seeks to answer the following key questions:
   Evaluate the need for follow-up experiments
 
 ## Duration
-Start Date: June 11, 2025
-
-End Date: June 12, 2025
+Start Date: June 12, 2025
+End Date: June 14, 2025
 
 ## Assignee
 
