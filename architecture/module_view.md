@@ -6,7 +6,9 @@ Eliminate current cyclic dependencies in the system to improve maintainability a
 ---
 
 ## Current Issues Analysis
-//TODO: 그림 삽입 예정
+![image](https://github.com/user-attachments/assets/cce8d1b4-f761-474b-9b79-91092e8658b4)
+
+
 ### Key Cyclic Dependencies
 1. **DisplayGUI ↔ AreaDialog**: Bidirectional dependency  
 2. **DisplayGUI → SBS_Message → DisplayGUI**: Indirect cycle  
@@ -46,7 +48,8 @@ class AreaDialog {
 ---
 
 ## Planed Architecture
-![image](https://github.com/user-attachments/assets/f33a59d1-fcd3-41a2-b245-8e323af8bcd3)
+![image](https://github.com/user-attachments/assets/3ce4248a-7fb6-4d2e-b2c8-b1ff1cc5927f)
+
 
 ### Adopt a 5-Layer Architecture
 
