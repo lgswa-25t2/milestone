@@ -56,7 +56,7 @@ _This supports modifiability (QA_003)._
 
 **Rationale:**
 
-- Complex business logic must be isolated to minimize change impact and increase modularity.
+- Deviation detection is a feature that is likely to evolve, with potential changes in algorithms or detection criteria. Encapsulating this logic reduces coupling and limits the impact of future changes to a single component. This supports extensibility and simplifies maintenance.
 ---
 
 ## 4. Modular Aircraft Identification
