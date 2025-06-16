@@ -3,7 +3,7 @@
 
 ## Results and recommendations 
 
-![Rendering Time vs. Number of Aircraft](../../images/RenderingTime.png)
+![Rendering Time vs. Number of Aircraft](../images/RenderingTime.png)
 
 Origin : Map rendering time on original source code
 DrawOnlyViewable : Render aircrafts only in the viewport
