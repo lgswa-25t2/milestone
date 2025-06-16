@@ -1,9 +1,9 @@
 # C&C View for Data Processing
-## **Current Data Processing C&C View**
+## **Legacy Data Processing C&C View**
 ![image](https://github.com/user-attachments/assets/ec353a89-6427-44c5-9a95-bd74251aa911)
 //Legend update 필요
 
-## **Improvements in the Data Processing C&C View**
+## **Planned Data Processing C&C View**
 ![image](https://github.com/user-attachments/assets/7cd88c15-0e59-420f-9a7f-e234ff846421)
 //Legend update 필요
 
