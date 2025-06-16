@@ -150,7 +150,7 @@ Submit updated architecture
 
 ### Development – Desirable Features
 
-#### Time series analysis (Desirable) -  (Assigned:Sangyoub)
+#### Time series analysis (Desirable) -  (Assigned:Sangyeob)
  - 6/20~6/22 While receiving and recording data, play back tracks (playback at 2x at 3x speed) by moving a mouse cursor
  - 6/23~6/25 Track simulation
  - 6/26~6/30 Dead reckoning - plot tracks now or where they should be based upon constant velocity and altitude (parametric fit)
