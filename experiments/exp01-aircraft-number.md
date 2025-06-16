@@ -2,7 +2,19 @@
 
 
 ## Results and recommendations 
-To be written upon completion of the experiment.
+
+![Rendering Time vs. Number of Aircraft](../../images/RenderingTime.png)
+
+Origin : Map rendering time on original source code
+DrawOnlyViewable : Render aircrafts only in the viewport
+DrawZoomIn0.00002 : Render when zoom-in (Number of aircraft is 200~300)
+DrawZoomIn0.00005 : Render when zoom-in (Number of aricraft is 1700~1800)
+  
+- UI performance starts to degrade noticeably when the number of aircraft exceeds 2,000.  
+- Displaying too many aircraft on the map also negatively affects usability.
+
+
+
 
 ## Objective 
 It is natural to be concerned that system performance may degrade as the number of tracked aircraft increases.
