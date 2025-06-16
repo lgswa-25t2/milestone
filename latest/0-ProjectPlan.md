@@ -61,6 +61,8 @@ If the assignee is not specifically mentioned in the plan below, it is a collabo
 #### *Milestone 1* (6/10)
 - Submit architectural drivers and requirement analysis
 
+[Go to schedule](#project-shedule)
+
 
 
 ### System Design & Experiments
@@ -76,6 +78,8 @@ If the assignee is not specifically mentioned in the plan below, it is a collabo
 -	6/18–6/22: key design decisions reflected in the architecture views and how they address the high priority requirements.
 -	6/18~6/19: A deployment view that shows the supporting infrastructure and high-level component allocation.
 -	6/20~6/21 : Draw Diagram for Module View, C&C View
+
+[Go to schedule](#project-shedule)
 
 
 
@@ -110,6 +114,8 @@ If the assignee is not specifically mentioned in the plan below, it is a collabo
 #### Big query -  (Assigned:Navnit)
 - TODO: update plan (Planning by Seungsoon)
 
+[Go to schedule](#project-shedule)
+
 
 
 ### Improve Quality Attribute
@@ -138,6 +144,8 @@ If the assignee is not specifically mentioned in the plan below, it is a collabo
 
 Submit updated architecture
 
+[Go to schedule](#project-shedule)
+
 
 
 ### Development – Desirable Features
@@ -157,6 +165,8 @@ Submit updated architecture
 - 6/20–6/23: Development - Detecting abnormal flight and deviation  
 - 6/24–6/26: Discuss how to display the detected flight 
 
+[Go to schedule](#project-shedule)
+
 
 
 ### Reassessment of QA
@@ -168,6 +178,8 @@ All team members participate, but the assignee of each attribue is the leader of
  - Modifiability (Navnit)
  - Extensibility (Youngtae)
 
+[Go to schedule](#project-shedule)
+
 
 
 
@@ -177,6 +189,8 @@ All team members participate, but the assignee of each attribue is the leader of
 
 TBD
 
+[Go to schedule](#project-shedule)
+
 
 
 ### Final Demo
@@ -184,3 +198,5 @@ TBD
 #### Presentation and Demonstration
 
 TBD
+
+[Go to schedule](#project-shedule)
