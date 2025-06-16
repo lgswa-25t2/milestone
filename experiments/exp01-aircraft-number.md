@@ -25,7 +25,7 @@
 ![Original UI](../images/OriginalUI.png)
   
 **[Proposed UI Style - provide summarized information]**
-![Bubble Style UI](../images/BubbleStyleUI.png)
+![Bubble Style UI](../images/BubbleStyleUIWithNumber.png)
 
 
 
