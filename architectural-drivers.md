@@ -173,7 +173,7 @@ Because there is no part that is linked to other parts of the documents, items d
 | The project duration is limited to approximately 4 weeks, with additional assignments affecting overall work efforts. | Short project timeline and parallel other tasks(Assignment, Quiz). | H    | H    | Focus on essential features, utilize planning tools and AI assistance for efficiency. |
 
 
-
+<!--
 ## Potential Quality Attribute Trade-offs
 
 Based on the defined Quality Attributes (QAs), the following trade-offs may arise due to conflicting architectural goals:
@@ -216,4 +216,4 @@ Based on the defined Quality Attributes (QAs), the following trade-offs may aris
 | ----------- | ------------- | ------------------------------------------------------------ |
 | Performance | Modifiability | Modular structure increases overhead; tight coupling boosts speed |
 | Performance | Resiliency    | Monitoring and recovery add load and complexity              |
-
+-->
