@@ -1,3 +1,8 @@
+# This page is N/A for Milestone2, and we will decide if this diagram needed for final presenation.
+# Performance or Resillensy related C&C View needed
+
+----
+
 # C&C View for Data Processing
 ## **Legacy Data Processing C&C View**
 ![image](https://github.com/user-attachments/assets/ec353a89-6427-44c5-9a95-bd74251aa911)
