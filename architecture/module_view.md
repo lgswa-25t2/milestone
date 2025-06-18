@@ -1,3 +1,8 @@
+# This page is N/A for Milestone2, and it will be used for Final Presentation without source refactoring.
+# Performance related module view needed.
+
+---
+
 # Module View
 
 ## Objective
