@@ -1,67 +1,34 @@
-# Experiment 8: TBD - about BigQuery
+# Experiment 8: Usage of BigQuery
 
 ## Results and recommendations
 
-To be written upon completion of the experiment.
+The big query-related code that has already been implemented works well, and the API key can be used normally, so there is no need for an experiment, so we cancel it.
 
 ## Objective
 
-
+It aims to confirm the usage of Big Query and check the restrictions.
 
 ## Status
 
-\[***Planned*** | In progress | Suspended | Canceled | Concluded]
+\[Planned | In progress | Suspended | ***Canceled*** | Concluded]
 
 ## Expected outcomes
 
-
+N/A
 
 ## Resources required
 
 * **Hardware**:
-
-  * Raspberry Pi 5
-  * Wi-Fi-enabled test environment
-  * Removable external antenna (if used)
-  * Power supply with switch (for simulating lock-up or forced reset)
-
-* **Software**:
-
-  * Device-side agent expected to report error status or send heartbeat
-  * Network tools for ping/connection monitoring (e.g., `ping`, `fping`, custom watchdog)
-
-* **Personnel**: 2 people × 5 hours
-
-  * (1 for physical and network testing, 1 for log capture and analysis)
+* Windows PC
 
 ## Experiment description
 
-### 1. Setup
-
-
-
-### 2. Test Scenarios
-
-
-
-  * Whether heartbeat stops
-  * If our system detects this via timeout or ping failure
-  * Whether any residual logs are sent on reboot
-
-
-
-### 3. Conclusion and Review
-
-
+N/A
 
 ## Duration
 
-
+N/A
 
 ## Assignee
 
-
-
-## Links and references
-
-Technical risk [TR2](../architectural-drivers.md#technical-risk-assessment)
+Yongshik Bae

@@ -111,8 +111,10 @@ If the assignee is not specifically mentioned in the plan below, it is a collabo
 - 6/25–6/26: Zoom-based tile rendering
 - 6/27–6/28: Integration test and bug fix
 
-#### Big query -  (Assigned:Navnit)
-- TODO: update plan (Planning by Seungsoon)
+#### Big Query -  (Assigned:Yongshik)
+- 6/17: Analyze current BigQuery code (python script and DisplayGUI module)
+- 6/18: Make Google API json file
+- 6/19: Data storage verification using BigQuery
 
 [Go to schedule](#project-shedule)
 
