@@ -2,7 +2,7 @@
 
 ## Results and recommendations
 
-To be written upon completion of the experiment.
+The progress is suspended because it is judged that the priority of the function implementation is ahead of this experiment. There is a high possibility that it will be canceled in the future.
 
 ## Objective
 
@@ -13,7 +13,7 @@ The purpose of this experiment is to measure how much performance is improved wh
 
 ## Status
 
-\[***Planned*** | In progress | Suspended | Canceled | Concluded]
+\[Planned | In progress | ***Suspended*** | Canceled | Concluded]
 
 ## Expected outcomes
 

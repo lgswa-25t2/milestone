@@ -2,6 +2,10 @@
 
 
 ## Results and recommendations 
+**Summary**
+
+The number of updates and aircrafts is not too much for the system, but since there are so many messages per second, the impact on volume and application speed should be considered when testing the Record/Playback function.
+
 **1. Average and Peak Message Ingestion Rate (msg/sec)**
 
 Observation Period: June 14, 01:00 – 10:00
@@ -31,7 +35,7 @@ Maximum: 7,015 aircraft
 ![image](https://github.com/user-attachments/assets/d548447e-fe80-4adc-8d58-edf3f19ac02f)
 
 **3. Update Frequency per Aircraft**
-   
+
 Observation Period: From June 13, 01:04 (based on 100,000 data points)
 
 Average Update Interval: 15.815 seconds per aircraft
@@ -49,7 +53,7 @@ The experiment seeks to answer the following key questions:
  The results will be used to update the performance test benchmarks and serve as reference material for architectural design decisions.
 
 ## Status
-[***Planned*** | In progress | Suspended | Canceled | Concluded]
+[Planned | In progress | Suspended | Canceled | ***Concluded***]
 
 ## Expected outcomes
  - Number of aircraft observed per minute/hour
