@@ -20,14 +20,14 @@ TBD
 
 ### Experiments
 
-| ID                                                 | Description                                                  | Status   |
-| -------------------------------------------------- | ------------------------------------------------------------ | -------- |
-| [EXP_01](./experiments/exp01-aircraft-number.md)   | Performance Test According to Number of Aircraft             | Planned  |
-| [EXP_02](./experiments/exp02-ingestion-rate.md)    | Real-Time Aircraft Data Ingestion Rate and Volume via ADS-B Hub | Planned  |
-| [~~EXP_03~~](./experiments/exp03-stress-input.md)  | ~~UI Input Stress Test (System Behavior Under Rapid Button Clicks)~~ | Canceled |
-| [~~EXP_04~~](./experiments/exp04-map-api.md)       | ~~API Key Requirement and Limitation Test for Map Providers~~ | Canceled |
-| [~~EXP_05~~](./experiments/exp05-playback-size.md) | ~~System Behavior Test According to Playback Data Size~~     | Canceled |
-| [EXP_06](./experiments/exp06-pi-operation.md)      | Verification of Error Cause Reporting and Connectivity Monitoring for Raspberry Pi | Planned  |
-| [EXP_07](./experiments/exp07-multi-thread.md)      | Measuring performance improvement by introducing multi-threading | Planned  |
-| [EXP_08](./experiments/exp08-big-query.md)         |                                                              | Planned  |
-| [EXP_09](./experiments/exp09-new-map.md)           |                                                              |          |
+| ID                                                 | Description                                                  | Status    |
+| -------------------------------------------------- | ------------------------------------------------------------ | --------- |
+| [EXP_01](./experiments/exp01-aircraft-number.md)   | Performance Test According to Number of Aircraft             | Planned   |
+| [EXP_02](./experiments/exp02-ingestion-rate.md)    | Real-Time Aircraft Data Ingestion Rate and Volume via ADS-B Hub | Planned   |
+| [~~EXP_03~~](./experiments/exp03-stress-input.md)  | ~~UI Input Stress Test (System Behavior Under Rapid Button Clicks)~~ | Canceled  |
+| [~~EXP_04~~](./experiments/exp04-map-api.md)       | ~~API Key Requirement and Limitation Test for Map Providers~~ | Canceled  |
+| [~~EXP_05~~](./experiments/exp05-playback-size.md) | ~~System Behavior Test According to Playback Data Size~~     | Canceled  |
+| [EXP_06](./experiments/exp06-pi-operation.md)      | Verification of Error Cause Reporting and Connectivity Monitoring for Raspberry Pi | Planned   |
+| [EXP_07](./experiments/exp07-multi-thread.md)      | Measuring performance improvement by introducing multi-threading | Planned   |
+| [EXP_08](./experiments/exp08-big-query.md)         |                                                              | Planned   |
+| [EXP_09](./experiments/exp09-new-map.md)           | Add new map provider                                         | Concluded |
