@@ -4,6 +4,8 @@
 
 After analysis, ***OpenStreetMap (OSM)*** was selected as the most suitable provider due to open license, modular integration capability, offline tile accessibility.
 
+![image](https://github.com/user-attachments/assets/83ce49fc-598f-41d3-aada-144c99b5ed5b)
+
 ## Objective
 
 Evaluate the effort and system impact required to support an additional map provider in the existing architecture. This tests the system's modifiability by assessing how easily a new component can be plugged in and made functional without major architectural changes. This will guide the decision on selecting the most suitable map provider for production integration.
@@ -70,9 +72,3 @@ End Date: June 17, 2025
 ## Assignee
 
 Navnit Kumar
-
-## Links and references
-
-![image](https://github.com/user-attachments/assets/83ce49fc-598f-41d3-aada-144c99b5ed5b)
-
-
