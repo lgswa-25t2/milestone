@@ -1,6 +1,6 @@
 # Module View
 
-##  Remote User Interface Module View for Region clustering functionality
+##  Remote User Interface Module View for Region clustering
 ![image](https://github.com/user-attachments/assets/2c221957-8ce4-44dc-b6ac-80c5883d6d22)
 
 
