@@ -23,7 +23,7 @@ The chosen approach balances both performance and user usability.
 
 ## Consequences
 Positive:  
-- Reduced Map rendering time 
+- Reduced map and aircraft rendering time 
 - Enhanced user experience, especially at wider zoom levels
 
 Negative:
