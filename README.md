@@ -30,3 +30,4 @@ TBD
 | [EXP_06](./experiments/exp06-pi-operation.md)      | Verification of Error Cause Reporting and Connectivity Monitoring for Raspberry Pi | Planned  |
 | [EXP_07](./experiments/exp07-multi-thread.md)      | Measuring performance improvement by introducing multi-threading | Planned  |
 | [EXP_08](./experiments/exp08-big-query.md)         |                                                              | Planned  |
+| [EXP_09](./experiments/exp09-new-map.md)           |                                                              |          |
