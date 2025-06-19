@@ -1,19 +1,11 @@
-# Remote User Interface Module View 
+# Module View
 
-
-# 1. 아래 그림에서 수정된 모듈만 Coloring하고, 그 아래에 class level로 그린 상세 그림 추가
-# 2. 아래 설명 중에 현재 구현과 틀린 부분 있는지 봐주세요.
-
-## Remote User Interface Module View 
-![image](https://github.com/user-attachments/assets/cce8d1b4-f761-474b-9b79-91092e8658b4)
-
-![image](https://github.com/user-attachments/assets/648a8c7b-17bf-4211-b241-4ea6dcd8abee)
-
-
+##  Remote User Interface Module View for Region clustering functionality
+![image](https://github.com/user-attachments/assets/522dd630-5144-4aad-a717-f484ab5f2dbb)
 
 **Key Highlight - Region Clustering Feature:**
 
-🎯 **Region clustering functionality when zooming out** implemented in the **DisplayGUI module**:
+**Region clustering functionality when zooming out** implemented in the **DisplayGUI module**:
 
 1. **Zoom Level Detection**: Check zoom level with `xf >= cellDrawZoomRate` condition
 2. **Grid System**: Divide screen into 10x10 cells
