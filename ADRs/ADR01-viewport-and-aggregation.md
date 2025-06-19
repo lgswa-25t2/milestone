@@ -23,7 +23,7 @@ The chosen approach balances both performance and user usability.
 
 ## Consequences
 Positive:  
-- Reduced CPU usage and improved frame rate  
+- Reduced Map rendering time 
 - Enhanced user experience, especially at wider zoom levels
 
 Negative:
