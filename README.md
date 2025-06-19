@@ -16,7 +16,11 @@ The document of the software architecture that we envision to address requiremen
 
 ### ADRs
 
-TBD
+The ADRs record the important architectural decisions including rationale.
+
+| ID                                      | Description                                          | Status   |
+| --------------------------------------- | ---------------------------------------------------- | -------- |
+| [ADR_01](./ADRs/ADR01-load-shedding.md) | Use the load shedding strategy for reducing overhead | Accepted |
 
 ### Experiments
 
