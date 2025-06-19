@@ -3,9 +3,13 @@
 
 ## Results and recommendations 
 
+### Current Behavior:
+- The map area is repainted every 500ms by timer event  
+- In each repaint phase, all tracked aircraft, including those outside the viewport, are rendered on the OpenGL panel  
+![alt text](../images/DrawingAreaVsViewport.png)
 
 
-#### Experiment Conditions  
+### Experiment Conditions  
 - Origin : Map rendering time on original source code  
 - DrawOnlyViewable : Render aircrafts only in the viewport  
 - DrawZoomIn0.00002 : Render when zoom-in (Number of aircraft is between 200 and 300)  
@@ -13,20 +17,28 @@
 
 ![Rendering Time vs. Number of Aircraft](../images/RenderingTime.png)
 
-#### Conclusion  
-
-- UI performance starts to degrade noticeably when the number of aircraft exceeds 2000
-- Displaying too many aircraft on the map also negatively affects usability  
-- **By limiting the number of objects displayed on the map under 2000, can keep the response time under 100ms**  
-- **Only render aircrafts under specific zoom level**
-  
-    
-**[Original UI Style]**
+### Observation
+- Rendering time increases proportionally with the number of objects rendered
+- Lag was observed when the map was moved with more than 2,000 objects rendered
+- Limiting the number of displayed objects to under 1800 helps keep the rendering time below 100ms  
+- Too many aircraft rendered on the map can negatively impact user experience  
+  (Users can only view the distribution and are expected to zoom in to identify individual aircraft.)
 ![Original UI](../images/OriginalUI.png)
+ 
+### Conclusion  
+To achieve quality attribute QAR_001_01, QAR_001_02, rendering time must be maintained under a specified limit  
   
-**[Proposed UI Style - provide summarized information]**
-![Bubble Style UI](../images/BubbleStyleUIWithNumber.png)
+#### Application of Tactic : Aggregate
+Aggregation is mainly used for usability but can also improve performance in our case.
+#### How to
+1. Only display aggregated representations (e.g., circle markers with counts) when the zoom level is low.  
+2. Render aircraft only when the map is zoomed in and only a few aircraft are visible in the viewport  
 
+Aggregation enables improvements in both performance and usability.  
+
+![Bubble Style UI](../images/BubbleStyleUIWithNumber.png)  
+
+  
 
 
 ## Objective 
@@ -34,7 +46,7 @@ It is natural to be concerned that system performance may degrade as the number 
 The objective of this experiment is to determine how many aircraft the current system can handle while maintaining an acceptable screen update rate and user interaction responsiveness.
 The results will help identify system performance thresholds, bottlenecks, and areas that require optimization.
 
-## Status
+## Statuskk
 [***Planned*** | In progress | Suspended | Canceled | Concluded]
 
 ## Expected outcomes
