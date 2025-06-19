@@ -130,9 +130,8 @@ If the assignee is not specifically mentioned in the plan below, it is a collabo
 
 #### Modifiability –  (Assigned:Navnit)
 - 6/10–6/13: Analyze current design  
-- 6/14–6/17: Add map provider  
+- 6/14–6/17: Add map provider - Link to [Experiment 9](./experiments/exp09-new-map.md)
 - 6/18–6/20: Apply architectural improvement
-- TODO: update plan
 
 #### Extensibility –  (Assigned:Youngtae)
 - 6/18–6/22: Add feature to detect deviation  
