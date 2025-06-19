@@ -60,6 +60,18 @@ Evaluate the effort and system impact required to support an additional map prov
   - Clear modular separation
   - Open and permissive license promoting future adaptations
 - Proceed with OSM, and leveraging the modular approach tested
+- Totally files affected
+  - DisplayGUI (cpp, h, dfm)
+  - FileSystemStorage (cpp, h)
+  - Global (cpp, h)
+  - **OsmLayer (cpp, h) - newly added**
+
+
+
+
+## Constraint
+
+OpenStreetMap supports 150,000 tiles download, so only zoom level 9 can be supported.
 
 
 
