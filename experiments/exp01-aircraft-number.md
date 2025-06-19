@@ -23,11 +23,11 @@
 - Limiting the number of displayed objects to under 1800 helps keep the rendering time below 100ms  
 - Too many aircraft rendered on the map can negatively impact user experience  
   (Users can only view the distribution and are expected to zoom in to identify individual aircraft.)
-![Original UI](../images/OriginalUI.png)
- 
+  ![Original UI](../images/OriginalUI.png)
+
 ### Conclusion  
 To achieve quality attribute QAR_001_01, QAR_001_02, rendering time must be maintained under a specified limit  
-  
+
 #### Application of Tactic : Aggregate
 Aggregation is mainly used for usability but can also improve performance in our case.
 #### How to
@@ -46,8 +46,8 @@ It is natural to be concerned that system performance may degrade as the number 
 The objective of this experiment is to determine how many aircraft the current system can handle while maintaining an acceptable screen update rate and user interaction responsiveness.
 The results will help identify system performance thresholds, bottlenecks, and areas that require optimization.
 
-## Statuskk
-[***Planned*** | In progress | Suspended | Canceled | Concluded]
+## Status
+[Planned | In progress | Suspended | Canceled | ***Concluded***]
 
 ## Expected outcomes
  - Performance test logs and statistical data

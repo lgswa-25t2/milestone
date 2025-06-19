@@ -22,7 +22,7 @@ TBD
 
 | ID                                                 | Description                                                  | Status    |
 | -------------------------------------------------- | ------------------------------------------------------------ | --------- |
-| [EXP_01](./experiments/exp01-aircraft-number.md)   | Performance Test According to Number of Aircraft             | Planned   |
+| [EXP_01](./experiments/exp01-aircraft-number.md)   | Performance Test According to Number of Aircraft             | Concluded |
 | [EXP_02](./experiments/exp02-ingestion-rate.md)    | Real-Time Aircraft Data Ingestion Rate and Volume via ADS-B Hub | Planned   |
 | [~~EXP_03~~](./experiments/exp03-stress-input.md)  | ~~UI Input Stress Test (System Behavior Under Rapid Button Clicks)~~ | Canceled  |
 | [~~EXP_04~~](./experiments/exp04-map-api.md)       | ~~API Key Requirement and Limitation Test for Map Providers~~ | Canceled  |
