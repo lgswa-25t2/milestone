@@ -18,15 +18,15 @@ The document of the software architecture that we envision to address requiremen
 
 The ADRs record the important architectural decisions including rationale.
 
-| ID                                      | Description                                          | Status   |
-| --------------------------------------- | ---------------------------------------------------- | -------- |
-| [ADR_01](./ADRs/ADR01-load-shedding.md) | Use the load shedding strategy for reducing overhead | Accepted |
+| ID                                                 | Description                                                 | Status   |
+| -------------------------------------------------- | ----------------------------------------------------------- | -------- |
+| [ADR_01](./ADRs/ADR01-viewport-and-aggregation.md) | Viewport-Based Aircraft Rendering with Aggregation Strategy | Accepted |
 
 ### Experiments
 
 | ID                                                 | Description                                                  | Status    |
 | -------------------------------------------------- | ------------------------------------------------------------ | --------- |
-| [EXP_01](./experiments/exp01-aircraft-number.md)   | Performance Test According to Number of Aircraft             | Concluded |
+| [EXP_01](./experiments/exp01-aircraft-number.md)   | Performance Test based on the number of aircraft             | Concluded |
 | [EXP_02](./experiments/exp02-ingestion-rate.md)    | Real-Time Aircraft Data Ingestion Rate and Volume via ADS-B Hub | Concluded |
 | [~~EXP_03~~](./experiments/exp03-stress-input.md)  | ~~UI Input Stress Test (System Behavior Under Rapid Button Clicks)~~ | Canceled  |
 | [~~EXP_04~~](./experiments/exp04-map-api.md)       | ~~API Key Requirement and Limitation Test for Map Providers~~ | Canceled  |
