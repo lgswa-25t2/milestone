@@ -7,7 +7,8 @@
 ## Remote User Interface Module View 
 ![image](https://github.com/user-attachments/assets/cce8d1b4-f761-474b-9b79-91092e8658b4)
 
-![image](https://github.com/user-attachments/assets/6fe565a7-0803-4265-95b8-a6d0b6b05373)
+![image](https://github.com/user-attachments/assets/648a8c7b-17bf-4211-b241-4ea6dcd8abee)
+
 
 
 **Key Highlight - Region Clustering Feature:**
