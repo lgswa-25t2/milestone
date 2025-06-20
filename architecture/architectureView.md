@@ -1,4 +1,4 @@
-# Module and C&C View: Improvement response time
+# Module and C&C View: Improve response time
 
 ## Quality Attribute
 - **Target**: Performance, Usability
