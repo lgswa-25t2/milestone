@@ -1,3 +1,14 @@
+Template for a view
+1. Primary presentation
+2. Element catalog
+3. Behavior
+4. Context diagram
+5. Variability guide
+6. Design rationale
+7. Related views
+
+---
+
 #  Remote User Interface Module View for Region clustering
 ![image](https://github.com/user-attachments/assets/2c221957-8ce4-44dc-b6ac-80c5883d6d22)
 
