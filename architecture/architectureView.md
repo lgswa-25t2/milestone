@@ -1,6 +1,15 @@
-3개의 diagram으로 지피티에게 시켜 template 에 맞게 머지해달라고 한 결과입니다.
+## 3개의 diagram으로 지피티에게 시켜 template 에 맞게 머지해달라고 한 결과입니다.
 ---
+### 🧭 그렇다면 뷰 이름은 어떻게 정해야 할까?
+### View 이름 = [Viewtype 이름]: [기능 또는 품질 속성 중심 설명]
+### 이 패턴이 가장 널리 쓰이며 명확하고 일관성 있게 문서를 구성할 수 있습니다.
 
+## 🔹 예시 제목 (지금 상황에 맞게)
+### 뷰 이름 제안	설명
+### Component & Connector View: Region Clustering	Viewtype 명시 + 기능 중심
+### Component & Connector View for Performance Optimization	Viewtype + 품질 속성 중심
+### Behavior and C&C View: Region-Based Aircraft Aggregation	복합적인 Viewtype 사용 가능 (필요 시)
+---
 
 # Architecture View for Region Clustering Enhancement
 
