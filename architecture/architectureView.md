@@ -2,7 +2,7 @@
 ---
 
 
-# Component & Connector View: Region Clustering Enhancement
+# Architecture View for Region Clustering Enhancement
 
 ## Quality Attribute
 - **Target**: Performance, Usability
