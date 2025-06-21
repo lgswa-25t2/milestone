@@ -73,7 +73,8 @@ TODO: 그려보기 (Sujin)
 ---
 
 ## 6. Design Rationale
-TODO: Link to ADR
+- [ADR 1 : Viewport-Based Aircraft Rendering with Aggregation Strategy](../ADRs/ADR01-viewport-and-aggregation.md)
+
 ---
 
 ## 7. Related Views
