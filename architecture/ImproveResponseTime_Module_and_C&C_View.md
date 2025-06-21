@@ -51,7 +51,8 @@ TODO: New *Thread 관련 추가 (Jeong)
 ---
 
 ## 3. Behavior
-![image](https://github.com/user-attachments/assets/cfcc4412-8584-4046-ab92-ad24b7789433)
+![image](https://github.com/user-attachments/assets/1e317fb1-f9c8-45ce-b2ca-53afa9f0e9c5)
+
 
 - **Event Trigger**: Zoom out event or periodic draw event
 - **Zoom threshold** (`xf >= cellDrawZoomRate`) triggers clustering mode
