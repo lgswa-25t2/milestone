@@ -1,3 +1,9 @@
+TODO 4가지
+- C&C 뷰에 thread 추가 및 Element catalog에 new thread 추가 (jeong)
+- Context Diagram, Deployment Diagram (sujin)
+
+  
+---
 # Module and C&C View: Improve response time
 
 ## Quality Attribute
@@ -16,7 +22,7 @@
 
 #### Component & Connector (C&C) View
 ![image](https://github.com/user-attachments/assets/2bdc240e-2428-4afa-9233-b907bb7378ac)
-
+TODO: draw.io 에 thread 추가한 것 그리기 (Jeong)
 
 ---
 
@@ -31,6 +37,8 @@
 | `Aircraft Data Store`  | Shared Data   | Holds live aircraft data, accessed via HashTable               |
 | `TTCPClient*Thread`    | Thread        | Feeds real-time data from Raspberry Pi and ADS-B server        |
 | `New *Thread`    | Thread        | TODO: description        |
+
+TODO: New *Thread 관련 추가 (Jeong)
 
 ---
 
@@ -54,7 +62,7 @@
 
 ## 4. Context Diagram 
 
-TODO:
+TODO: 그려보기 (Sujin)
 
 
 ---
@@ -69,7 +77,7 @@ TODO: Link to ADR
 ---
 
 ## 7. Related Views
-TODO: **Deployment View**: Threads and data flow for TTCPClient modules (defined elsewhere)
+TODO: **Deployment View** (sujin)
 
 ---
 
