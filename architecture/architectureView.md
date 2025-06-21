@@ -62,7 +62,8 @@ TODO: New *Thread 관련 추가 (Jeong)
 
 ## 4. Context Diagram 
 
-TODO: 그려보기 (Sujin)
+![image](https://github.com/user-attachments/assets/6fb9f489-33b2-4562-935a-189f5942eb8d)
+
 
 
 ---
