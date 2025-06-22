@@ -123,15 +123,15 @@ If the assignee is not specifically mentioned in the plan below, it is a collabo
 ### Improve Quality Attribute
 
 #### Performance & Resiliency –  (Assigned: Jaeyoung, Seungsoon)
-- 6/9–6/11: Basic test  
-- 6/11–6/13: 1st verification test  
-- 6/14–6/17: Strategy and design 2nd test  
-- 6/18–6/20: 2nd test  
-- 6/18–6/28: Code improvement  
-- 6/20–6/30: Final validation test  
+- 6/9–6/11: Basic test
+- 6/11–6/13: 1st verification test
+- 6/14–6/17: Strategy and design 2nd test
+- 6/18–6/20: 2nd test
+- 6/18–6/28: Code improvement
+- 6/20–6/30: Final validation test
 
 #### Modifiability –  (Assigned:Navnit)
-- 6/10–6/13: Analyze current design  
+- 6/10–6/13: Analyze current design
 - 6/14–6/17: Add map provider - Link to [Experiment 9](./experiments/exp09-new-map.md)
 - 6/18–6/20: Apply architectural improvement
 
@@ -139,7 +139,6 @@ If the assignee is not specifically mentioned in the plan below, it is a collabo
 - 6/18–6/22: Add feature to detect deviation  
 - 6/23–6/27: Add featrue to detect unregistred aircraft
 - 6/28–6/30: Apply architectural improvement
-- TODO: update plan
 
 #### *Milestone 2* (6/23)
 
@@ -155,7 +154,6 @@ Submit updated architecture
  - 6/20~6/22 While receiving and recording data, play back tracks (playback at 2x at 3x speed) by moving a mouse cursor
  - 6/23~6/25 Track simulation
  - 6/26~6/30 Dead reckoning - plot tracks now or where they should be based upon constant velocity and altitude (parametric fit)
- - TODO: update plan
 
 
 #### Safety & Deviation –  (Assigned:Youngtae)
