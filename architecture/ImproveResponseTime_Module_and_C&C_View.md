@@ -62,10 +62,33 @@ TODO: New *Thread 관련 추가 (Jeong)
      - Count aircraft per 10×10 screen grid cell
   2. **Circle Rendering**  
      - For each populated cell, render a semi-transparent circle with aircraft count
-
+       
 ### Result:
 - **Before**: Thousands of individual aircraft sprites rendered → High load
 - **After**: At most 100 region circles shown → Lower load, better user clarity
+
+---
+
+### Before
+![image](https://github.com/user-attachments/assets/5c3fa15c-defe-4ecd-8c0e-0ddcbb293584)
+
+The user clicks a button → TForm1 calls methods directly on IdTCPClientRaw.
+TForm1 also resumes the TCPClientRawHandleThread.
+Because all actions run in the UI thread, the interface may become unresponsive while waiting for network operations to complete.
+
+
+### After
+![image](https://github.com/user-attachments/assets/30d4f931-bc8e-4c3d-b332-02892115a488)
+
+The user still clicks the button, but TForm1 spawns a ConnectionThread1.
+ConnectionThread1 performs the connection by calling Connect on IdTCPClientRaw.
+When the connection is successful, OnConnectionComplete is triggered.
+Only then is the TCPClientRawHandleThread resumed and the input is processed asynchronously.
+This keeps the UI thread free and responsive.
+
+### Conclusion:
+The new design improves system architecture by introducing asynchronous connection handling,
+reducing UI thread load, and increasing maintainability and responsiveness. 
 
 ---
 
