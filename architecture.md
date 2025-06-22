@@ -4,7 +4,9 @@ You can find our software architecture documentation for system requirements in 
 
 First, the context diagram of our system and external elements is as follows.
 
-![image](https://github.com/user-attachments/assets/6fb9f489-33b2-4562-935a-189f5942eb8d)
+
+
+<img src="/Users/myhome/Library/Application Support/typora-user-images/image-20250622155411853.png" alt="image" style="zoom: 25%;" />
 
 
 
