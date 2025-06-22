@@ -27,9 +27,9 @@ TODO 4가지
 #### Module Dependency Diagram
 ![image](https://github.com/user-attachments/assets/6268ac37-59e6-4a07-a9ef-0904f99b66be)
 
-
 #### Component & Connector (C&C) View
-![image](https://github.com/user-attachments/assets/2bdc240e-2428-4afa-9233-b907bb7378ac)
+![image](https://github.com/user-attachments/assets/1c5a44c2-846a-4f79-bf62-751233dc7e82)
+
 TODO: draw.io 에 thread 추가한 것 그리기 (Jeong)
 
 ---
@@ -44,7 +44,7 @@ TODO: draw.io 에 thread 추가한 것 그리기 (Jeong)
 | `DrawObject()`         | Function      | Core drawing method, runs on timer or user event               |
 | `Aircraft Data Store`  | Shared Data   | Holds live aircraft data, accessed via HashTable               |
 | `TTCPClient*Thread`    | Thread        | Feeds real-time data from Raspberry Pi and ADS-B server        |
-| `New *Thread`    | Thread        | TODO: description        |
+| `TConnectionThread`    | Thread        | Establishes the TCP connection in a separate thread to avoid blocking the UI thread        |
 
 TODO: New *Thread 관련 추가 (Jeong)
 
