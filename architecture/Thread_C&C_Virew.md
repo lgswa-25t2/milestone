@@ -52,10 +52,24 @@ reducing UI thread load, and increasing maintainability and responsiveness.
 ---
 
 ## 4. Design Rationale
-- Rationale: To resolve UI blocking issues and improve user experience.
-- Alternative Considered: Timer-based polling was evaluated but found inefficient in terms of resource usage.
-- Decision: Separated network connection from the main UI thread by introducing TConnectionThread.
-- Result: Ensured 100% UI responsiveness and reduced connection time.
+### Rationale
+Originally, the connection logic was executed on the main UI thread, causing the UI to freeze for several seconds while connecting. This led to poor responsiveness and a negative user experience. The goal was to improve perceived performance and usability.
+
+### Alternative Considered
+**Shorter timeout (Tactic: Bounded Execution Time) :**
+Reduces delay but increases failure rate in unstable networks.
+
+**Progress popup (Tactic: User Feedback) :**
+Informs the user but does not resolve the underlying blocking issue.
+
+**Introduce concurrency (Selected) :**
+Using a background thread separates the blocking task from the UI.
+
+### Decision
+We introduced TConnectionThread to handle network connections off the UI thread, improving system responsiveness.
+
+### Result
+The "Connect" button now responds within 1 second, and the UI remains interactive during connection attempts. This change improves response time and user satisfaction without affecting success rate.
 
 ---
 
