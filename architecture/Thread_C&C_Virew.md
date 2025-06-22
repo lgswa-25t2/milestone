@@ -1,4 +1,4 @@
-# Asynchronous Network Connection through Separation of TConnectionThread Component & Connector View
+# Separation of TConnectionThread Component & Connector View
 
 ## 1. Primary Presentation
 
