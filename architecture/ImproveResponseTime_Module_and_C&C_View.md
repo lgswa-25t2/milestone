@@ -25,7 +25,6 @@
 #### Component & Connector (C&C) View
 ![image](https://github.com/user-attachments/assets/1c5a44c2-846a-4f79-bf62-751233dc7e82)
 
-TODO: draw.io 에 thread 추가한 것 그리기 (Jeong)
 
 ---
 
