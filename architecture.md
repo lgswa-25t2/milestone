@@ -8,7 +8,12 @@ First, the context diagram of our system and external elements is as follows.
 
 
 
+Also, this is a deployment view that shows the infrastructure for each components.
 
+<table>
+<tr><td align="center"><a href="./architecture/IFTA_Deployment_View.md">Deployment view<br>
+<img src="https://github.com/user-attachments/assets/217bcb79-3f64-4034-b285-ac11970d8b80" width="700"></a></td></tr>
+</table>
 
 
 
