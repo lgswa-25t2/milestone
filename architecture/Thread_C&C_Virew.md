@@ -5,7 +5,8 @@
 ### Key Diagrams
 
 #### Component & Connector (C&C) View
-![image](https://github.com/user-attachments/assets/1c5a44c2-846a-4f79-bf62-751233dc7e82)
+![image](https://github.com/user-attachments/assets/05bd718a-952e-4a37-a8a1-b9064eba0fe4)
+
 
 ---
 
