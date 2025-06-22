@@ -21,9 +21,11 @@ Also, this is a deployment view that shows the infrastructure for each component
 
 
 
-Paulo 의 팀 [project 문서](https://github.com/miyagis-forests/farmacy-food-kata/blob/main/README.md#architecture) 참조
+---
 
-TODO - 아래의 5개 항목은 각각 특정 pattern 에 속하기 때문에 이에 대한 내용은 ADR 로 옮기고, 여기는 각 다이어그램에 대한 간략한 설명과 그림의 출처에 해당되는 architecture 폴더 밑의 문서와 매핑시킨다.
+## 아래는 참조용 - 곧 지울거임 TODO TBD NA N/A
+
+Paulo 의 팀 [project 문서](https://github.com/miyagis-forests/farmacy-food-kata/blob/main/README.md#architecture) 참조
 
 
 
