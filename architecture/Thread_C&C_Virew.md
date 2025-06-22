@@ -48,17 +48,7 @@ reducing UI thread load, and increasing maintainability and responsiveness.
 
 ---
 
-## 4. Context Diagram 
-
-
----
-
-## 5. Variability Guide
-- N/A
-
----
-
-## 6. Design Rationale
+## 4. Design Rationale
 - Rationale: To resolve UI blocking issues and improve user experience.
 - Alternative Considered: Timer-based polling was evaluated but found inefficient in terms of resource usage.
 - Decision: Separated network connection from the main UI thread by introducing TConnectionThread.
@@ -66,7 +56,7 @@ reducing UI thread load, and increasing maintainability and responsiveness.
 
 ---
 
-## 7. Related Views
+## 5. Related Views
 - Deployment View - [Intelligent Flight Tracking Assistant System Deployment View](./IFTA_Deployment_View.md)
 
 ---
