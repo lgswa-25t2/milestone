@@ -52,7 +52,6 @@ It avoids blocking operations on the UI thread and improves both **performance**
 ---
 
 ## 4. Design Rationale
-### Rationale
 Originally, the connection logic was executed on the main UI thread, causing the UI to freeze for several seconds while connecting. This led to poor responsiveness and a negative user experience. The goal was to improve perceived performance and usability.
 
 ### Alternative Considered
