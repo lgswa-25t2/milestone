@@ -17,7 +17,9 @@
 | Element                | Type          | Responsibility                                                |
 |------------------------|---------------|----------------------------------------------------------------|
 | `MainThread`         | Thread      | Main UI thread               |
-| `DrawObject()`         | Function      | Core drawing method, runs on timer or user event               |
+| `UI Object`         | Component      | Represents visual components and interface elements rendered on screen               |
+| `Timer1Timer`         | Component      | Triggers every 500ms to call DrawObject() and handle timeout events               |
+| `Timer2Timer`         | Component      | Triggers every 5000ms to purge and clean up outdated data from the aircraft DB               |
 | `Aircraft Data Store`  | Shared Data   | Holds live aircraft data, accessed via HashTable               |
 | `TTCPClient*Thread`    | Thread        | Feeds real-time data from Raspberry Pi and ADS-B server        |
 | `TConnectionThread`    | Thread        | Establishes the TCP connection in a separate thread to avoid blocking the UI thread        |
