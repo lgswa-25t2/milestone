@@ -70,7 +70,8 @@ TODO: New *Thread 관련 추가 (Jeong)
 ---
 
 ### Before
-![image](https://github.com/user-attachments/assets/5c3fa15c-defe-4ecd-8c0e-0ddcbb293584)
+![image](https://github.com/user-attachments/assets/b8778a4f-d6b8-4717-8ac6-00268e1ab816)
+
 
 The user clicks a button → TForm1 calls methods directly on IdTCPClientRaw.
 TForm1 also resumes the TCPClientRawHandleThread.
@@ -78,7 +79,8 @@ Because all actions run in the UI thread, the interface may become unresponsive 
 
 
 ### After
-![image](https://github.com/user-attachments/assets/30d4f931-bc8e-4c3d-b332-02892115a488)
+![image](https://github.com/user-attachments/assets/2cd25197-daf0-4c30-970e-53bade5d217a)
+
 
 The user still clicks the button, but TForm1 spawns a ConnectionThread1.
 ConnectionThread1 performs the connection by calling Connect on IdTCPClientRaw.
