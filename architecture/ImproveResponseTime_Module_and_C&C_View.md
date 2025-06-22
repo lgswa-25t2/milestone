@@ -1,9 +1,4 @@
-TODO 4가지
-- C&C 뷰에 thread 추가 및 Element catalog에 new thread 추가 (jeong)
-- Context Diagram, Deployment Diagram (sujin) -done
-
----
-# Improve response time Module and C&C View
+# Viewport-Based Aircraft Rendering with Aggregation Module and C&C View
 
 ## Quality Attribute
 - **Target**: Performance, Usability
