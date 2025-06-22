@@ -1,5 +1,19 @@
 # Architecture - under construction
 
+You can find our software architecture documentation for system requirements in this document.
+
+First, the context diagram of our system and external elements is as follows.
+
+![image](https://github.com/user-attachments/assets/6fb9f489-33b2-4562-935a-189f5942eb8d)
+
+
+
+
+
+
+
+
+
 
 
 Paulo 의 팀 [project 문서](https://github.com/miyagis-forests/farmacy-food-kata/blob/main/README.md#architecture) 참조
