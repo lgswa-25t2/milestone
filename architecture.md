@@ -1,4 +1,4 @@
-# Architecture - under construction
+# Architecture
 
 You can find our software architecture documentation for system requirements in this document.
 
@@ -35,4 +35,3 @@ The architecture views below are the main contents of system software architectu
   </td>
 </tr>
 </table>
-
