@@ -2,7 +2,7 @@
 
 ## Results and recommendations
 
-To be written upon completion of the experiment.
+As a result of the experiment, there is nothing reported to the system when the connection with Raspberry Pi is disconnected or when data through the antenna does not come in. Also, it seems that heartbeat does not work, so we need to think more about what to do with fault detection and error handling methods.
 
 ## Objective
 
@@ -11,7 +11,7 @@ Additionally, the experiment will confirm whether the Raspberry Pi has a working
 
 ## Status
 
-\[***Planned*** | In progress | Suspended | Canceled | Concluded]
+\[Planned | In progress | Suspended | Canceled | ***Concluded***]
 
 ## Expected outcomes
 
@@ -29,13 +29,11 @@ Additionally, the experiment will confirm whether the Raspberry Pi has a working
   * Power supply with switch (for simulating lock-up or forced reset)
 
 * **Software**:
-
   * Device-side agent expected to report error status or send heartbeat
   * Network tools for ping/connection monitoring (e.g., `ping`, `fping`, custom watchdog)
-
+  
 * **Personnel**: 2 people × 5 hours
-
-  * (1 for physical and network testing, 1 for log capture and analysis)
+* (1 for physical and network testing, 1 for log capture and analysis)
 
 ## Experiment description
 

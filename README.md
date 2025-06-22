@@ -31,7 +31,7 @@ The ADRs record the important architectural decisions including rationale.
 | [~~EXP_03~~](./experiments/exp03-stress-input.md)  | ~~UI Input Stress Test (System Behavior Under Rapid Button Clicks)~~ | Canceled  |
 | [~~EXP_04~~](./experiments/exp04-map-api.md)       | ~~API Key Requirement and Limitation Test for Map Providers~~ | Canceled  |
 | [~~EXP_05~~](./experiments/exp05-playback-size.md) | ~~System Behavior Test According to Playback Data Size~~     | Canceled  |
-| [EXP_06](./experiments/exp06-pi-operation.md)      | Verification of Error Cause Reporting and Connectivity Monitoring for Raspberry Pi | Planned   |
+| [EXP_06](./experiments/exp06-pi-operation.md)      | Verification of Error Cause Reporting and Connectivity Monitoring for Raspberry Pi | Concluded |
 | [EXP_07](./experiments/exp07-multi-thread.md)      | Measuring performance improvement by introducing multi-threading | Suspended |
 | ~~[EXP_08](./experiments/exp08-big-query.md)~~     | ~~Usage of BigQuery~~                                        | Canceled  |
 | [EXP_09](./experiments/exp09-new-map.md)           | Add new map provider                                         | Concluded |
