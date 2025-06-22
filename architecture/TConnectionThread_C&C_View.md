@@ -55,13 +55,13 @@ It avoids blocking operations on the UI thread and improves both **performance**
 Originally, the connection logic was executed on the main UI thread, causing the UI to freeze for several seconds while connecting. This led to poor responsiveness and a negative user experience. The goal was to improve perceived performance and usability.
 
 ### Alternative Considered
-**Shorter timeout (Tactic: Bounded Execution Time) :**
+- **Shorter timeout (Tactic: Bounded Execution Time) :**
 Reduces delay but increases failure rate in unstable networks.
 
-**Progress popup (Tactic: User Feedback) :**
+- **Progress popup (Tactic: User Feedback) :**
 Informs the user but does not resolve the underlying blocking issue.
 
-**Introduce concurrency (Selected) :**
+- **Introduce concurrency (Selected) :**
 Using a background thread separates the blocking task from the UI.
 
 ### Decision
