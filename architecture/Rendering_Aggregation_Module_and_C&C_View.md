@@ -82,5 +82,3 @@
 ## 7. Related Views
 - Deployment View - [Intelligent Flight Tracking Assistant System Deployment View](./IFTA_Deployment_View.md)
 
----
-
