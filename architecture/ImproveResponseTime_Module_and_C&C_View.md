@@ -88,7 +88,7 @@ TODO: New *Thread 관련 추가 (Jeong)
 ---
 
 ## 7. Related Views
-- Deployment View - [Intelligent Flight Tracking Assistant System Deployment View](./System_DeploymentView.md)
+- Deployment View - [Intelligent Flight Tracking Assistant System Deployment View](./IFTA_Deployment_View.md)
 
 ---
 
