@@ -4,7 +4,7 @@ You can find our software architecture documentation for system requirements in 
 
 First, the context diagram of our system and external elements is as follows.
 
-<img src="./images/context-diagram.jpg" alt="Context Diagram" style="zoom:33%;" />
+![Context Diagram](./images/context-diagram.jpg)
 
 
 
