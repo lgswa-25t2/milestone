@@ -41,8 +41,6 @@ TODO: draw.io 에 thread 추가한 것 그리기 (Jeong)
 | `TTCPClient*Thread`    | Thread        | Feeds real-time data from Raspberry Pi and ADS-B server        |
 | `TConnectionThread`    | Thread        | Establishes the TCP connection in a separate thread to avoid blocking the UI thread        |
 
-TODO: New *Thread 관련 추가 (Jeong)
-
 ---
 
 ## 3. Behavior
@@ -62,37 +60,12 @@ TODO: New *Thread 관련 추가 (Jeong)
 - **Before**: Thousands of individual aircraft sprites rendered → High load
 - **After**: At most 100 region circles shown → Lower load, better user clarity
 
----
-
-### Before
-![image](https://github.com/user-attachments/assets/b8778a4f-d6b8-4717-8ac6-00268e1ab816)
-
-
-The user clicks a button → TForm1 calls methods directly on IdTCPClientRaw.
-TForm1 also resumes the TCPClientRawHandleThread.
-Because all actions run in the UI thread, the interface may become unresponsive while waiting for network operations to complete.
-
-
-### After
-![image](https://github.com/user-attachments/assets/2cd25197-daf0-4c30-970e-53bade5d217a)
-
-
-The user still clicks the button, but TForm1 spawns a ConnectionThread1.
-ConnectionThread1 performs the connection by calling Connect on IdTCPClientRaw.
-When the connection is successful, OnConnectionComplete is triggered.
-Only then is the TCPClientRawHandleThread resumed and the input is processed asynchronously.
-This keeps the UI thread free and responsive.
-
-### Conclusion:
-The new design improves system architecture by introducing asynchronous connection handling,
-reducing UI thread load, and increasing maintainability and responsiveness. 
 
 ---
 
 ## 4. Context Diagram 
 
 ![image](https://github.com/user-attachments/assets/6fb9f489-33b2-4562-935a-189f5942eb8d)
-
 
 
 ---
