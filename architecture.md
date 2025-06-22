@@ -22,8 +22,10 @@ The architecture views below are the main contents of system software architectu
 
 <table>
 <tr>
-  <td align="center"><a href="./architecture/Rendering_Aggregation_Module_and_C&C_View.md#module-dependency-diagram">Aircraft Rendering - module uses view<br><img src="https://github.com/user-attachments/assets/6268ac37-59e6-4a07-a9ef-0904f99b66be" width="800"></a>       </td>
-      </tr>
+  <td align="center"><a href="./architecture/Rendering_Aggregation_Module_and_C&C_View.md#module-dependency-diagram">Aircraft Rendering - module uses view<br>
+        <img src="https://github.com/user-attachments/assets/6268ac37-59e6-4a07-a9ef-0904f99b66be" width="800"></a>       
+      </td>
+  </tr>
   <tr>  
   <td align="center"><a href="./architecture/Rendering_Aggregation_Module_and_C&C_View.md#component--connector-cc-view">Aircraft Rendering - Data repository<br>
         <img src="https://github.com/user-attachments/assets/1c5a44c2-846a-4f79-bf62-751233dc7e82" width="800"></a>
