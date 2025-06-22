@@ -46,8 +46,8 @@ Only then is the TCPClientRawHandleThread resumed and the input is processed asy
 This keeps the UI thread free and responsive.
 
 ### Conclusion:
-The new design improves system architecture by introducing asynchronous connection handling,
-reducing UI thread load, and increasing maintainability and responsiveness. 
+This implementation applies the **"Introduce Concurrency"** tactic.
+It avoids blocking operations on the UI thread and improves both **performance** and **usability**.
 
 ---
 
