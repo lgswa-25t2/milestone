@@ -5,15 +5,6 @@
 
 ![image](https://github.com/user-attachments/assets/932df633-aca1-40cb-813b-5542d78750c8)
 
-
-
----
-
-
-### Overview
-
-This Deployment View illustrates the **physical deployment architecture** of the ADS-B aircraft tracking system. It shows the relationship between hardware nodes and software components in this distributed system that receives, processes, and visualizes real-time aircraft data.
-
 ---
 
 ### Physical Architecture
