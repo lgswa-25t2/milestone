@@ -28,7 +28,9 @@
 
 ## 3. Behavior
 ### Before
-![image](https://github.com/user-attachments/assets/b8778a4f-d6b8-4717-8ac6-00268e1ab816)
+![image](https://github.com/user-attachments/assets/cae83755-2179-4606-8da5-c4c483393a41)
+
+
 
 
 The user clicks a button → TForm1 calls methods directly on IdTCPClientRaw.
@@ -37,7 +39,9 @@ Because all actions run in the UI thread, the interface may become unresponsive 
 
 
 ### After
-![image](https://github.com/user-attachments/assets/d12778b0-2cf4-4fc8-bb26-ff4b20787c74)
+![image](https://github.com/user-attachments/assets/c30dd38b-3f9a-4db2-8754-89af616e3d13)
+
+
 
 
 The user still clicks the button, but TForm1 spawns a ConnectionThread1.
