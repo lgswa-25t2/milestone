@@ -32,7 +32,7 @@ To achieve quality attribute QAR_001_01, QAR_001_02, rendering time must be main
 Aggregation is mainly used for usability but can also improve performance in our case.
 #### How to
 1. Only display aggregated representations (e.g., circle markers with counts) when the zoom level is low.  
-2. Render aircraft only when the map is zoomed in and only a few aircraft are visible in the viewport  
+2. Render aircraft only when the map is zoomed in (only a few aircraft are visible) in the viewport  
 
 Aggregation enables improvements in both performance and usability.  
 
