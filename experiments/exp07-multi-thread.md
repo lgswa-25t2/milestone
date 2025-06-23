@@ -58,9 +58,9 @@ The purpose of this experiment is to measure how much performance is improved wh
 
 ## Duration
 
-Start Date: June 22, 2025
+~~Start Date: June 22, 2025~~
 
-End Date: June 22, 2025
+~~End Date: June 22, 2025~~
 
 ## Assignee
 
