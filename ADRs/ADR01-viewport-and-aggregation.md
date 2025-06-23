@@ -29,3 +29,9 @@ Positive:
 
 Negative:
 - Slight increase in implementation complexity due to aggregation logic
+
+
+
+## Related view
+
+[Rendering aggregation](../architecture/Rendering_Aggregation_Module_and_C&C_View.md)
