@@ -142,7 +142,7 @@ In order to prioritize, ***I*** and ***R*** scores were given according to the f
 - Artifact - Map rendering module in the Remote User Interface (RUI)
 - Environment - During iterative development or feature expansion
 - Response - The new map provider integrates seamlessly without affecting existing components
-- Response Measure - Integration completed in under 4 person-hours, no unintended side effects observed
+- Response Measure - Integration completed in under 1 person/4hours for 4 days, no unintended side effects observed
 
 
 
