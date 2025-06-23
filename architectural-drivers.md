@@ -97,7 +97,7 @@ In order to prioritize, ***I*** and ***R*** scores were given according to the f
 - Artifact - Remote User Interface (RUI)
 - Environment - Normal raw connect or SBS connect mode, The system is tracking 5000 aircrafts simultaneously
 - Response - UI responds to user interaction
-- Response Measure - Map toggle interaction response ≤ 150 (TBD) milliseconds
+- Response Measure - Map toggle interaction response ≤ 150 milliseconds
 
 #### QA_002_01
 
