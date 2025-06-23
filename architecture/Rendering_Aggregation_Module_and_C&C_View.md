@@ -43,8 +43,7 @@
 ---
 
 ## 3. Behavior
-![image](https://github.com/user-attachments/assets/1e317fb1-f9c8-45ce-b2ca-53afa9f0e9c5)
-
+![image](https://github.com/user-attachments/assets/e5d394d1-03fa-4715-8839-a233e0754476)
 
 - **Event Trigger**: Zoom out event or periodic draw event
 - **Zoom threshold** (`xf >= cellDrawZoomRate`) triggers clustering mode
