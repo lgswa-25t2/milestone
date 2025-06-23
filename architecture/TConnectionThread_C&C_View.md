@@ -37,7 +37,8 @@ Because all actions run in the UI thread, the interface may become unresponsive 
 
 
 ### After
-![image](https://github.com/user-attachments/assets/2cd25197-daf0-4c30-970e-53bade5d217a)
+![image](https://github.com/user-attachments/assets/d12778b0-2cf4-4fc8-bb26-ff4b20787c74)
+
 
 The user still clicks the button, but TForm1 spawns a ConnectionThread1.
 ConnectionThread1 performs the connection by calling Connect on IdTCPClientRaw.
