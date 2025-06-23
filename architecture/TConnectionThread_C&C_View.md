@@ -1,4 +1,4 @@
-# Separation of TConnectionThread Component & Connector View
+# Separation of TConnectionThread C&C View
 
 ## 1. Primary Presentation
 
