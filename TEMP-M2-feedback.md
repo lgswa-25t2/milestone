@@ -1,0 +1,41 @@
+# Feedback M2 - must be deleted before M3
+
+- Plan improved. Comprehensive. May not be easy to update in this format (long bullet list with dates for each task).
+- Impl mandatory features on 6/28
+- Impl desirable features on 6/30
+- Good performance experiment about OpenGL. Viewport rendering, etc.
+- In the main architecture page (https://github.com/lgswa-25t2/milestone/blob/main/architecture.md), you should use thumbnails for the diagrams.
+- Context diagram: "Raspberry PI" is too vague. It's the same as drawing a line to a computer. The CD should show what is it for. You can label the arrow to indicate what's the interaction.
+- Deployment view: not following a view template. If you remove the boxes "Remote Infrastructure" and "Client Infrastructure", your diagram will become more clear and easier to read. These boxes don't add anything to the design understanding.
+- The second view has multiple, inconsistent names: "Aircraft Rendering - module uses view", "Viewport-Based Aircraft Rendering with Aggregation Module and C&C View", "Rendering_Aggregation_Module_and_C&C_View", "Aircraft Rendering - Data repository". In any case, you should have separate views: one is "Module dependencies for the Windows app", the other is "Runtime view of the Windows app".
+- Please follow a view template. Each view is documented in a different structure. Be consistent.
+- TForm1 is a poor name for a component. Remember we talked about using clear names...
+- Did not split DisplayGUI.
+- DrawObject in the diagram has a list of 11 things. Why not show that in the element catalog.
+- TConnectionThread was created to identify connection issues.
+- Team was able to integrate new map.
+- New map integrated in 16 hours. QA 005 asks for 4 hours.
+- I don't see a working plan with detailed task assignments, tracking, etc. It feels like the team has developed the submitted plan just for the mentors, but that's not actually what the team is working from. It would be nice to know how the team is actually planning, assigning, and tracking work.
+- The experiments seem to be well aligned with the objectives of the project. The architectural decisions have been embedded in the experiments. It would have been nice to also see those reflected in the architecture document.
+- It would be helpful to have the architectural decisions clearly identified (it's not clear from the documentation what's been done or how the QAS have been supported)
+- The team needs to think a bit more carefully about what information the documentation needs to convey and make sure the document supports those objectives. I see the views, but there isn't any supporting documention that explains what the key decisions are, what the elements in the document are, what the relationships are (in some cases)
+
+- 계획이 개선되었습니다. 포괄적입니다. 이 형식(각 작업의 날짜가 포함된 긴 글머리 기호 목록)으로는 업데이트가 쉽지 않을 수 있습니다.
+- 6월 28일 필수 기능 구현
+- 6월 30일 권장 기능 구현
+- OpenGL, 뷰포트 렌더링 등에 대한 성능 실험 진행
+- 메인 아키텍처 페이지(https://github.com/lgswa-25t2/milestone/blob/main/architecture.md)에서 다이어그램에 썸네일을 사용해야 합니다.
+- 컨텍스트 다이어그램: "Raspberry PI"는 너무 모호합니다. 컴퓨터에 선을 긋는 것과 같습니다. CD에 용도를 표시해야 합니다. 화살표에 레이블을 지정하여 상호 작용을 나타낼 수 있습니다.
+- 배포 뷰: 뷰 템플릿을 따르지 않습니다. "원격 인프라" 및 "클라이언트 인프라" 상자를 제거하면 다이어그램이 더 명확하고 읽기 쉬워집니다. 하지만 이러한 상자는 설계 이해에 아무런 도움이 되지 않습니다.
+- 두 번째 뷰에는 여러 개의 일관성 없는 이름이 있습니다. "항공기 렌더링 - 모듈에서 뷰 사용", "집계 모듈 및 C&C 뷰를 사용한 뷰포트 기반 항공기 렌더링", "Rendering_Aggregation_Module_and_C&C_View", "항공기 렌더링 - 데이터 저장소". 어떤 경우든 별도의 뷰를 사용해야 합니다. 하나는 "Windows 앱의 모듈 종속성"이고, 다른 하나는 "Windows 앱의 런타임 뷰"입니다.
+- 뷰 템플릿을 따르세요. 각 뷰는 다른 구조로 문서화됩니다. 일관성을 유지하세요.
+- TForm1은 구성 요소 이름으로 적합하지 않습니다. 명확한 이름을 사용하는 것에 대해 이야기했던 것을 기억하세요...
+- DisplayGUI를 분할하지 않았습니다.
+- 다이어그램의 DrawObject에는 11개의 항목이 있습니다. 요소 카탈로그에 표시하지 않는 것이 좋습니다.
+- 연결 문제를 식별하기 위해 TConnectionThread가 생성되었습니다.
+- 팀은 새 맵을 통합할 수 있었습니다.
+- 새 맵을 16시간 만에 통합했습니다. QA 005에서 4시간을 요청했습니다.
+- 세부적인 작업 할당, 추적 등이 포함된 작업 계획이 보이지 않습니다. 팀이 멘토들을 위해 제출한 계획을 작성한 것처럼 보이지만, 실제로는 그런 방식으로 작업하고 있지 않습니다. 팀이 실제로 어떻게 계획, 할당 및 추적하는지 알 수 있다면 좋겠습니다.
+- 실험은 프로젝트 목표와 잘 부합하는 것 같습니다. 아키텍처 관련 결정 사항들이 실험에 포함되어 있습니다. 아키텍처 문서에도 반영되었으면 좋았을 텐데요.
+- 아키텍처 관련 결정 사항들을 명확하게 명시했으면 좋겠습니다. (문서에는 어떤 작업이 수행되었는지, QAS가 어떻게 지원되었는지 명확하게 나와 있지 않습니다.)
+- 팀은 문서에 어떤 정보를 담아야 하는지 좀 더 신중하게 생각하고, 문서가 해당 목표를 뒷받침하는지 확인해야 합니다. 의견은 있지만, 주요 결정 사항, 문서의 요소, 관계(경우에 따라)를 설명하는 뒷받침 문서가 없습니다.
