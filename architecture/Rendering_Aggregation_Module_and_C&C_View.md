@@ -1,11 +1,8 @@
-# Viewport-Based Aircraft Rendering with Aggregation Module and C&C View
+# Aggregated Aircraft Rendering C&C View
 
 ## 1. Primary Presentation
 
 ### Key Diagrams
-
-#### Module Dependency Diagram
-![image](https://github.com/user-attachments/assets/6268ac37-59e6-4a07-a9ef-0904f99b66be)
 
 #### Component & Connector (C&C) View
 ![image](https://github.com/user-attachments/assets/1c5a44c2-846a-4f79-bf62-751233dc7e82)
