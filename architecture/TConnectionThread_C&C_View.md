@@ -28,7 +28,8 @@
 
 ## 3. Behavior
 ### Before
-![image](https://github.com/user-attachments/assets/cae83755-2179-4606-8da5-c4c483393a41)
+![image](https://github.com/user-attachments/assets/77a0a03c-e021-4b68-a890-e08438f81904)
+
 
 
 
@@ -39,7 +40,8 @@ Because all actions run in the UI thread, the interface may become unresponsive 
 
 
 ### After
-![image](https://github.com/user-attachments/assets/c30dd38b-3f9a-4db2-8754-89af616e3d13)
+![image](https://github.com/user-attachments/assets/f487b782-ece5-4af4-8774-96a0190a1735)
+
 
 
 
