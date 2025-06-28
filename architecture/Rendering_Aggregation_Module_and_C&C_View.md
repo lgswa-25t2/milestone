@@ -1,20 +1,5 @@
 # Viewport-Based Aircraft Rendering with Aggregation Module and C&C View
 
-## Quality Attribute
-- **Target**: Performance, Usability
-- **Goal**: Improve rendering efficiency and visual clarity when displaying a large number of aircraft on screen.
-
-## System Architecture Description
-- This ADS-B Display System implements a sophisticated region-based clustering feature that enhances both user experience and system performance. When users zoom out beyond a certain threshold (cellDrawZoomRate), the system automatically switches from displaying individual aircraft icons to showing regional clusters.
-
-## Core Features
-- Adaptive Display: Automatically switches between detailed aircraft view and clustered view based on zoom level
-- Grid-based Clustering: Uses a 10x10 grid system to group aircraft by screen regions
-- Visual Feedback: Displays white circles with aircraft counts for each populated region
-- Performance Optimization: Reduces rendering overhead when dealing with high aircraft density
-
----
-
 ## 1. Primary Presentation
 
 ### Key Diagrams
