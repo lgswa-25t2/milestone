@@ -1,7 +1,8 @@
 # Intelligent Flight Tracking Assistant System Deployment View
 
 ## Deployment Diagram
-![image](https://github.com/user-attachments/assets/5d799de9-9ccc-46cc-91cb-3667cf9087d8)
+![image](https://github.com/user-attachments/assets/4dc56cfe-f4a7-4f8d-8180-e826222dfd2b)
+
 
 
 ![image](https://github.com/user-attachments/assets/932df633-aca1-40cb-813b-5542d78750c8)
