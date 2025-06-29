@@ -20,7 +20,7 @@ This following module view presents a refactoring of the legacy DisplayGUI archi
 <table>
   <tr>
   <td align="center"><a href="./architecture/Layered_Module_View.md">Layered Module View<br>
-        <img src="https://github.com/user-attachments/assets/05bd718a-952e-4a37-a8a1-b9064eba0fe4" width="200"></a>
+        <img src="https://github.com/user-attachments/assets/6801cebf-a5ca-4aef-889d-9f7550f45c5c" width="200"></a>
   </td>
 </tr>
 </table>
