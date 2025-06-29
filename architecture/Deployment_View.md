@@ -5,7 +5,8 @@ The diagram illustrates Deployment Diagram for Intelligent Flight Tracking Assis
 ### Key Diagrams
 ![image](https://github.com/user-attachments/assets/4dc56cfe-f4a7-4f8d-8180-e826222dfd2b)
 
-![image](https://github.com/user-attachments/assets/932df633-aca1-40cb-813b-5542d78750c8)
+![image](https://github.com/user-attachments/assets/b84a61bb-f680-4b8c-93d0-63219dc86481)
+
 
 ---
 
