@@ -1,4 +1,5 @@
 # Separation of TConnectionThread C&C View
+The "Separation of TConnectionThread C&C View" is a view document created to address an unexpected issue observed during testing—where the UI becomes completely unresponsive until a timeout occurs when the server connection is unstable. This view aims to improve <a href="../architectural-drivers.md#qa_001_01">QAR_001_01</a> and <a href="../architectural-drivers.md#qa_001_02">QAR_001_02</a>.
 
 ## 1. Primary Presentation
 
