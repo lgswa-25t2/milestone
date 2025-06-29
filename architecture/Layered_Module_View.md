@@ -21,7 +21,8 @@ Eliminate current cyclic dependencies in the system to improve maintainability a
 ### Key Diagrams
 
 #### Planned Layered Architecture
-![image](https://github.com/user-attachments/assets/2d4cdd67-05b0-4974-94d5-6eb271920841)
+![image](https://github.com/user-attachments/assets/6801cebf-a5ca-4aef-889d-9f7550f45c5c)
+
 
 ## 2. Element Catalog
 
