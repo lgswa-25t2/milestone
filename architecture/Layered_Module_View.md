@@ -1,20 +1,5 @@
 # Intelligent Flight Tracking Assistant System - Layered Module View
 
-## Objective
-Eliminate current cyclic dependencies in the system to improve maintainability and modifiability.
-
-### Legacy Architecture - Key Cyclic Dependencies
-| Cycle | Type | Description |
-|-------|------|-------------|
-| 1 | Bidirectional | `DisplayGUI ↔ AreaDialog` |
-| 2 | Indirect | `DisplayGUI → SBS_Message → DisplayGUI` |
-| 3 | Indirect | `DisplayGUI → DecodeRawADS_B → DisplayGUI` |
-
-### Root Causes
-- **God Object (DisplayGUI)**: Excessive responsibilities concentrated in one class.
-- **Lack of Layered Structure**: Business and UI logic are tightly coupled.
-- **Direct Coupling**: UI directly depends on data model implementations.
-
 ---
 ## 1. Primary Presentation
 
@@ -22,7 +7,6 @@ Eliminate current cyclic dependencies in the system to improve maintainability a
 
 #### Planned Layered Architecture
 ![image](https://github.com/user-attachments/assets/6801cebf-a5ca-4aef-889d-9f7550f45c5c)
-
 
 ## 2. Element Catalog
 
@@ -46,10 +30,34 @@ Eliminate current cyclic dependencies in the system to improve maintainability a
 - N/A
 
 ## 4. Design Rationale
-- Eliminate cycles for better maintainability
-- Decouple UI from logic to enhance testability
-- Improve adherence to SOLID principles
-- Align with layered architectural patterns
+### Objective
+- Eliminate current cyclic dependencies in the system to improve maintainability and modifiability.
+
+#### Legacy Architecture - Key Cyclic Dependencies
+| Cycle | Type | Description |
+|-------|------|-------------|
+| 1 | Bidirectional | `DisplayGUI ↔ AreaDialog` |
+| 2 | Indirect | `DisplayGUI → SBS_Message → DisplayGUI` |
+| 3 | Indirect | `DisplayGUI → DecodeRawADS_B → DisplayGUI` |
+
+### Root Causes
+- **God Object (DisplayGUI)**: Excessive responsibilities concentrated in one class.
+- **Lack of Layered Structure**: Business and UI logic are tightly coupled.
+- **Direct Coupling**: UI directly depends on data model implementations. 
+
+### Architectural Alternatives Considered
+
+| Option | Description | Reason Not Chosen |
+|--------|-------------|-------------------|
+| **Keep monolithic DisplayGUI** | Continue using DisplayGUI as central coordinator | High coupling and poor testability made it unsustainable |
+| **Use direct observer callbacks** | Pass raw function pointers or lambdas between modules | Difficult to manage and test; tight coupling remained |
+| **Service Layer without Interfaces** | No explicit interfaces; use direct service references | Violates Dependency Inversion Principle; harder to mock/test |
+
+### Why Layered + Inversion Approach Was Chosen
+- Supports separation of concerns and single responsibility
+- Interfaces enable dependency injection and test doubles
+- Easier future extension (e.g., plug-in services, alternate renderers)
+- Enables event-driven interaction between decoupled UI modules
 
 ## 5. Related Views
 - Deployment View - [Intelligent Flight Tracking Assistant System Deployment View](./IFTA_Deployment_View.md)
