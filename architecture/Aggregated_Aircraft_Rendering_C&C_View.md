@@ -18,6 +18,16 @@
 
 | Element                       | Type            | Responsibility                                                                                  |
 |-------------------------------|------------------|-----------------------------------------------------------------------------------------------|
+| `Timer1Timer`                 | Timer Handler    | Triggers every 500ms to call `DrawObject()`                                                   |
+| `Timer2Timer`                 | Timer Handler    | Triggers every 5000ms to purge outdated aircraft data                                         |
+| `Aircraft Data Store`        | Shared Variable  | Stores real-time aircraft data accessed and modified by multiple threads                      |
+| `Event Handlers`             | UI Component     | Handles user interactions like drag, zoom, and aircraft selection                             |
+| `OpenGL Library`             | External Library | Provides rendering capabilities for map and aircraft visualization                            |
+| `TConnectionThread`          | Thread           | Establishes the TCP connection independently to prevent UI blocking                          |
+| `TTCPClientRawHandleThread`  | Thread           | Receives real-time aircraft data from Raspberry Pi                                            |
+| `TTCPClientSBSHandleThread`  | Thread           | Receives aircraft data from ADS-B server                                                      |
+| `MainThread`                 | Thread           | Hosts the UI and orchestrates timer events and rendering                                      |
+| `UI Object`                  | Component        | Represents drawn elements (airport, aircraft, overlays) on screen                            |
 | `DrawObject()`                | Function         | Central drawing logic. Performs multiple visualization tasks triggered by timer or UI events. |
 |                               |                  | - 1. OpenGL Rendering Setup                                                                    |
 |                               |                  | - 2. Airport Display                                                                           |
@@ -31,16 +41,6 @@
 |                               |                  | - 10. Airport Connection Lines                                                                  |
 |                               |                  | - 11. Aggregation Display                                                                      |
 |                               |                  | - 12. Re-Draw UI                                                                               |
-| `Timer1Timer`                 | Timer Handler    | Triggers every 500ms to call `DrawObject()`                                                   |
-| `Timer2Timer`                 | Timer Handler    | Triggers every 5000ms to purge outdated aircraft data                                         |
-| `Aircraft Data Store`        | Shared Variable  | Stores real-time aircraft data accessed and modified by multiple threads                      |
-| `Event Handlers`             | UI Component     | Handles user interactions like drag, zoom, and aircraft selection                             |
-| `OpenGL Library`             | External Library | Provides rendering capabilities for map and aircraft visualization                            |
-| `TConnectionThread`          | Thread           | Establishes the TCP connection independently to prevent UI blocking                          |
-| `TTCPClientRawHandleThread`  | Thread           | Receives real-time aircraft data from Raspberry Pi                                            |
-| `TTCPClientSBSHandleThread`  | Thread           | Receives aircraft data from ADS-B server                                                      |
-| `MainThread`                 | Thread           | Hosts the UI and orchestrates timer events and rendering                                      |
-| `UI Object`                  | Component        | Represents drawn elements (airport, aircraft, overlays) on screen                            |
 
 
 ---
