@@ -1,5 +1,8 @@
 # Aggregated Aircraft Rendering C&C View
 
+The "Aggregated Aircraft Rendering C&C View" document presents the implementation view that reflects our design decisions, which were derived from <a href="../experiments/exp01-aircraft-number.md">Experiment01</a> conducted to improve <a href="../architectural-drivers.md#qa_001_01">QAR_001_01</a>
+
+
 ## 1. Primary Presentation
 
 ### Key Diagrams
