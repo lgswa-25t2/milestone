@@ -1,5 +1,6 @@
 # Intelligent Flight Tracking Assistant System - Deployment View
 ## 1. Primary Presentation
+The diagram below illustrates the end-to-end system architecture for Intelligent Flight Tracking Assistant System.
 
 ### Key Diagrams
 ![image](https://github.com/user-attachments/assets/4dc56cfe-f4a7-4f8d-8180-e826222dfd2b)
@@ -27,31 +28,14 @@
 ---
 
 ## 3. Behavior
-N/A
+- N/A
 
 ---
 
 ## 4. Design Rationale
 
-This architecture separates **data collection** from **visualization**, achieving modularity and improved scalability.
-
-### Why this separation?
-
-- **Performance**: Local processing on Raspberry Pi prevents overload of the GUI client.
-- **Responsiveness**: Windows app stays responsive with TCP clients handled in threads.
-- **Scalability**: Easy to add multiple Pi stations or visualization clients.
-
-### Alternatives Considered
-
-| Approach              | Pros                             | Cons                                     |
-|----------------------|----------------------------------|------------------------------------------|
-| Monolithic deployment| Simplifies management            | Poor scalability, hard to maintain       |
-| UDP broadcasting     | Lower latency                    | Less reliable, potential packet loss     |
-
-### Decision
-Use a **TCP-based streaming model** with clear separation between data producer (Pi) and consumer (Windows App), ensuring modularity, performance, and real-time responsiveness.
-
+- N/A
 ---
 
 ## 5. Related Views
-N/A
+- N/A
