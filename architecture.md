@@ -12,7 +12,7 @@ This deployment view shows how the system separates data collection and visualiz
 
 <table>
 <tr><td align="center"><a href="./architecture/Deployment_View.md">Deployment view<br>
-<img src="https://github.com/user-attachments/assets/217bcb79-3f64-4034-b285-ac11970d8b80" width="200"></a></td></tr>
+<img src="https://github.com/lgswa-25t2/milestone/blob/main/images/deployment_view.png" width="200"></a></td></tr>
 </table>
 
 This following module view presents a refactoring of the legacy DisplayGUI architecture into a layered and decoupled structure, aiming to eliminate cyclic dependencies and improve maintainability, testability, and adherence to design principles.
