@@ -1,6 +1,6 @@
 # Intelligent Flight Tracking Assistant System - Deployment View
 ## 1. Primary Presentation
-The diagram below illustrates the end-to-end system architecture for Intelligent Flight Tracking Assistant System.
+The diagram illustrates Deployment Diagram for Intelligent Flight Tracking Assistant System.
 
 ### Key Diagrams
 ![image](https://github.com/user-attachments/assets/4dc56cfe-f4a7-4f8d-8180-e826222dfd2b)
@@ -11,7 +11,6 @@ The diagram below illustrates the end-to-end system architecture for Intelligent
 
 ## 2. Element Catalog
 
-### Component & Connector (C&C) View
 
 | Element                        | Type           | Responsibility                                                                 |
 |-------------------------------|----------------|--------------------------------------------------------------------------------|
