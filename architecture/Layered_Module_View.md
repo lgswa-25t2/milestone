@@ -1,6 +1,8 @@
 # Intelligent Flight Tracking Assistant System - Layered Module View
 
-The ADS-B Display System currently suffers from significant architectural issues that impact maintainability, testability, and extensibility. To address these challenges, we proposed a layered architecture. The following is the corresponding architecture view. Due to limited implementation time, the layered structure was not fully applied in the actual system.
+The ADS-B Display System currently suffers from significant architectural issues that impact maintainability, testability, and extensibility. </br>
+To address these challenges, we proposed a layered architecture. </br>
+The following is the corresponding architecture view. Due to limited implementation time, the layered structure was not fully applied in the actual system.
   
 ## 1. Primary Presentation
 
