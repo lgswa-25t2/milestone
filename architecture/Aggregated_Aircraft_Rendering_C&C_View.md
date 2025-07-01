@@ -8,7 +8,7 @@ The "Aggregated Aircraft Rendering C&C View" document presents the implementatio
 ### Key Diagrams
 
 #### Component & Connector (C&C) View
-![image](https://github.com/user-attachments/assets/1c5a44c2-846a-4f79-bf62-751233dc7e82)
+![image](https://github.com/user-attachments/assets/187c6e03-1291-40e1-a07a-2dad40ed766d)
 
 
 ---
@@ -21,29 +21,16 @@ The "Aggregated Aircraft Rendering C&C View" document presents the implementatio
 
 | Element                       | Type            | Responsibility                                                                                  |
 |-------------------------------|------------------|-----------------------------------------------------------------------------------------------|
-| `Timer1Timer`                 | Timer Handler    | Triggers every 500ms to call `DrawObject()`                                                   |
-| `Timer2Timer`                 | Timer Handler    | Triggers every 5000ms to purge outdated aircraft data                                         |
-| `Aircraft Data Store`        | Shared Variable  | Stores real-time aircraft data accessed and modified by multiple threads                      |
-| `Event Handlers`             | UI Component     | Handles user interactions like drag, zoom, and aircraft selection                             |
-| `OpenGL Library`             | External Library | Provides rendering capabilities for map and aircraft visualization                            |
-| `TConnectionThread`          | Thread           | Establishes the TCP connection independently to prevent UI blocking                          |
-| `TTCPClientRawHandleThread`  | Thread           | Receives real-time aircraft data from Raspberry Pi                                            |
-| `TTCPClientSBSHandleThread`  | Thread           | Receives aircraft data from ADS-B server                                                      |
-| `MainThread`                 | Thread           | Hosts the UI and orchestrates timer events and rendering                                      |
-| `UI Object`                  | Component        | Represents drawn elements (airport, aircraft, overlays) on screen                            |
-| `DrawObject()`                | Function         | Central drawing logic. Performs multiple visualization tasks triggered by timer or UI events. |
-|                               |                  | - 1. OpenGL Rendering Setup                                                                    |
-|                               |                  | - 2. Airport Display                                                                           |
-|                               |                  | - 3. Map Center Point Display                                                                  |
-|                               |                  | - 4. Area Visualization                                                                        |
-|                               |                  | - 5. Aircraft Rendering (Region Rendering + Aggregation)                                       |
-|                               |                  | - 6. Flight Path Prediction                                                                    |
-|                               |                  | - 7. Aircraft Tracking                                                                          |
-|                               |                  | - 8. Selected Aircraft Information Display                                                     |
-|                               |                  | - 9. CPA (Closest Point of Approach) Visualization                                             |
-|                               |                  | - 10. Airport Connection Lines                                                                  |
-|                               |                  | - 11. Aggregation Display                                                                      |
-|                               |                  | - 12. Re-Draw UI                                                                               |
+| `Main Thread`                 | Thread           | Handles the remote user interface; triggers rendering and purge events       |
+| `Renderer`                    | Component        | Renders aircraft or circles based on zoom level                              |
+| `Purge`                       | Component        | Deletes expired aircraft data from the store                                 |
+| `Mouse Event Handlers`        | Component        | Handles user input (drag, zoom, right-click)                                 |
+| `OpenGL Library`              | Component        | Provides graphics rendering functions                                         |
+| `Aircraft Data Store`         | Shared Variable  | Stores and shares aircraft data across threads                               |
+| `TTCPClientRawHandleThread`   | Thread           | Receives data from Raspberry Pi and updates data store                       |
+| `TTCPClientSBSHandleThread`   | Thread           | Receives SBS-format data from ADS-B server and updates data store            |
+| `DistanceThread`              | Thread           | Finds aircraft near specified airport locations                              |
+| `TConnectionThread`           | Thread           | Maintains and monitors background TCP connections                            |
 
 
 ---
