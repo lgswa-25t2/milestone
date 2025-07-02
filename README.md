@@ -2,6 +2,8 @@
 
 The documents in this folder are constantly updated and periodically backed up to the archive folder.
 
+And our final presentation is in [Google Slide Link](https://docs.google.com/presentation/d/1uCBuazzTcBPUN7PpB5gjWluY5R7if3t0NAmvF9Qv5iM/edit?usp=sharing).
+
 ### [Project Plan](./project-plan.md)
 
 The plan explains the outline of the project, members and roles, the task planned, and the milestones.
