@@ -186,7 +186,7 @@ All team members participate, but the assignee of each attribue is the leader of
 
 #### Integrate modules, run QA & functional requirements test
 
-TBD
+- 7/1 noon: SW fix
 
 [Go to schedule](#project-shedule)
 
@@ -196,6 +196,6 @@ TBD
 
 #### Presentation and Demonstration
 
-TBD
+Our final presentation is in [Google Slide Link](https://docs.google.com/presentation/d/1uCBuazzTcBPUN7PpB5gjWluY5R7if3t0NAmvF9Qv5iM/edit?usp=sharing).
 
 [Go to schedule](#project-shedule)
